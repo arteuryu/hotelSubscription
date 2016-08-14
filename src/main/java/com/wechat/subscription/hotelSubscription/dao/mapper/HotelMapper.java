@@ -3,7 +3,8 @@ package com.wechat.subscription.hotelSubscription.dao.mapper;
 import java.util.List;
 
 import com.wechat.subscription.hotelSubscription.dao.entity.HotelInfo;  
-  
+
+
 public interface HotelMapper {  
       
     int save(HotelInfo hotelInfo);  
