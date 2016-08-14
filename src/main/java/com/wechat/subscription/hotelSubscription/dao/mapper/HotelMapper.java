@@ -1,20 +1,16 @@
 package com.wechat.subscription.hotelSubscription.dao.mapper;
 
-import java.util.List;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
-import com.wechat.subscription.hotelSubscription.dao.entity.HotelInfo;  
-
-
+@Mapper
 public interface HotelMapper {  
       
-    int save(HotelInfo hotelInfo);  
-      
-    HotelInfo selectById(Integer id);  
-      
-    int updateById(HotelInfo hotelInfo);  
-      
-    int deleteById(Integer id);  
-      
-    List<HotelInfo> queryAll();  
+	  @Select("SELECT * FROM USER WHERE NAME = #{name}")
+	  String findByName(@Param("name") String name);
+
+	  @Insert("INSERT INTO USER(NAME, AGE) VALUES(#{name}, #{age})")
+	  int insert(@Param("name") String name, @Param("age") Integer age);
       
 }  
