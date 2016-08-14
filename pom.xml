@@ -26,20 +26,8 @@
         <dependency>
       		<groupId>junit</groupId>
       		<artifactId>junit</artifactId>
-      		<version>3.8.1</version>
       		<scope>test</scope>
     	</dependency>
-    <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
-		<dependency>
-   			<groupId>commons-codec</groupId>
-    		<artifactId>commons-codec</artifactId>
-    		<version>1.10</version>
-		</dependency>
-    	<dependency>
-    		<groupId>org.mybatis.spring.boot</groupId>
-    		<artifactId>mybatis-spring-boot-starter</artifactId>
-    		<version>1.0.0</version>
-		</dependency>
     </dependencies>
     <build>
         <plugins>
@@ -52,18 +40,6 @@
 
     <!-- Allow access to Spring milestones and snapshots -->
     <!-- (you don't need this if you are using anything after 0.5.0.RELEASE) -->
-    <repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <url>http://repo.spring.io/snapshot</url>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <url>http://repo.spring.io/milestone</url>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-    </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>spring-snapshots</id>
