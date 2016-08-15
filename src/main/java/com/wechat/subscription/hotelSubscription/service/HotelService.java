@@ -1,7 +1,9 @@
 package com.wechat.subscription.hotelSubscription.service;
 
-import com.wechat.subscription.hotelSubscription.dao.entity.HotelInfo;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.wechat.subscription.hotelSubscription.dao.entity.HotelInfo;
+@SpringBootApplication
 public interface HotelService {
 	/**   
 	* @Title: HotelService.java 

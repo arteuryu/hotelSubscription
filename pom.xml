@@ -47,16 +47,23 @@
     		<artifactId>HikariCP</artifactId>
     		<!-- 版本号可以不用指定，Spring Boot会选用合适的版本 -->
 		</dependency>
-<!-- 		<dependency> -->
-<!--     		<groupId>org.mybatis.spring.boot</groupId> -->
-<!--     		<artifactId>mybatis-spring-boot-starter</artifactId> -->
-<!--     		<version>1.1.1</version> -->
-<!-- 		</dependency> -->
+		<dependency>
+    		<groupId>org.mybatis.spring.boot</groupId>
+    		<artifactId>mybatis-spring-boot-starter</artifactId>
+    		<version>1.1.1</version>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.21</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+		<dependency>
+    		<groupId>com.alibaba</groupId>
+   			<artifactId>druid</artifactId>
+    		<version>1.0.24</version>
+		</dependency>
+		
     </dependencies>
     <build>
         <plugins>
@@ -70,6 +77,10 @@
         <repository>
             <id>spring-snapshots</id>
             <url>http://repo.spring.io/libs-snapshot</url>
+        </repository>
+        <repository>
+            <id>druid</id>
+            <url>http://central.maven.org/maven2</url>
         </repository>
     </repositories>
     <!-- Allow access to Spring milestones and snapshots -->

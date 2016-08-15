@@ -19,11 +19,11 @@ import com.wechat.subscription.hotelSubscription.service.HotelService;
 @RequestMapping("/hotel")  
 public class HotelController {
 	private Logger logger =  LoggerFactory.getLogger(this.getClass());
-//	@Autowired
-//	private HotelService hotelService;
+	@Autowired
+	private HotelService hotelService;
 	@RequestMapping("/arteur")  
     public String view() {  
-//		hotelService.testService();
+		hotelService.testService();
         return "hello world";  
     }  
 	@RequestMapping("/authenrize")  

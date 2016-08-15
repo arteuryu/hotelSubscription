@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>  
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >  
-<mapper namespace="com.ibigsea.bootdao.mapper.UserMapper" >  
+<mapper namespace="com.wechat.subscription.hotelSubscription.dao.mapper.HotelMapper" >  
           
-    <select id="queryAll" resultType="com.ibigsea.bootdao.entity.User">  
-        select * from arteur  
+    <select id="countLine" resultType="java.lang.Integer">  
+        select count(*) from arteur  
     </select>  
           
 </mapper>  
