@@ -1,5 +1,7 @@
 package com.wechat.subscription.hotelSubscription.service;
 
+import java.util.List;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.wechat.subscription.hotelSubscription.dao.entity.HotelInfo;
@@ -14,4 +16,6 @@ public interface HotelService {
 	* @version V1.0   
 	*/
 	public HotelInfo testService();
+	
+	public List menuTest() throws Exception;
 }

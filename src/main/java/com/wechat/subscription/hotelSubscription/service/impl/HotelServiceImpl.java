@@ -1,5 +1,7 @@
 package com.wechat.subscription.hotelSubscription.service.impl;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,9 @@ public class HotelServiceImpl implements HotelService{
 		Integer count = hotelDAO.countLine(4);
 		logger.info("count is "+count);
 		return null;
+	}
+	public List menuTest() throws Exception {
+		return hotelDAO.menuTest();
 	}
 	
 }
