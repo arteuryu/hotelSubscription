@@ -4,6 +4,5 @@
           
     <select id="countLine" resultType="java.lang.Integer">  
         select count(*) from arteur  
-    </select>  
-          
+    </select>            
 </mapper>  
