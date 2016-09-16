@@ -4,7 +4,7 @@
 
   <groupId>com.wechat.subscription</groupId>
   <artifactId>hotelSubscription</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.4.0.RELEASE</version>
   <packaging>jar</packaging>
 
   <name>hotelSubscription</name>
