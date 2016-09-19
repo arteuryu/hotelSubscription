@@ -46,21 +46,21 @@
         </tbody>
       </table>
       </li>
-      <li>
+      <li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_kf01.png">
         <h3>豪华城景房</h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li>
+      <li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_kf02.png">
         <h3>行政海景套房</h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
       </li>
-      <li>
+      <li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_kf03.png">
         <h3>豪华城景房</h3>
         <p>58平方米的宽敞豪华城景房</p>
-      </li>
+      </li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
       <li>
         <img class="hotelImg" src="/assets/images/hotel/pic_kf04.png">
         <h3>行政海景套房</h3>
@@ -83,5 +83,6 @@ function isWeixnOpen(){
 if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
+$("li").on("tap",function(){window.location.href=$(this).attr("href");});
 </script>
 </html>

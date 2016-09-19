@@ -38,4 +38,16 @@ public class HotelPageController {
 	public String getMediaCenter(){
 		return "mediaCenter";
 	}
+	@RequestMapping("/mediaDetail")
+	public String getMediaDetail(){
+		return "mediaDetail";
+	}
+	@RequestMapping("/joinUs")
+	public String joinUs(){
+		return "joinUs";
+	}
+	@RequestMapping("/index")
+	public String index(){
+		return "mobileIndex";
+	}
 }
