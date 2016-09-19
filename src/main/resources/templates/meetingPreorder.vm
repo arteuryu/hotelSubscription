@@ -7,6 +7,11 @@
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <!-- <script src="/assets/js/common.js"></script> -->
 <link rel="stylesheet" href="/assets/css/guestRoomPreorder.css" />
+<style type="text/css"> 
+.hotelImg{
+	height:100%;
+}
+</style> 
 </head>
 <body>
 <div data-role="page" id="pageone">
@@ -46,13 +51,13 @@
         </tbody>
       </table>
       </li>
- 		<li id="haohua" href="/hotelPage/meetingDetail">
-        <img style="height:100%" class="hotelImg" src="/assets/images/meetingRoom/pic_cy01.png">
+ 		<li id="haohua" class="nc" href="/hotelPage/meetingDetail">
+        <img style="height:100%" class="hotelImg" src="/assets/images/meetingRoom/nc.jpg">
         <h3>豪华宴会厅（3楼）</h3>
         <p>7.5米挑高无柱，尽显大气典雅。可容纳多达1000人的会议或者800人的宴会</p>
       </li>
-      <li>
-        <img style="height:100%" class="hotelImg" src="/assets/images/meetingRoom/pic_cy02.png">
+      <li class="xm">
+        <img style="height:100%" class="hotelImg" src="/assets/images/meetingRoom/xm.jpg">
         <h3>菩提厅（4楼）</h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
       </li>
@@ -74,5 +79,15 @@ if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
 $("#haohua").on("tap",function(){window.location.href=$(this).attr("href");});
+$(".xm").hide();
+$("#city").change(function(){
+	if($(this).val()=="nc"){
+		$(".nc").show();
+		$(".xm").hide();
+	}else{
+		$(".nc").hide();
+		$(".xm").show();
+	}
+});
 </script>
 </html>

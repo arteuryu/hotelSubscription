@@ -11,11 +11,11 @@
 <body>
 <div data-role="page" id="pageone" data-corners="false">
 <div data-role="header" id="pageHeader">
-  <h1>首页</h1>
+  <h1>详情</h1>
   </div>
 <div data-role="main" class="ui-content" data-corners="false">
 <div>
-<h3 align="center">豪华宴会厅</h3>
+<p align="center">豪华宴会厅</p>
 <img  src="/assets/images/meetingRoom/pic_04.png" style="width:100%">
 </div>
 <p>无论生意伙伴云集的商务会议，还是亲朋好友共同见证的浪漫婚礼，再或高鹏满座的大型宴会，瑞颐都为您准备了上好的场所。</p>
