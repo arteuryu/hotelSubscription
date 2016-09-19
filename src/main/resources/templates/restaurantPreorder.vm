@@ -46,12 +46,12 @@
         </tbody>
       </table>
       </li>
-      <li href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
+      <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/hotel/pic_cy01.png">
         <h3>琴岸咖啡厅 [2楼]</h3>
         <p>位于2楼的全天候餐厅，早餐、午餐与晚餐自助餐均为现场烹饪，亦提供零点服务。</p>
       </li>
-      <li href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
+      <li title="nc" class="detailItem" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/hotel/pic_cy02.png">
         <h3>红泰餐厅 [2楼]</h3>
         <p>最地道的泰式料理，最豪华的泰厨阵容，最惬意的用餐环境，不可错过的味觉狂欢！</p>
@@ -73,6 +73,6 @@ function isWeixnOpen(){
 if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
-$("li").on("tap",function(){window.location.href=$(this).attr("href");});
+$(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 </script>
 </html>
