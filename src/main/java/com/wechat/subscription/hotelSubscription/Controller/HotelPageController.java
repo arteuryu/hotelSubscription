@@ -34,6 +34,10 @@ public class HotelPageController {
 	public String getMeetingPreorder(){
 		return "meetingPreorder";
 	}
+	@RequestMapping("/meetingDetail")
+	public String getMeetingDetail(){
+		return "meetingDetail";
+	}
 	@RequestMapping("/mediaCenter")
 	public String getMediaCenter(){
 		return "mediaCenter";

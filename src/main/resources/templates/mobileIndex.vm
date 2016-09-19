@@ -10,33 +10,38 @@
 </head>
 <body>
 <div data-role="page" id="pageone">
-<div data-role="header" id="pageHeader">
+<div data-role="header">
   <h1>首页</h1>
-  </div>
-<div data-role="main" class="ui-content">
+</div>
 <div class="ui-grid-b">        
 	<div class="ui-block-a">
 		<img src="/assets/images/index/comingsoon_logo.png"></img>
 	</div>
 	<div class="ui-block-b">
 		<select data-role="none" id="unit1">
-  	  		<option value="1" >发展副总监</option>
+  	  		<option value="1" >EN</option>
 		</select>
 	</div>
-		<div class="ui-block-c">
-		<button data-role="none">搜索</button>
-	</div>
-<div data-role="none" style="height:200px;width:100%;"></div>
-<table >
-<thead>客房预订</thead>
-<tbody>
-<tr><td>酒店位置</td><td>我的附近</td></tr>
-<tr><td>选择酒店</td><td></td></tr>
-<tr><td>时间</td><td></td></tr>
-<tr><td>预定间数</td><td>我的附近</td></tr>
+</div>
+<!-- 	<div class="ui-block-a"> -->
+<!-- 		<img src="/assets/images/index/comingsoon_logo.png"></img> -->
+<!-- 	</div> -->
+<!-- 	<div class="ui-block-a"> -->
+<!-- 		<img src="/assets/images/index/comingsoon_logo.png"></img> -->
+<!-- 	</div> -->
+<div data-role="main" class="ui-content">
 
-</tbody>
-</table>
+<div data-role="none" style="height:200px;width:100%;"></div>
+<!-- <table > -->
+<!-- <thead>客房预订</thead> -->
+<!-- <tbody> -->
+<!-- <tr><td>酒店位置</td><td>我的附近</td></tr> -->
+<!-- <tr><td>选择酒店</td><td></td></tr> -->
+<!-- <tr><td>时间</td><td></td></tr> -->
+<!-- <tr><td>预定间数</td><td>我的附近</td></tr> -->
+
+<!-- </tbody> -->
+<!-- </table> -->
 </div>
 </div>
 

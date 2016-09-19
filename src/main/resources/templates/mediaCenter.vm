@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-<link rel="stylesheet" href="/assets/css/hotelSelect.css" />
+<link rel="stylesheet" href="/assets/css/mediaCenter.css" />
 </head>
 <body>
 <div data-role="page" id="pageone">
@@ -17,24 +17,49 @@
   <div data-role="content">
   <ul data-role="listview" id="listView">
       <li id="mediaDetail" href="/hotelPage/mediaDetail">
-        <img class="hotelImg" src="/assets/images/mediaCenter/pic_meiti_01.png">
-        <h3>2013年度携程最佳合作奖</h3>
-        <p>2013年度携程最佳合作奖用于表彰与携程网合作最紧密，并提供最热情的服务的五星级酒店</p>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti01.png">
+        <h3>2012年全球酒店业金樽奖最佳商务酒店</h3>
+        <p>金樽奖</p>
       </li>
       <li>
-        <img class="hotelImg" src="/assets/images/mediaCenter/pic_meiti_02.png">
-        <h3>厦门地区2013年度最佳合作酒店</h3>
-        <p>	厦门瑞颐大酒店被“缤客”授予“厦门地区2013年度最佳合作酒店”</p>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti02.png">
+        <h3>2012年度全球酒店业最具投资价值酒店管理公司</h3>
+        <p>金樽奖</p>
       </li>
       <li>
-        <img class="hotelImg" src="/assets/images/mediaCenter/pic_meiti_03.png">
-        <h3>2013 雅高达金环奖</h3>
-        <p>	2013 年度雅高达金环奖授予厦门瑞颐大酒店，以表彰其在2013年度电子商务在线业务的优异客服表现。</p>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti03.png">
+        <h3>2012年度卓越奖</h3>
+        <p>	该奖项基于到到网的网上评分</p>
       </li>
       <li>
-        <img class="hotelImg" src="/assets/images/mediaCenter/pic_meiti_04.png">
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti04.png">
+        <h3>2012年酒店管理集团-年度最具成长性酒店集团</h3>
+        <p>亚洲酒店论坛中心</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti05.png">
+        <h3>2013年度十大度假精选</h3>
+        <p>福布斯生活2013年度十大度假精选</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti06.png">
+        <h3>2013年度卓越奖</h3>
+        <p>该奖项基于到到网的网上评分</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti07.png">
+        <h3>2013年度中国会议酒店前100</h3>
+        <p>Best 100奖项是经MICE China编辑独立审核、评估，由MICE China主编及出版人签名颁发的中国会议行业最高奖项。Best 100的表彰对象为会议设施齐备、能提供优质会议服务、积极开展市场行销活动、在会议业界广为认知的会议型酒店及会议场地。本奖由雅士国际媒体有限公司出 版的，亚太地区发行量最大的会议行业杂志MICE China颁发。</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti08.png">
         <h3>2013年度最佳酒店位置奖</h3>
         <p>本次奖项评选基于慧评网收录的2013年度600万条真实的住客点评 授奖单位：携程、慧评网</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti09.png">
+        <h3>世界酒店五洲钻石奖</h3>
+        <p>南昌瑞颐大酒店荣获世界酒店 五洲钻石奖 年度最佳新开业酒店殊荣</p>
       </li>
     </ul>
 
