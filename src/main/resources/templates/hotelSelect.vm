@@ -28,7 +28,7 @@
   <ul data-role="listview" id="listView">
       <li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/xiameng.png">
-        <h3>厦门</h3>
+        <h3>厦门瑞颐</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
         	厦门市思明区</p>
       </li>
