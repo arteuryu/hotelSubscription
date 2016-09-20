@@ -32,8 +32,8 @@ background:black;
 </head>
 <body>
 <div data-role="page" id="pageone">
-<div data-role="header" id="pageHeader">
-  <h1>首页</h1>
+<div data-role="header">
+  <h1 id="pageHeader">首页</h1>
   <ul data-role="none" style="height:20px;linear-gradient(#3c3c3c,#111)">
 	<li style="display:inline;float:left; list-style:none">
 			<img style="width:80px;height:20px"  src="/assets/images/index/logo.png"></img>
