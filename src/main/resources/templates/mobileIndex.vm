@@ -34,8 +34,8 @@ background:black;
 <div data-role="page" id="pageone">
 <div data-role="header">
   <h1 id="pageHeader">首页</h1>
-  <ul data-role="none" style="height:20px;linear-gradient(#3c3c3c,#111)">
-	<li style="display:inline;float:left; list-style:none">
+  <ul data-role="none" style="height:20px;linear-gradient(#3c3c3c,#111);list-style:none;margin:0px;padding：0px;-webkit-padding-start:10px;">
+	<li style="display:inline;float:left;list-style:none">
 			<img style="width:80px;height:20px"  src="/assets/images/index/logo.png"></img>
 	</li>
 	<li style="display:inline;float:right; list-style:none">
@@ -110,33 +110,37 @@ background:black;
 <!-- </div> -->
 <table>
 <tr align="center" valign="middle">
-<td>
+<td style=padding-bottom:0px>
 		<a href="/hotelPage/guestRoomPreorder"><img src="/assets/images/index/kefang.png"></img></a>
 		<p>客房预订</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a>
 		<p>会议宴会</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a>
 		<p>餐饮预订</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a>
 		<p>酒店商城</p>
 </td>
 </tr>
 </table>
+<hr size="1px" style="">
 <div>
-<p>客房预订</p>
+<p><font color=red size="5px">|</font>&nbsp;&nbsp;客房预订</p>
 <div class="ui-grid-b">        
 	<div class="ui-block-a">
 		<p>酒店位置</p>
 	</div>
 	<div class="ui-block-b">
-		<p>我的附近  位置/酒店/关键词</p>
+		<p>我的附近</p>
 	</div>
+	<div class="ui-block-c">
+	  <p>位置/酒店/关键词</p>
+	 </div>
 <!-- 	<div class="ui-block-c"> -->
 <!-- 		<img style="height:40px" src="/assets/images/index/arrow.png"> -->
 <!-- 	</div> -->
@@ -159,8 +163,8 @@ background:black;
 		<p>时间</p>
 	</div>
 	<div class="ui-block-b">
-		<p>8月16日 今天入住时间</p>
-		<p>8月17日 明天离店，共一天</p>		
+		<p><font size="2px">8月16日</font><font size="1px">今天入住时间</font></p>
+		<p><font size="2px">8月17日</font><font size="1px">明天离店一天</font></p>		
 	</div>
 <!-- 	<div class="ui-block-c"> -->
 <!-- 		<img src="/assets/images/index/arrow.png"> -->
@@ -214,31 +218,56 @@ background:black;
  	  <a href="/hotelPage/brandOverview"><button>关于瑞颐</button></a>
       <a href="/hotelPage/mediaCenter"><button>媒体中心</button></a>
       <a href="/hotelPage/joinUs"><button>加入我们</button></a>
+<!--  <div class="ui-grid-a">         -->
+<!-- 	<div class="ui-block-a"> -->
+<!-- 		<p>一年三百六十五日，我们竭力为您的出行提供源源不断的优惠和礼遇</p> -->
+<!-- 		<button></button> -->
+<!-- 	</div> -->
+<!-- 	<div class="ui-block-b"> -->
+<!-- 		<img src="/assets/images/index/drink.png"> -->
+<!-- 	</div> -->
+<!-- </div>  -->
+<table style="background-color:#ede9e2">
+<tr align="center" valign="middle">
+<td>
+		<p>一年三百六十五日，我们竭力为您的出行提供源源不断的优惠和礼遇</p>
+		<button data-role="none" style="background-color:#ffffff">获取详情</button>
+</td>
+<td>
+		<img style="width:150px" src="/assets/images/index/drink.png">
+</td>
+</tr>
+</table>
  <div class="ui-grid-a">        
 	<div class="ui-block-a">
 		<p>瑞颐微信公众号</p>
-        <img class="hotelImg"  src="/assets/images/index/logo.png">
+        <img style="width:150px" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img class="hotelImg" src="/assets/images/index/print.png">
+		<img src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
-<div class="ui-grid-c">        
-	<div class="ui-block-a">
+<table style="-webkit-padding-start:80px;">
+<tr align="center" valign="middle">
+<td style=padding-right:10px>
 		<p>联系我们</p>
-	</div>
-	<div class="ui-block-b">
-		<table height=20 style=border-color:000000;border-left-style:solid;border-width:1px><tr><td valign=bottom></td></tr></table>    
-	</div>
-	<div class="ui-block-c">
+</td>
+<td height=8px align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
 		<p>隐私政策</p>
-	</div>
-</div> 
+</td>
+</tr>
+</table>
 </div>
 </div>
+<div data-position="fixed" data-tap-toggle="false">
+	<ul data-role="none" >
+	<li style="display:inline;float:right;list-style:none">
+		<img style="height:40px;width:40px" src="/assets/images/index/phone.png">
+	</li>
+	</ul>
 </div>
-
+</div>
 </body>
 <script type="text/javascript">
 function isWeixnOpen(){
