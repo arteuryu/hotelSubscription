@@ -109,21 +109,21 @@ background:black;
 <!-- 	</div> -->
 <!-- </div> -->
 <table>
-<tr border="1" rules="rows">
+<tr align="center" valign="middle">
 <td>
 		<a href="/hotelPage/guestRoomPreorder"><img src="/assets/images/index/kefang.png"></img></a>
 		<p>客房预订</p>
 </td>
-<td>
-		<a href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+		<a style="vertical-align:middle;" href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a>
 		<p>会议宴会</p>
 </td>
-<td>
-		<a href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a>
 		<p>餐饮预订</p>
 </td>
-<td>
-		<a href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a>
 		<p>酒店商城</p>
 </td>
 </tr>
@@ -217,7 +217,7 @@ background:black;
  <div class="ui-grid-a">        
 	<div class="ui-block-a">
 		<p>瑞颐微信公众号</p>
-        <img class="hotelImg"  src="/assets/images/index/comingsoon_logo.png">
+        <img class="hotelImg"  src="/assets/images/index/logo.png">
 	</div>
 	<div class="ui-block-b">
 		<img class="hotelImg" src="/assets/images/index/print.png">
