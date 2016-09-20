@@ -11,8 +11,22 @@
 .ui-content{  
      background:white;  
 } 
-ul{
-	 background:white;  
+li{
+	margin: 5px 10px 5px 10px
+}
+/* ul{ */
+/* 	 background:black;   */
+/* } */
+/* .indexHeader{ */
+/* 	background:black;   */
+/* } */
+#people,#setting
+{
+border: 1px solid black;
+font-weight: bold;
+text-align: right;
+padding: 20px; 
+background:black;  
 }
 </style>
 </head>
@@ -20,24 +34,41 @@ ul{
 <div data-role="page" id="pageone">
 <div data-role="header" id="pageHeader">
   <h1>首页</h1>
-</div>
-<!-- <div class="ui-grid-c">         -->
-<!-- 	<div class="ui-block-a"> -->
-<!-- 		<img style="height:20px;" src="/assets/images/index/comingsoon_logo.png"></img> -->
+  <ul data-role="none" style="height:20px;linear-gradient(#3c3c3c,#111)">
+	<li style="display:inline;float:left; list-style:none">
+			<img style="width:80px;height:20px"  src="/assets/images/index/logo.png"></img>
+	</li>
+	<li style="display:inline;float:right; list-style:none">
+		<img  style="width:20px;height:20px" src="/assets/images/index/setting.png"></img>
+	</li>
+	<li style="display:inline;float:right; list-style:none">
+		<img  style="width:20px;height:20px" src="/assets/images/index/people.png"></img>
+	</li>
+		<li style="display:inline;float:right; list-style:none">
+		<select style="width:50px;height:19px" data-role="none">
+			<option>en</option>
+			<option>chinese</option>
+		</select>
+	</li>
+</ul>
+<!-- <div class="ui-grid-c indexHeader">         -->
+<!-- 	<div class="ui-block-a" id="icon"> -->
+<!-- 		<img style="width:50%;height:50%" class="ui-li-icon" src="/assets/images/index/comingsoon_logo.png"></img> -->
 <!-- 	</div> -->
-<!-- 	<div class="ui-block-b"> -->
-<!-- 		<select data-role="none" id="unit1"> -->
+<!-- 	<div class="ui-block-b" id="lang"> -->
+<!-- 		<select  id="unit1"> -->
 <!--   	  		<option value="1" >EN</option> -->
 <!-- 		</select> -->
 <!-- 	</div> -->
-<!-- 	<div class="ui-block-c"> -->
-<!-- 		<img style="height:20px;" src="/assets/images/index/huiyuan.png"></img> -->
+<!-- 	<div class="ui-block-c" id="people"> -->
+<!-- 		<img  style="width:40%;height:40%" src="/assets/images/index/people.png"></img> -->
 <!-- 	</div> -->
-<!-- 	<div class="ui-block-d"> -->
-<!-- 		<img style="height:20px;" src="/assets/images/index/caidan.png"></img> -->
+<!-- 	<div class="ui-block-d" id="setting"> -->
+<!-- 		<img  style="width:40%;height:40%" src="/assets/images/index/setting.png"></img> -->
 <!-- 	</div> -->
 <!-- </div> -->
 <img style="width:100%" src="/assets/images/index/banner01.png">
+</div>
 <!-- 	<div class="ui-block-a"> -->
 <!-- 		<img src="/assets/images/index/comingsoon_logo.png"></img> -->
 <!-- 	</div> -->
@@ -58,24 +89,45 @@ ul{
 <!-- </tbody> -->
 <!-- </table> -->
 <br>
-<div class="ui-grid-c">        
-	<div class="ui-block-a">
+<!-- <div class="ui-grid-d">         -->
+<!-- 	<div class="ui-block-a"> -->
+<!-- 		<a href="/hotelPage/guestRoomPreorder"><img src="/assets/images/index/kefang.png"></img></a> -->
+<!-- 		<p>客房预订</p> -->
+<!-- 		<table height=90 style=border-color:000000;border-left-style:solid;border-width:1px><tr><td valign=top></td></tr></table>		 
+<!-- 	</div> -->
+<!-- 	<div class="ui-block-b"> -->
+<!-- 		<a href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a> -->
+<!-- 		<p>会议宴会</p> -->
+<!-- 	</div> -->
+<!-- 	<div class="ui-block-c"> -->
+<!-- 		<a href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a> -->
+<!-- 		<p>餐饮预订</p> -->
+<!-- 	</div> -->
+<!-- 	<div class="ui-block-d"> -->
+<!-- 		<a href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a> -->
+<!-- 		<p>酒店商城</p> -->
+<!-- 	</div> -->
+<!-- </div> -->
+<table>
+<tr border="1" rules="rows">
+<td>
 		<a href="/hotelPage/guestRoomPreorder"><img src="/assets/images/index/kefang.png"></img></a>
 		<p>客房预订</p>
-	</div>
-	<div class="ui-block-b">
+</td>
+<td>
 		<a href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a>
 		<p>会议宴会</p>
-	</div>
-	<div class="ui-block-c">
+</td>
+<td>
 		<a href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a>
 		<p>餐饮预订</p>
-	</div>
-	<div class="ui-block-d">
+</td>
+<td>
 		<a href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a>
 		<p>酒店商城</p>
-	</div>
-</div>
+</td>
+</tr>
+</table>
 <div>
 <p>客房预订</p>
 <div class="ui-grid-b">        
@@ -172,7 +224,7 @@ ul{
 	</div>
 </div> 
 <br>
-<div class="ui-grid-b">        
+<div class="ui-grid-c">        
 	<div class="ui-block-a">
 		<p>联系我们</p>
 	</div>
