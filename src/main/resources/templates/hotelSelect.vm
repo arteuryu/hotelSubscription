@@ -21,38 +21,32 @@
 <body>
 <div data-role="page" id="pageone">
 <div data-role="header" id="pageHeader">
-  <h1>酒店预订</h1>
+  <h1>选择酒店</h1>
   </div>
 
   <div data-role="content">
   <ul data-role="listview" id="listView">
       <li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/xiameng.png">
+        <img class="hotelImg" src="/assets/images/hotel/pic_hotel_01.png">
         <h3>厦门瑞颐</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
         	厦门市思明区</p>
       </li>
       <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang.png">
+        <img class="hotelImg" src="/assets/images/hotel/pic_hotel_02.png">
         <h3>南昌瑞颐</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
-        	江西南昌</p>
+        	厦门市思明区</p>
       </li>
       <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/shanghai.png">
-        <h3>上海瑞颐</h3>
+        <img class="hotelImg" src="/assets/images/hotel/pic_hotel_03.png">
+        <h3>瑞颐海外</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
-        	上海市</p>
+        	厦门市思明区</p>
       </li>
-      <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/hangzhou.png">
-        <h3>杭州瑞颐</h3>
-        <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
-        	杭州市</p>
-      </li>
-      <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem" href="/hotelPage/comingsoon">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_04.png">
-        <h3>comming soon</h3>
+        <h3>COMING SOON</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
         	厦门市思明区</p>
       </li>

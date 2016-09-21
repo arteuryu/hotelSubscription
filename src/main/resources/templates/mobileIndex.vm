@@ -14,6 +14,9 @@
 li{
 	margin: 5px 10px 5px 10px
 }
+.hotelImg{
+	height:100%;
+}
 /* ul{ */
 /* 	 background:black;   */
 /* } */
@@ -33,7 +36,6 @@ background:black;
 <body>
 <div data-role="page" id="pageone">
 <div data-role="header">
-  <h1 id="pageHeader">首页</h1>
   <ul data-role="none" style="height:20px;linear-gradient(#3c3c3c,#111);list-style:none;margin:0px;padding：0px;-webkit-padding-start:10px;">
 	<li style="display:inline;float:left;list-style:none">
 			<img style="width:80px;height:20px"  src="/assets/images/index/logo.png"></img>
@@ -191,22 +193,22 @@ background:black;
 </br>
 	<ul data-role="listview" id="listView">
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/01.jpg">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
         <h3>行政江景套房</h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
       </li>
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.jpg">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
         <h3>名仕复式套房</h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.jpg">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
         <h3>豪华家庭房</h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.jpg">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
         <h3>高级大床房</h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
       </li>
@@ -263,7 +265,7 @@ background:black;
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
 	<li style="display:inline;float:right;list-style:none">
-		<img style="height:40px;width:40px" src="/assets/images/index/phone.png">
+		<a href="tel:18565702869"><img style="height:40px;width:40px" src="/assets/images/index/phone.png"></a>
 	</li>
 	</ul>
 </div>

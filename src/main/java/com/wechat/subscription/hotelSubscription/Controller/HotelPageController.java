@@ -54,4 +54,8 @@ public class HotelPageController {
 	public String index(){
 		return "mobileIndex";
 	}
+	@RequestMapping("/comingsoon")
+	public String comingsoon(){
+		return "comingsoon";
+	}
 }
