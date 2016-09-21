@@ -6,7 +6,13 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-<link rel="stylesheet" href="/assets/css/mediaCenter.css" />
+<!-- <link rel="stylesheet" href="/assets/css/mediaCenter.css" /> -->
+<style>
+.mediaImg{
+	height:80%;
+	padding-top:10px;
+}
+</style>
 </head>
 <body>
 <div data-role="page" id="pageone">
@@ -15,7 +21,7 @@
   </div>
 
   <div data-role="content">
-  <ul data-role="listview" id="listView">
+  <ul data-role="listview" id="listView" data-theme="d">
       <li id="mediaDetail" href="/hotelPage/mediaDetail">
         <img class="mediaImg" src="/assets/images/mediaCenter/meiti01.png">
         <h3>2012年全球酒店业金樽奖最佳商务酒店</h3>

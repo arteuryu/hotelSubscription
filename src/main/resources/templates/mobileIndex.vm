@@ -191,7 +191,7 @@ background:black;
 </div>
 <button style="background-color:red">搜索</button>
 </br>
-	<ul data-role="listview" id="listView">
+	<ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
         <h3>行政江景套房</h3>

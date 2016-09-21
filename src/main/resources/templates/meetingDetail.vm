@@ -9,11 +9,11 @@
 <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
 <body>
-<div data-role="page" id="pageone" data-corners="false">
+<div data-role="page" id="pageone" data-corners="false" data-theme="d">
 <div data-role="header" id="pageHeader">
   <h1>详情</h1>
   </div>
-<div data-role="main" class="ui-content" data-corners="false">
+<div data-role="main" class="ui-content" data-corners="false" data-theme="d">
 <div>
 <p align="center">豪华宴会厅</p>
 <img  src="/assets/images/meetingRoom/pic_04.png" style="width:100%">

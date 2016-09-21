@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/assets/css/mediaDetail.css" />
 </head>
 <body>
-<div data-role="page" id="pageone" data-corners="false">
+<div data-role="page" id="pageone" data-corners="false" data-theme="d">
 <div data-role="header" id="pageHeader">
   <h1>媒体中心详情</h1>
   </div>
