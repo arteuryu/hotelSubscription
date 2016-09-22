@@ -25,7 +25,7 @@
 /* 	-webkit-margin-before:10px; */
 /* } */
 </style>
-<body>
+<body onload="opener.location.reload(true)">
 <div data-role="page" id="pageone">
   <div data-role="header">
 <!--   	<a href="#" data-icon="arrow-l"></a> -->
