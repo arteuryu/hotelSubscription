@@ -17,6 +17,9 @@
 	border-width:thin;
 	margin:5px;
 }
+.ui-content{  
+     background:white;  
+} 
 </style> 
 </head>
 <body>
@@ -25,7 +28,7 @@
   <h1>客房预订</h1>
   </div>
 
-  <div data-role="main" class="ui-content">
+  <div data-role="main" class="ui-content"  data-theme="d">
 <!--     <form method="post" action=""> -->
 <!--       <div class="ui-grid-b">   -->
 <!--       	<div class="ui-block-a">   -->
@@ -39,11 +42,8 @@
 <!--         </div> -->
 <!--        </div> -->
 <!--     </form> -->
-
-
-      <ul data-role="listview" id="listView" data-theme="d">
-      <li>
-      	<table width="100%" height="60%">  
+<div>
+<table width="100%" height="60%">  
 		<tbody>
         <tr>  
             <td align="left">选择酒店</td>  
@@ -56,7 +56,45 @@
         </tr>  
         </tbody>
       </table>
-      </li>
+      </div>
+      <br>
+      <div id="mobileContent">
+      <hr>
+      
+      <div class="ui-grid-b"  data-theme="d">        
+	<div class="ui-block-a">
+		<p>时间</p>
+	</div>
+	<div class="ui-block-b">
+		<p><font size="2px">8月16日</font><font size="1px">今天入住时间</font></p>
+		<p><font size="2px">8月17日</font><font size="1px">明天离店一天</font></p>		
+	</div>
+
+<!-- 	<div class="ui-block-c"> -->
+<!-- 		<img src="/assets/images/index/arrow.png"> -->
+<!-- 	</div> -->
+</div>
+<hr>
+<div class="ui-grid-c"  data-theme="d">        
+	<div class="ui-block-a">
+		<p>预订间数</p>
+	</div>
+	<div class="ui-block-b">
+		<select date-role="none">
+			<option>1</option>
+		</select>
+	</div>
+	<div class="ui-block-c">
+		<p>预订代码</p>
+	</div>
+	<div class="ui-block-d">
+		<input></input>
+	</div>
+</div>
+<button style="background-color:red">搜索</button>
+<br>
+</div>
+      <ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
         <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
@@ -177,7 +215,7 @@ function isWeixnOpen(){
 }
 
 if(isWeixnOpen()){
-	$("#pageHeader").hide();
+	$("#pageHeader,#mobileContent").hide();
 }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 $(".xm").hide();

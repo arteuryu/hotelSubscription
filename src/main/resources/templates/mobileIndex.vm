@@ -11,6 +11,9 @@
 .ui-content{  
      background:white;  
 } 
+a{ 
+	text-decoration: none;
+}
 li{
 	margin: 5px 10px 5px 10px
 }
@@ -227,7 +230,7 @@ background:black;
       <p align="center">更多房型</p>
       <hr>
       <a href="/hotelPage/hotelSelect"><button>瑞颐酒店</button></a>
- 	  <a href="/hotelPage/brandOverview"><button>关于瑞颐</button></a>
+ 	  <a href="/hotelPage/about"><button>关于瑞颐</button></a>
       <a href="/hotelPage/mediaCenter"><button>媒体中心</button></a>
       <a href="/hotelPage/joinUs"><button>加入我们</button></a>
 <!--  <div class="ui-grid-a">         -->
@@ -263,10 +266,10 @@ background:black;
 <table style="-webkit-padding-start:80px;">
 <tr align="center" valign="middle">
 <td style=padding-right:10px>
-		<p>联系我们</p>
+		<a href="mailto:12345@qq.com">联系我们</a>
 </td>
 <td height=8px align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
-		<p>隐私政策</p>
+		<a href="/hotelPage/privacy">隐私政策</a>
 </td>
 </tr>
 </table>

@@ -10,6 +10,14 @@ public class HotelPageController {
 	public String getHistoryPage(){
 		return "history";
 	}
+	@RequestMapping("/privacy")
+	public String getPrivacyPage(){
+		return "privacy";
+	}
+	@RequestMapping("/about")
+	public String getAboutPage(){
+		return "about";
+	}
 	@RequestMapping("/commingSoon")
 	public String commingSoonPage(){
 		return "commingSoon";
