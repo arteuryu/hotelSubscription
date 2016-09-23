@@ -26,17 +26,17 @@
 
   <div data-role="content">
   <ul data-role="listview" id="listView" data-theme="d">
-      <li href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_01.png">
         <h3>厦门瑞颐</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
         	厦门市思明区</p>
       </li>
-      <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_02.png">
         <h3>南昌瑞颐</h3>
         <p>	<img class="iconSite" src="/assets/images/hotel/icon_site.png">
-        	厦门市思明区</p>
+        	江西省南昌市</p>
       </li>
       <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_03.png">

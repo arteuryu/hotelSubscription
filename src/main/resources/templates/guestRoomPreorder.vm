@@ -7,6 +7,10 @@
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <!-- <script src="/assets/js/common.js"></script> -->
 <link rel="stylesheet" href="../assets/css/guestRoomPreorder.css" />
+
+</head>
+<body>
+<div data-role="page" id="pageone">
 <style type="text/css"> 
 .hotelImg{
 	height:80%;
@@ -21,9 +25,6 @@
      background:white;  
 } 
 </style> 
-</head>
-<body>
-<div data-role="page" id="pageone">
 <div data-role="header" id="pageHeader">
   <h1>客房预订</h1>
   </div>
@@ -95,47 +96,47 @@
 <br>
 </div>
       <ul data-role="listview" id="listView" data-theme="d">
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
         <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
         <h3>名仕复式套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
         <h3>豪华家庭房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
         <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/05.png">
         <h3>豪华江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/06.png">
         <h3>豪华江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/07.png">
         <h3>行政江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/08.png">
         <h3>女皇江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn" style="padding-top:10px">
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn" style="padding-top:10px">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/09.png">
         <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
@@ -202,9 +203,7 @@
       </li>
     </ul>
     </div>
-</div>
-</body>
-<script type="text/javascript">
+    <script type="text/javascript">
 function isWeixnOpen(){
     var ua = navigator.userAgent.toLowerCase();
     if(ua.match(/MicroMessenger/i)=="micromessenger") {
@@ -215,7 +214,7 @@ function isWeixnOpen(){
 }
 
 if(isWeixnOpen()){
-	$("#pageHeader,#mobileContent").hide();
+	$("#pageHeader").hide();
 }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 $(".xm").hide();
@@ -229,4 +228,6 @@ $("#city").change(function(){
 	}
 });
 </script>
+</div>
+</body>
 </html>

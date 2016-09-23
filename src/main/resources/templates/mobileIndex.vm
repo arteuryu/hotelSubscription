@@ -259,7 +259,7 @@ background:black;
         <img style="width:150px" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img src="/assets/images/index/scanCode.png">
+		<img style="padding-left:30px" src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
