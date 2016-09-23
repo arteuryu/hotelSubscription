@@ -283,18 +283,18 @@ background:black;
 }
 </style>
 <script type="text/javascript">
-function isWeixnOpen(){
-    var ua = navigator.userAgent.toLowerCase();
-    if(ua.match(/MicroMessenger/i)=="micromessenger") {
-        return true;
-    } else {
-        return false;
-    }
-}
+// function isWeixnOpen(){
+//     var ua = navigator.userAgent.toLowerCase();
+//     if(ua.match(/MicroMessenger/i)=="micromessenger") {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
-if(isWeixnOpen()){
-	$("#pageHeader").hide();
-}
+// if(isWeixnOpen()){
+// 	$("#pageHeader").hide();
+// }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 </script>
 </div>

@@ -11,6 +11,7 @@
 <body>
 <div data-role="page" id="pageone" data-corners="false" data-theme="d">
 <div data-role="header" id="pageHeader">
+   	<a href="#" data-rel="back" data-role="none"><img style="padding-top:8px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
   <h1>媒体中心详情</h1>
   </div>
 <div data-role="main" class="ui-content" data-corners="false">
