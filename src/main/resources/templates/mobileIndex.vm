@@ -23,8 +23,8 @@
 	</li>
 		<li style="display:inline;float:right; list-style:none">
 		<select style="width:50px;height:19px" data-role="none">
+			<option>简体中文</option>
 			<option>en</option>
-			<option>chinese</option>
 		</select>
 	</li>
 </ul>
