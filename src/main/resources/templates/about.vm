@@ -8,19 +8,6 @@
 </head>
 <body>
 <div data-role="page" id="pageone">
-<style>
-.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb{
-	min-height:0px;	
-}
-.ui-li{
-	height:30px;
-}
-.aboutImg{
-	height:40%;  
- 	padding-left:30px;
- 	padding-top:20px;
-}
-</style>
   <div data-role="header">
 <!--   	<a href="#" data-icon="arrow-l"></a> -->
     <h1 id="pageHeader">关于瑞颐</h1>
@@ -38,6 +25,19 @@
      </li>
 	</ul>  
 </div>
+	<style>
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb{
+	min-height:0px;	
+}
+.ui-li{
+	height:30px;
+}
+.aboutImg{
+	height:40%;  
+ 	padding-left:30px;
+ 	padding-top:20px;
+}
+</style>
 <script type="text/javascript">
 function isWeixnOpen(){
     var ua = navigator.userAgent.toLowerCase();

@@ -7,40 +7,6 @@
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <!-- <script src="/assets/js/common.js"></script> -->
 <link rel="stylesheet" href="/assets/css/index.css" />
-<style type="text/css">
-.ui-content{  
-     background:white;  
-} 
-a{ 
-	text-decoration: none;
-}
-li{
-	margin: 5px 10px 5px 10px
-}
-.hotelImg{
-	height:80%;
-	width:80%;
-	padding:2px;
-	border-style:solid;
-	border-color:#dedede;	
-	border-width:thin;
-	margin:5px;
-}
-/* ul{ */
-/* 	 background:black;   */
-/* } */
-/* .indexHeader{ */
-/* 	background:black;   */
-/* } */
-#people,#setting
-{
-border: 1px solid black;
-font-weight: bold;
-text-align: right;
-padding: 20px; 
-background:black;  
-}
-</style>
 </head>
 <body>
 <div data-role="page" id="pageone">
@@ -282,8 +248,40 @@ background:black;
 	</li>
 	</ul>
 </div>
-</div>
-</body>
+<style type="text/css">
+.ui-content{  
+     background:white;  
+} 
+a{ 
+	text-decoration: none;
+}
+li{
+	margin: 5px 10px 5px 10px
+}
+.hotelImg{
+	height:80%;
+	width:80%;
+	padding:2px;
+	border-style:solid;
+	border-color:#dedede;	
+	border-width:thin;
+	margin:5px;
+}
+/* ul{ */
+/* 	 background:black;   */
+/* } */
+/* .indexHeader{ */
+/* 	background:black;   */
+/* } */
+#people,#setting
+{
+border: 1px solid black;
+font-weight: bold;
+text-align: right;
+padding: 20px; 
+background:black;  
+}
+</style>
 <script type="text/javascript">
 function isWeixnOpen(){
     var ua = navigator.userAgent.toLowerCase();
@@ -299,4 +297,6 @@ if(isWeixnOpen()){
 }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 </script>
+</div>
+</body>
 </html>
