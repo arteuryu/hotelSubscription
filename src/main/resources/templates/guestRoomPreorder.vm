@@ -59,17 +59,16 @@
         </tbody>
       </table>
       </div>
-      <br>
       <div id="mobileContent">
       <hr>
       
-      <div class="ui-grid-b"  data-theme="d">        
-	<div class="ui-block-a">
-		<p>时间</p>
+      <div class="ui-grid-a"  data-theme="d">        
+	<div class="ui-block-a" style="width:100px;">
+		<p style="-webkit-margin-before: 0em;-webkit-margin-after: 0em;">时间</p>
 	</div>
 	<div class="ui-block-b">
-		<p><font size="2px">8月16日</font><font size="1px">今天入住时间</font></p>
-		<p><font size="2px">8月17日</font><font size="1px">明天离店一天</font></p>		
+		<p style="-webkit-margin-before: 0em;-webkit-margin-after: 0em;><font size="2px">8月16日</font><font size="1px">今天入住时间</font></p>
+		<p style="-webkit-margin-before: 0em;-webkit-margin-after: 0em;><font size="2px">8月17日</font><font size="1px">明天离店一天</font></p>		
 	</div>
 
 <!-- 	<div class="ui-block-c"> -->
