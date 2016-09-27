@@ -43,7 +43,7 @@
         <tr>  
             <td align="left">选择酒店</td>  
             <td align="right">
-            	<select id="city">  
+            	<select id="city" data-role="none" style="width:200px;height:30px;">  
               		<option value="nc">南昌</option> 
          			<option value="xm">厦门</option>  
             	</select>

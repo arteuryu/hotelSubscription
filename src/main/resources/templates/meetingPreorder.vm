@@ -21,20 +21,6 @@
   </div>
 
   <div data-role="main" class="ui-content">
-<!--     <form method="post" action=""> -->
-<!--       <div class="ui-grid-b">   -->
-<!--       	<div class="ui-block-a">   -->
-<!--         <label id="selectLable">选择酒店:</label> -->
-<!--         </div> -->
-<!--         <div class="ui-block-b">          -->
-<!--         <select  id="city" data-mini="false" data-inline="true" data-iconpos="right"> -->
-<!--          <option value="nc">南昌</option> -->
-<!--          <option value="xm">厦门</option> -->
-<!--         </select> -->
-<!--         </div> -->
-<!--        </div> -->
-<!--     </form> -->
-
 
       <ul data-role="listview" id="listView" data-theme="d">
       <li>
@@ -43,7 +29,7 @@
         <tr>  
             <td align="left">选择酒店</td>  
             <td align="right">
-            	<select id="city">  
+            	<select id="city" data-role="none" style="width:200px;height:30px;">  
               		<option value="nc">南昌</option> 
          			<option value="xm">厦门</option>  
             	</select>
