@@ -11,9 +11,9 @@
 <body>
 <div data-role="page" id="pageone">
 <div data-role="header">
-  <ul data-role="none" style="height:20px;linear-gradient(#3c3c3c,#111);list-style:none;margin:0px;padding：0px;-webkit-padding-start:10px;">
+  <ul data-role="none" style="height:40px;linear-gradient(#3c3c3c,#111);list-style:none;margin:0px;padding：0px;-webkit-padding-start:10px;">
 	<li style="display:inline;float:left;list-style:none">
-			<img style="width:80px;height:20px"  src="/assets/images/index/logo.png"></img>
+			<img style="width:100px;height:20px"  src="/assets/images/index/logo.png"></img>
 	</li>
 	<li style="display:inline;float:right; list-style:none">
 		<img  style="width:20px;height:20px" src="/assets/images/index/setting.png"></img>
@@ -23,84 +23,91 @@
 	</li>
 		<li style="display:inline;float:right; list-style:none">
 		<select style="width:50px;height:19px" data-role="none">
-			<option>简体中文</option>
+			<option>简</option>
+			<option>繁</option>			
 			<option>en</option>
 		</select>
 	</li>
 </ul>
-<!-- <div class="ui-grid-c indexHeader">         -->
-<!-- 	<div class="ui-block-a" id="icon"> -->
-<!-- 		<img style="width:50%;height:50%" class="ui-li-icon" src="/assets/images/index/comingsoon_logo.png"></img> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-b" id="lang"> -->
-<!-- 		<select  id="unit1"> -->
-<!--   	  		<option value="1" >EN</option> -->
-<!-- 		</select> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-c" id="people"> -->
-<!-- 		<img  style="width:40%;height:40%" src="/assets/images/index/people.png"></img> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-d" id="setting"> -->
-<!-- 		<img  style="width:40%;height:40%" src="/assets/images/index/setting.png"></img> -->
-<!-- 	</div> -->
-<!-- </div> -->
-<img style="width:100%" src="/assets/images/index/banner01.png">
 </div>
-<!-- 	<div class="ui-block-a"> -->
-<!-- 		<img src="/assets/images/index/comingsoon_logo.png"></img> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-a"> -->
-<!-- 		<img src="/assets/images/index/comingsoon_logo.png"></img> -->
-<!-- 	</div> -->
+<!-- <iframe> -->
+<div class="banner-box">
+	<div id="bd" class="bd">
+        <ul id="ulImg">          	    
+            <li class="lImg" style="background:#F3E5D8;">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>
+            <li class="lImg" style="background:#B01415">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>
+            <li class="lImg" style="background:#C49803;">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>
+            <li class="lImg" style="background:#FDFDF5">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>  
+         
+        </ul>
+    </div>
+    <div class="banner-btn">
+        <a class="prev" href="javascript:void(0);"></a>
+        <a class="next" href="javascript:void(0);"></a>
+        <div class="hd"><ul></ul></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".prev,.next").hover(function(){
+		$(this).stop(true,false).fadeTo("show",0.9);
+	},function(){
+		$(this).stop(true,false).fadeTo("show",0.4);
+	});
+	
+	$(".banner-box").slide({
+		titCell:".hd ul",
+		mainCell:".bd ul",
+		effect:"fold",
+		interTime:3500,
+		delayTime:500,
+		autoPlay:true,
+		autoPage:true, 
+		trigger:"click" 
+	});
+
+});
+</script>
+<!-- <img style="width:100%;display:none" id="img1" src="/assets/images/index/banner01.png"> -->
+<!-- <img style="width:100%;display:block;"  id="img2" src="/assets/images/index/banner01.png"> -->
+<!-- <img style="width:100%;display:none"  id="img3" src="/assets/images/index/banner01.png"> -->
+<!-- <img style="width:100%;display:none"  id="img4" src="/assets/images/index/banner01.png"> -->
+<!-- </iframe> -->
 <div data-role="main" class="ui-content">
-
-
-<!-- <table > -->
-<!-- <thead>客房预订</thead> -->
-<!-- <tbody> -->
-<!-- <tr><td>酒店位置</td><td>我的附近</td></tr> -->
-<!-- <tr><td>选择酒店</td><td></td></tr> -->
-<!-- <tr><td>时间</td><td></td></tr> -->
-<!-- <tr><td>预定间数</td><td>我的附近</td></tr> -->
-
-<!-- </tbody> -->
-<!-- </table> -->
-<br>
-<!-- <div class="ui-grid-d">         -->
-<!-- 	<div class="ui-block-a"> -->
-<!-- 		<a href="/hotelPage/guestRoomPreorder"><img src="/assets/images/index/kefang.png"></img></a> -->
-<!-- 		<p>客房预订</p> -->
-<!-- 		<table height=90 style=border-color:000000;border-left-style:solid;border-width:1px><tr><td valign=top></td></tr></table>		 
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-b"> -->
-<!-- 		<a href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a> -->
-<!-- 		<p>会议宴会</p> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-c"> -->
-<!-- 		<a href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a> -->
-<!-- 		<p>餐饮预订</p> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-d"> -->
-<!-- 		<a href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a> -->
-<!-- 		<p>酒店商城</p> -->
-<!-- 	</div> -->
-<!-- </div> -->
 <table>
 <tr align="center" valign="middle">
 <td style=padding-bottom:0px>
-		<a href="/hotelPage/guestRoomPreorder"><img src="/assets/images/index/kefang.png"></img></a>
+		<a href="/hotelPage/guestRoomPreorder"><img class="iconImg" src="/assets/images/index/kefang.png"></img></a>
 		<p>客房预订</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
-		<a style="vertical-align:middle;" href="/hotelPage/meetingPreorder"><img src="/assets/images/index/huiyi.png"></img></a>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:7px;padding-right:7px;padding-bottom:0px>
+		<a style="vertical-align:middle;" href="/hotelPage/meetingPreorder"><img class="iconImg" src="/assets/images/index/huiyi.png"></img></a>
 		<p>会议宴会</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
-		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img src="/assets/images/index/canyin.png"></img></a>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:7px;padding-right:7px;padding-bottom:0px>
+		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img class="iconImg" src="/assets/images/index/canyin.png"></img></a>
 		<p>餐饮预订</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
-		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img src="/assets/images/index/shangcheng.png"></img></a>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:7px;padding-right:7px;padding-bottom:0px>
+		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img class="iconImg" src="/assets/images/index/shangcheng.png"></img></a>
 		<p>酒店商城</p>
 </td>
 </tr>
@@ -108,60 +115,45 @@
 <hr size="1px" style="">
 <div>
 <p><font color=red size="5px">|</font>&nbsp;&nbsp;客房预订</p>
-<div class="ui-grid-b">        
-	<div class="ui-block-a">
-		<p>酒店位置</p>
-	</div>
-	<div class="ui-block-b">
-		<p>我的附近</p>
-	</div>
-	<div class="ui-block-c">
-	  <p><font color=grey>位置/酒店/关键词</font></p>
-	 </div>
-<!-- 	<div class="ui-block-c"> -->
-<!-- 		<img style="height:40px" src="/assets/images/index/arrow.png"> -->
-<!-- 	</div> -->
-</div>
+<pre style="font-size:16px;float:left;">酒店位置   我的位置  </pre><pre style="float:left;font-size:16px;color:#999999" >位置/酒店/关键词</pre>
+<hr style="clear:both;">
+<pre style="font-size:16px;">选择酒店   厦门瑞颐大酒店</pre>
 <hr>
-<div class="ui-grid-b">        
-	<div class="ui-block-a">
-		<p>选择酒店</p>
-	</div>
-	<div class="ui-block-b">
-		<p>厦门瑞颐大酒店</p>
-	</div>
-<!-- 	<div class="ui-block-c"> -->
-<!-- 		<img src="/assets/images/index/arrow.png"> -->
-<!-- 	</div> -->
-</div>
-<hr>
-<div class="ui-grid-b">        
-	<div class="ui-block-a">
+<div>        
+	<div style="font-size:16px;display:inline;float:left;">
 		<p>时间</p>
 	</div>
-	<div class="ui-block-b">
-		<p><font size="2px">8月16日</font><font size="1px">今天入住时间</font></p>
-		<p><font size="2px">8月17日</font><font size="1px">明天离店一天</font></p>		
+	<div style="font-size:16px;padding-left:50px;display:inline;float:left;">
+		<p>8月16日<font style="padding-left:20px;" size="3" color="#999999">今天入住时间</font></p>
+		<p>8月17日<font style="padding-left:20px;" size="3" color="#999999">明天离店一天</font></p>		
 	</div>
 <!-- 	<div class="ui-block-c"> -->
 <!-- 		<img src="/assets/images/index/arrow.png"> -->
 <!-- 	</div> -->
 </div>
-<hr>
+<hr style="clear:both;">
 <div class="ui-grid-c">        
 	<div class="ui-block-a">
-		<p>预订间数</p>
+		<label>预订间数</label>
 	</div>
 	<div class="ui-block-b">
-		<select date-role="none">
+		<select data-role="none" style="width:70px;">
 			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
 		</select>
 	</div>
 	<div class="ui-block-c">
-		<p>预订代码</p>
+		<label>预订代码</label>
 	</div>
 	<div class="ui-block-d">
-		<input></input>
+		<input data-role="none" style="width:50px;"></input>
 	</div>
 </div>
 <button style="background-color:red">搜索</button>
@@ -211,7 +203,7 @@
 <table style="background-color:#ede9e2">
 <tr align="center" valign="middle">
 <td>
-		<p>一年三百六十五日，我们竭力为您的出行提供源源不断的优惠和礼遇</p>
+		<p>一年365日，我们竭力为您的出行提供源源不断的优惠和礼遇</p>
 		<button data-role="none" style="background-color:#ffffff">获取详情</button>
 </td>
 <td>
@@ -221,11 +213,11 @@
 </table>
  <div class="ui-grid-a">        
 	<div class="ui-block-a">
-		<p>瑞颐微信公众号</p>
-        <img style="width:150px" src="/assets/images/index/footerLogo.png">
+		<p align="center">瑞颐微信公众号</p>
+        <img style="width:150px;align:center;padding-left:10px;" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img style="padding-left:30px" src="/assets/images/index/scanCode.png">
+		<img class="iconImg" style="padding-left:30px" src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
@@ -244,7 +236,7 @@
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
 	<li style="display:inline;float:right;list-style:none">
-		<a href="tel:110"><img style="height:40px;width:40px" src="/assets/images/index/phone.png"></a>
+		<a href="tel:110"><img style="z-index:-1;height:40px;width:40px" src="/assets/images/index/phone.png"></a>
 	</li>
 	</ul>
 </div>
@@ -267,6 +259,27 @@ li{
 	border-width:thin;
 	margin:5px;
 }
+#bd,#ulImg,.lImg{padding:0;margin:0;}
+ul{list-style:none ;}
+img{border:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+
+/* banner-box */
+.banner-box{position:relative;overflow:hidden;}
+.banner-box .bd{ width:100% !important;}
+.banner-box .bd li .m-width {width:100%;margin:0 auto;overflow:hidden;}
+.banner-box .bd li{width:100% !important;}
+.banner-box .bd li a{width:100%;display:block;background-size:auto;}
+.banner-box .bd li a img{width:100%;}
+
+.banner-btn{width:1210px;position:absolute;top:120px;left:50%;margin-left:-605px;}
+.banner-btn a{display:block;width:49px;height:104px;position:absolute;top:0;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;}
+.banner-btn a.prev{left:20px;background:url(../images/foot.png) no-repeat 0 0;} 
+.banner-btn a.next{right:20px;background:url(../images/foot.png) no-repeat -49px 0;}
+
+.banner-box .hd {position:absolute;top:80px;left:515px;}
+.banner-box .hd ul li{width:8px;height:8px;border-radius :50%;text-indent:-9999px;margin-right:10px;background:#ccc;float:left;cursor:pointer;}
+.banner-box .hd ul li.on{background:#DA324D;}
 /* ul{ */
 /* 	 background:black;   */
 /* } */
@@ -282,6 +295,7 @@ padding: 20px;
 background:black;  
 }
 </style>
+<script src="/assets/js/jquery.SuperSlide.2.1.1.js"></script> 
 <script type="text/javascript">
 // function isWeixnOpen(){
 //     var ua = navigator.userAgent.toLowerCase();

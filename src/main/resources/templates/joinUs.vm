@@ -40,7 +40,7 @@
 		<button style="font-size:14px;background-color:red;" data-role="none">搜索</button>
 	</div>
 </div>
-<textarea disabled="disabled">发展副总监（事业发展部）</textarea>
+<textarea disabled="disabled" style="padding-top:13px;">发展副总监（事业发展部）</textarea>
 <p>性别：			不限<br>
  年龄：			不限<br>
  要求：			直接向董事长汇报。<br>
