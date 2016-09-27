@@ -10,21 +10,6 @@
 </head>
 <body>
 <div data-role="page" id="pageone">
-<script type="text/javascript">
-function isWeixnOpen(){
-    var ua = navigator.userAgent.toLowerCase();
-    if(ua.match(/MicroMessenger/i)=="micromessenger") {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-if(isWeixnOpen()){
-	$("#pageHeader").hide();
-}
-$(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
-</script>
 <div data-role="header" id="pageHeader">
   <a class="pageHeader" href="#" data-rel="back" data-role="none"><img style="padding-top:8px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>
   <h1>选择酒店</h1>
@@ -57,6 +42,21 @@ $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");}
       </li>
     </ul>
 	</div>
+	<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+$(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
+</script>
 </div>
 </body>
 </html>
