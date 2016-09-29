@@ -16,17 +16,18 @@
 			<img style="width:100px;height:20px"  src="/assets/images/index/logo.png"></img>
 	</li>
 	<li style="display:inline;float:right; list-style:none">
-		<img  style="width:20px;height:20px" src="/assets/images/index/setting.png"></img>
+		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px" src="/assets/images/index/setting.png"></img></a>
 	</li>
 	<li style="display:inline;float:right; list-style:none">
 		<img  style="width:20px;height:20px" src="/assets/images/index/people.png"></img>
 	</li>
 		<li style="display:inline;float:right; list-style:none">
-		<select style="width:50px;height:19px" data-role="none">
+		<select style="font-size:14px;height:19px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;color:white;" data-role="none">
 			<option>简</option>
 			<option>繁</option>			
-			<option>en</option>
+			<option>EN</option>
 		</select>
+		<img  style="height:10px;width:10px;"src="/assets/images/index/down.png"></img>
 	</li>
 </ul>
 </div>
@@ -91,22 +92,22 @@ $(document).ready(function(){
 <!-- <img style="width:100%;display:none"  id="img3" src="/assets/images/index/banner01.png"> -->
 <!-- <img style="width:100%;display:none"  id="img4" src="/assets/images/index/banner01.png"> -->
 <!-- </iframe> -->
-<div data-role="main" class="ui-content">
+<div data-role="main" class="ui-content" id="mainPage">
 <table>
 <tr align="center" valign="middle">
-<td style=padding-bottom:0px>
+<td style="padding-bottom:0px;padding-left:6px;padding-right:6px;">
 		<a href="/hotelPage/guestRoomPreorder"><img class="iconImg" src="/assets/images/index/kefang.png"></img></a>
 		<p>客房预订</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:7px;padding-right:7px;padding-bottom:0px>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:6px;padding-right:6px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="/hotelPage/meetingPreorder"><img class="iconImg" src="/assets/images/index/huiyi.png"></img></a>
 		<p>会议宴会</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:7px;padding-right:7px;padding-bottom:0px>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:6px;padding-right:6px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img class="iconImg" src="/assets/images/index/canyin.png"></img></a>
 		<p>餐饮预订</p>
 </td>
-<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:7px;padding-right:7px;padding-bottom:0px>
+<td height=30 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:6px;padding-right:6px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img class="iconImg" src="/assets/images/index/shangcheng.png"></img></a>
 		<p>酒店商城</p>
 </td>
@@ -156,7 +157,7 @@ $(document).ready(function(){
 		<input data-role="none" style="width:50px;"></input>
 	</div>
 </div>
-<button style="background-color:#d71619;width:100%;margin-top:20px;height:50px;" data-role="none"><font size="4">搜索</font></button>
+<button style="background-color:#d71619;width:100%;margin-top:20px;height:40px;color:white;" data-role="none"><font size="4">搜索</font></button>
 <hr>
 	<ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
@@ -185,46 +186,38 @@ $(document).ready(function(){
       </li>
       </ul>
       <hr>
-      <p align="center">更多房型</p>
+      <p align="center"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:black;">更多房型</a></p>
       <hr>
-      <a href="/hotelPage/hotelSelect"><button>瑞颐酒店</button></a>
- 	  <a href="/hotelPage/about"><button>关于瑞颐</button></a>
-      <a href="/hotelPage/mediaCenter"><button>媒体中心</button></a>
-      <a href="/hotelPage/joinUs"><button>加入我们</button></a>
-<!--  <div class="ui-grid-a">         -->
-<!-- 	<div class="ui-block-a"> -->
-<!-- 		<p>一年三百六十五日，我们竭力为您的出行提供源源不断的优惠和礼遇</p> -->
-<!-- 		<button></button> -->
-<!-- 	</div> -->
-<!-- 	<div class="ui-block-b"> -->
-<!-- 		<img src="/assets/images/index/drink.png"> -->
-<!-- 	</div> -->
-<!-- </div>  -->
-<table style="background-color:#ede9e2">
-<tr align="center" valign="middle">
+      <a href="/hotelPage/hotelSelect"><button data-corners="false">瑞颐酒店</button></a>
+ 	  <a href="/hotelPage/about"><button data-corners="false">关于瑞颐</button></a>
+      <a href="/hotelPage/mediaCenter"><button data-corners="false">媒体中心</button></a>
+      <a href="/hotelPage/joinUs"><button data-corners="false">加入我们</button></a>
+<table data-role="none" style="margin-top:15px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;cellspacing:8px;">
+<tr align="center" style="margin:0px;">
 <td>
-		<p>一年365日，我们竭力为您的出行提供源源不断的优惠和礼遇</p>
-		<button data-role="none" style="background-color:#ffffff">获取详情</button>
+		<pre style="font-size:12px;"> 一年365日，我们竭力为您的 </pre>
+		<pre style="font-size:12px;"> 出行提供源源不断的优惠和礼遇 </pre>
+		<button data-role="none" style="background-color:#a3854a">获取详情</button>
 </td>
 <td>
-		<img style="width:150px" src="/assets/images/index/drink.png">
+		<img style="width:145px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
 </td>
 </tr>
 </table>
- <div class="ui-grid-a">        
+ <div class="ui-grid-a" style="margin-top:30px;">        
 	<div class="ui-block-a">
-		<p align="center">瑞颐微信公众号</p>
-        <img style="width:150px;align:center;padding-left:10px;" src="/assets/images/index/footerLogo.png">
+		<p style="color:red;padding-left:25px;">瑞颐微信公众号</p>
+        <img style="width:150px;align:center;padding-left:25px;" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img class="iconImg" style="padding-left:30px" src="/assets/images/index/scanCode.png">
+		<img class="iconImg" style="padding-left:30px;padding-right:30px;" src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
 <table style="-webkit-padding-start:80px;">
 <tr align="center" valign="middle">
 <td style=padding-right:10px>
-		<a href="mailto:12345@qq.com">联系我们</a>
+		<a href="#popUpContact" data-rel="popup" data-transition="flip">联系我们</a>
 </td>
 <td height=8px align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
 		<a href="/hotelPage/privacy">隐私政策</a>
@@ -236,12 +229,34 @@ $(document).ready(function(){
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
 	<li style="display:inline;float:right;list-style:none">
-		<a href="tel:110"><img style="z-index:-1;height:40px;width:40px" src="/assets/images/index/phone.png"></a>
+		<a href="#popUpContact" data-rel="popup" data-transition="pop"><img style="z-index:-1;height:40px;width:40px" src="/assets/images/index/phone.png"></a>
 	</li>
 	</ul>
 </div>
+<div data-role="popup" id="popUpContact" data-theme="e" data-overlay-theme="a" class="ui-content" data-position-to="window">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+<h2 align="center">联系我们</h2>
+<hr>
+<p>瑞颐集团办公室  电话:<a href="tel:865925709110">86 592 5709110</a></p>
+<!-- <p>邮箱:<a href="mailto:info@sihotels.com">info@sihotels.com</a> -->
+<p>厦门瑞颐大酒店  电话:<a href="tel:865926366666">86 592 6366666</a></p>
+<!-- <p>邮箱:<a href="mailto:info@swissinternationalxiamen.com.cn">info@swissinternationalxiamen.com.cn</a> -->
+<p>南昌瑞颐大酒店  电话:<a href="tel:865925709110">86 791 87777777</a></p>
+<!-- <p>邮箱:<a href="mailto:info@swissinternationalnanchang.com.cn">info@swissinternationalnanchang.com.cn</a> -->
+<hr>
+<div style="text-align:center; width:100%;height:100%;margin:0px;">
+<button data-role="none" id="closePhonePopup" align="center" style="font-size:16px;margin:0 auto;">关闭</button>
+</div>
+</div>
+<div data-role="popup" id="popUpMenu" data-theme="a" class="ui-content" data-position-to="#indexMenu" style="font-size:18px;width:130px;margin-top:10px;">
+<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="#">首页</a></p>
+<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/hotelSelect">瑞颐酒店</a></p>
+<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
+<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
+<p><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
+</div>
 <style type="text/css">
-.ui-content{  
+#mainPage{  
      background:white;  
 } 
 a{ 
@@ -310,6 +325,9 @@ background:black;
 // 	$("#pageHeader").hide();
 // }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
+$("#closePhonePopup").click(function(){
+	$("#popUpContact").popup("close");
+});
 </script>
 </div>
 </body>

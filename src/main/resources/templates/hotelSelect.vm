@@ -11,7 +11,7 @@
 <body>
 <div data-role="page" id="pageone">
 <div data-role="header" id="pageHeader">
-  <a class="pageHeader" href="#" data-rel="back" data-role="none"><img style="padding-top:8px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>
+  <a class="pageHeader" href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>
   <h1>选择酒店</h1>
   </div>
   <div data-role="content">
@@ -19,29 +19,40 @@
       <li class="detailItem"  href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_01.png">
         <h3>厦门瑞颐</h3>
-        <img class="iconSite" style="float:left;height:10px;width:10px;"  src="/assets/images/hotel/icon_site.png">
-        <p style="padding-left:10px;float:left">厦门市思明区</p>
+        <img class="iconSite" style="float:left;height:15px;width:10px;"  src="/assets/images/hotel/icon_site.png">
+        <p style="padding-left:10px;padding-top:5px;float:left">厦门市思明区</p>
       </li>
       <li class="detailItem" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_02.png">
         <h3>南昌瑞颐</h3>
-        <img class="iconSite" style="float:left;height:10px;width:10px;"  src="/assets/images/hotel/icon_site.png">
-        <p style="padding-left:10px;float:left">江西省南昌市</p>
+        <img class="iconSite" style="float:left;height:15px;width:10px;"  src="/assets/images/hotel/icon_site.png">
+        <p style="padding-left:10px;padding-top:5px;float:left">江西省南昌市</p>
       </li>
       <li class="detailItem" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_03.png">
         <h3>瑞颐海外</h3>
-        <img class="iconSite" style="float:left;height:10px;width:10px;"  src="/assets/images/hotel/icon_site.png">
-        <p style="padding-left:10px;float:left">厦门市思明区</p>
+        <img class="iconSite" style="float:left;height:15px;width:10px;"  src="/assets/images/hotel/icon_site.png">
+        <p style="padding-left:10px;padding-top:5px;float:left">厦门市思明区</p>
       </li>
       <li class="detailItem" href="/hotelPage/comingsoon">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_04.png">
         <h3>COMING SOON</h3>
-        <img class="iconSite" style="float:left;height:10px;width:10px;"  src="/assets/images/hotel/icon_site.png">
-        <p style="padding-left:10px;float:left">厦门市思明区</p>
+        <img class="iconSite" style="float:left;height:15px;width:10px;"  src="/assets/images/hotel/icon_site.png">
+        <p style="padding-left:10px;padding-top:5px;float:left">厦门市思明区</p>
       </li>
     </ul>
 	</div>
+	<style>
+	.hotelImg{
+	height:80%;
+	width:80%;
+	padding:2px;
+	border-style:solid;
+	border-color:#dedede;	
+	border-width:thin;
+	margin:5px;
+}
+	</style>
 	<script type="text/javascript">
 function isWeixnOpen(){
     var ua = navigator.userAgent.toLowerCase();

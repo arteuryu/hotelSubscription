@@ -10,10 +10,10 @@
 <div data-role="page" id="pageone">
   <div data-role="header" id="pageHeader">
 <!--   	<a href="#" data-icon="arrow-l"></a> -->
-    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:8px;padding-left:8px;height:22px;" src="/assets/images/index/return.png"></a>	
+    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:22px;" src="/assets/images/index/return.png"></a>	
     <h1>历史溯源</h1>
   </div>
-<div data-role="content" style="text-indent:2em">
+<div data-role="content" style="text-indent:2em;">
 <p>
 	瑞颐的发展历史可以追溯至1982年,因“友谊”而生的瑞颐由一群瑞士酒店业的精英筑梦人,怀揣着对行业的热情倾注而成,瑞颐始终与瑞士最杰出的酒店业专家以瑞士人的品质坚持塑造着瑞颐的个性，影响着瑞士酒店业的发展。历经三十多年的锤炼，瑞颐已经成为活跃在酒店经营管理领域的提供全方位酒店业服务的瑞士知名酒店集团。
 	</p>

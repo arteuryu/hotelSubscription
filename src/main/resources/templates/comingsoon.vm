@@ -24,7 +24,8 @@
 <body>
 <div data-role="page" id="pageone" data-theme="d">
 <div data-role="header" id="pageHeader">
-  <h1>COMING SOON</h1>
+	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+  <h1>COMING SOON</h1>  
   </div>
 
   <div data-role="content" data-theme="d">
