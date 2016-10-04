@@ -152,7 +152,6 @@ $(document).ready(function(){
 </div>
 <button style="background-color:#8B0000;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
-<div data-role="main" class="ui-content" id="mainPage">
 	<ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
@@ -179,13 +178,12 @@ $(document).ready(function(){
  		<span>CNY:<font color=red>1236</font></span>             
       </li>
       </ul>
-      <hr>
       <p align="center"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
-      <hr>
-      <a href="/hotelPage/hotelSelect"><button data-corners="false"><font color="#666666">瑞颐酒店</font></button></a>
- 	  <a href="/hotelPage/about"><button data-corners="false"><font color="#666666">关于瑞颐</font></button></a>
-      <a href="/hotelPage/mediaCenter"><button data-corners="false"><font color="#666666">媒体中心</font></button></a>
-      <a href="/hotelPage/joinUs"><button data-corners="false"><font color="#666666">加入我们</font></button></a>
+      <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
+      <div style="margin-top:20px;"><a href="/hotelPage/hotelSelect"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
+ 	  <div style="margin-top:10px;"><a href="/hotelPage/about" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
+      <div style="margin-top:10px;"><a href="/hotelPage/mediaCenter" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
+      <div style="margin-top:10px;"><a href="/hotelPage/joinUs" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
 <table data-role="none" style="margin-top:15px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;">
 <tr align="center" style="margin:0px;">
 <td>
@@ -218,7 +216,6 @@ $(document).ready(function(){
 </td>
 </tr>
 </table>
-</div>
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
 	<li style="display:inline;float:right;list-style:none">

@@ -60,7 +60,7 @@
 		<label style="color:#999999;float:left;padding-left:10px;width:80px;padding-top:5px;">预订代码:</label>
 		<input id="preInput" data-role="none"></input>
 </div>
-<button style="background-color:#d71619;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
+<button style="background-color:#8B0000;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
 <hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
   <div data-role="main" class="ui-content"  data-theme="d" style="margin-top:0px;">
       <ul data-role="listview" id="listView" data-theme="d">
