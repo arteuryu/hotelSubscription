@@ -13,16 +13,16 @@
 <div data-role="header">
   <ul data-role="none" style="height:40px;linear-gradient(#3c3c3c,#111);list-style:none;margin:0px;padding：0px;-webkit-padding-start:10px;">
 	<li style="display:inline;float:left;list-style:none">
-			<img style="width:100px;height:20px"  src="/assets/images/index/logo.png"></img>
+			<img style="width:100px;height:20px;padding-top:5px"  src="/assets/images/index/logo.png"></img>
 	</li>
 	<li style="display:inline;float:right; list-style:none">
-		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px" src="/assets/images/index/setting.png"></img></a>
+		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px;padding-top:5px" src="/assets/images/index/setting.png"></img></a>
 	</li>
 	<li style="display:inline;float:right; list-style:none">
-		<img  style="width:20px;height:20px" src="/assets/images/index/people.png"></img>
+		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
 	</li>
 		<li style="display:inline;float:right; list-style:none">
-		<select style="font-size:14px;height:19px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;color:white;" data-role="none">
+		<select style="font-size:14px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;" data-role="none">
 			<option>简</option>
 			<option>繁</option>			
 			<option>EN</option>
@@ -192,15 +192,15 @@ $(document).ready(function(){
  	  <a href="/hotelPage/about"><button data-corners="false">关于瑞颐</button></a>
       <a href="/hotelPage/mediaCenter"><button data-corners="false">媒体中心</button></a>
       <a href="/hotelPage/joinUs"><button data-corners="false">加入我们</button></a>
-<table data-role="none" style="margin-top:15px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;cellspacing:8px;">
+<table data-role="none" style="margin-top:15px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;">
 <tr align="center" style="margin:0px;">
 <td>
 		<pre style="font-size:12px;"> 一年365日，我们竭力为您的 </pre>
 		<pre style="font-size:12px;"> 出行提供源源不断的优惠和礼遇 </pre>
-		<button data-role="none" style="background-color:#a3854a">获取详情</button>
+		<button data-role="none" style="border:none;background-color:#a3854a;color:white;margin-bottom:10px;padding-left:10px;padding-right:10px;">获取详情</button>
 </td>
 <td>
-		<img style="width:145px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
+		<img style="height:50%;width:145px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
 </td>
 </tr>
 </table>
@@ -248,11 +248,11 @@ $(document).ready(function(){
 <button data-role="none" id="closePhonePopup" align="center" style="font-size:16px;margin:0 auto;">关闭</button>
 </div>
 </div>
-<div data-role="popup" id="popUpMenu" data-theme="a" class="ui-content" data-position-to="#indexMenu" style="font-size:18px;width:130px;margin-top:10px;">
-<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="#">首页</a></p>
-<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/hotelSelect">瑞颐酒店</a></p>
-<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
-<p style="margin-bottom:30px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
+<div data-role="popup" id="popUpMenu" data-theme="a" class="ui-content" data-position-to="#indexMenu" style="font-size:15px;width:130px;margin-top:10px;">
+<p style="margin-bottom:20px;"><a style="color:#ffffff;text-decoration:none;" href="#">首页</a></p>
+<p style="margin-bottom:20px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/hotelSelect">瑞颐酒店</a></p>
+<p style="margin-bottom:20px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
+<p style="margin-bottom:20px;"><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
 <p><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
 </div>
 <style type="text/css">

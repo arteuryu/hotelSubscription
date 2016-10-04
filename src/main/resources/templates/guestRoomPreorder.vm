@@ -82,7 +82,7 @@
 		<input data-role="none" style="width:50px;"></input>
 	</div>
 </div>
-<button style="background-color:#d71619;width:100%;margin-top:20px;height:50px;" data-role="none"><font size="4">搜索</font></button>
+<button style="background-color:#d71619;width:100%;margin-top:20px;height:40px;color:white;" data-role="none"><font size="4">搜索</font></button>
   <div data-role="main" class="ui-content"  data-theme="d">
       <ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
