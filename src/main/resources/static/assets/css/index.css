@@ -1,4 +1,13 @@
-.iconImg {     display: block;     height: auto;     width: 70%; }
+.iconImg {    
+	display: block;     
+	height: auto;     
+	width: 70%; 
+}
+.mainIconImg{
+	display: block;     
+	height: 60px;     
+	width: 60px; 
+}
 /* .ui-grid-b{ */
 /* 	background-color:black; */
 /* } */

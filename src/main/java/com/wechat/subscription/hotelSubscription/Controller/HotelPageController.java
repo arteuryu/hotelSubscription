@@ -42,9 +42,13 @@ public class HotelPageController {
 	public String getMeetingPreorder(){
 		return "meetingPreorder";
 	}
-	@RequestMapping("/meetingDetail")
-	public String getMeetingDetail(){
-		return "meetingDetail";
+	@RequestMapping("/meetingDetailNc")
+	public String getMeetingDetailNc(){
+		return "meetingDetailNc";
+	}
+	@RequestMapping("/meetingDetailXm")
+	public String getMeetingDetailXm(){
+		return "meetingDetailXm";
 	}
 	@RequestMapping("/mediaCenter")
 	public String getMediaCenter(){

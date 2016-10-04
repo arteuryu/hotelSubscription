@@ -14,39 +14,23 @@
   	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
   <h1>餐厅预订</h1>
   </div>
-
-  <div data-role="main" class="ui-content">
-<!--     <form method="post" action=""> -->
-<!--       <div class="ui-grid-b">   -->
-<!--       	<div class="ui-block-a">   -->
-<!--         <label id="selectLable">选择酒店:</label> -->
-<!--         </div> -->
-<!--         <div class="ui-block-b">          -->
-<!--         <select  id="city" data-mini="false" data-inline="true" data-iconpos="right"> -->
-<!--          <option value="nc">南昌</option> -->
-<!--          <option value="xm">厦门</option> -->
-<!--         </select> -->
-<!--         </div> -->
-<!--        </div> -->
-<!--     </form> -->
-
-
-      <ul data-role="listview" id="listView" data-theme="d">
-      <li>
-      	<table width="100%" height="60%">  
-		<tbody>
-        <tr>  
-            <td align="left">选择酒店</td>  
-            <td align="right">
-            	<select id="city" data-role="none" style="width:200px;height:30px;">  
-              		<option value="nc">南昌</option> 
-         			<option value="xm">厦门</option>  
+  <div data-role="none" style="background-color:#f6f6f6">
+	<table data-role="none">  
+		<tbody data-role="none" style="background-color:#f6f6f6">
+        <tr data-role="none" style="height:50px;background-color:#f6f6f6">  
+            <td data-role="none" style="padding-left:17px;">选择酒店</td>  
+            <td data-role="none" style="padding-left:20px;">
+            	<select id="city" data-role="none">  
+              		<option value="nc">&nbsp;&nbsp;&nbsp;南昌</option> 
+         			<option value="xm">&nbsp;&nbsp;&nbsp;厦门</option>  
             	</select>
             </td>  
         </tr>  
         </tbody>
       </table>
-      </li>
+</div>
+  <div data-role="main" class="ui-content">
+      <ul data-role="listview" id="listView" data-theme="d">
       <li  class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/hotel/pic_cy01.png">
         <h3>红泰餐厅 [2楼]</h3>
@@ -68,6 +52,27 @@
 	border-color:#dedede;	
 	border-width:thin;
 	margin:5px;
+}
+#city{
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 95% center transparent;
+  background-size:10px 10px;
+  background-color:white;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+	height:34px;
+	width:250px;
+	float:right;" 
 }
 </style>
     <script type="text/javascript">

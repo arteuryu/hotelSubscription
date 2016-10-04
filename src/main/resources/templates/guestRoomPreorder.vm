@@ -11,20 +11,6 @@
 </head>
 <body>
 <div data-role="page" id="pageone">
-<style type="text/css"> 
-.hotelImg{
-	height:80%;
-	width:80%;
-	padding:2px;
-	border-style:solid;
-	border-color:#dedede;	
-	border-width:thin;
-	margin:5px;
-}
-.ui-content{  
-     background:white;  
-} 
-</style> 
 <div data-role="header" id="pageHeader">
   	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
   <h1>客房预订</h1>
@@ -35,17 +21,17 @@
         <tr data-role="none" style="height:50px;background-color:#f6f6f6">  
             <td data-role="none" style="padding-left:17px;">选择酒店</td>  
             <td data-role="none" style="padding-left:20px;">
-            	<select id="city" style="font-size:14px;width:250px;float:right;" data-role="none">  
-              		<option value="nc">南昌</option> 
-         			<option value="xm">厦门</option>  
+            	<select id="city" data-role="none">  
+              		<option value="nc">&nbsp;&nbsp;&nbsp;南昌</option> 
+         			<option value="xm">&nbsp;&nbsp;&nbsp;厦门</option>  
             	</select>
             </td>  
         </tr>  
         </tbody>
       </table>
 </div>
-<hr style="-webkit-margin-before: 0em;-webkit-margin-after: 0em;" data-role="none">      
-<div>        
+<hr style="-webkit-margin-before: 0em;-webkit-margin-after: 0em;"color=#dedede data-role="none">      
+<div data-role="none" style="background-color:white">        
 	<div style="font-size:16px;display:inline;float:left;padding-left:20px;">
 		<p>时间</p>
 	</div>
@@ -53,39 +39,32 @@
 		<p>8月16日<font style="padding-left:20px;" size="3" color="#999999">今天入住时间</font></p>
 		<p>8月17日<font style="padding-left:20px;" size="3" color="#999999">明天离店一天</font></p>		
 	</div>
-<!-- 	<div class="ui-block-c"> -->
-<!-- 		<img src="/assets/images/index/arrow.png"> -->
-<!-- 	</div> -->
-</div>
-<hr style="clear:both;">
-<div class="ui-grid-c">        
-	<div class="ui-block-a" style="padding-left:20px;">
-		<label>预订间数</label>
+<div style="float:right;padding-top:35px;padding-right:20px;">
+		<img src="/assets/images/index/right.png">
 	</div>
-	<div class="ui-block-b">
-		<select data-role="none" style="width:70px;">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-			<option>6</option>
-			<option>7</option>
-			<option>8</option>
-			<option>9</option>
+</div>
+<hr style="clear:both;"color=#dedede noshade="noshade">
+<div style="padding-top:10px;padding-left:20px;background-color:white;">        
+		<label style="float:left;color:#999999;padding-top:5px;width:80px;">预订间数:</label>
+		<select id="selectCount" data-role="none">
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option>
+			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option>
 		</select>
-	</div>
-	<div class="ui-block-c">
-		<label>预订代码</label>
-	</div>
-	<div class="ui-block-d">
-		<input data-role="none" style="width:50px;"></input>
-	</div>
+		<label style="color:#999999;float:left;padding-left:10px;width:80px;padding-top:5px;">预订代码:</label>
+		<input id="preInput" data-role="none"></input>
 </div>
-<button style="background-color:#d71619;width:100%;margin-top:20px;height:40px;color:white;" data-role="none"><font size="4">搜索</font></button>
-  <div data-role="main" class="ui-content"  data-theme="d">
+<button style="background-color:#d71619;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
+<hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
+  <div data-role="main" class="ui-content"  data-theme="d" style="margin-top:0px;">
       <ul data-role="listview" id="listView" data-theme="d">
-      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li  class="detailItem nc" style ="border-top-width:0px;" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
         <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
@@ -192,6 +171,73 @@
       </li>
     </ul>
     </div>
+    <style type="text/css"> 
+.hotelImg{
+	height:80%;
+	width:80%;
+	padding:2px;
+	border-style:solid;
+	border-color:#dedede;	
+	border-width:thin;
+	margin:5px;
+}
+#pageone{  
+     background:white;  
+} 
+#preInput{
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  width:80px;;
+  height:30px;
+  float:left;
+}
+#selectCount {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 90% center transparent;
+  background-size:10px 10px;
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+	height:34px;
+	width:70px;
+	float:left;
+}
+#city{
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 95% center transparent;
+  background-size:10px 10px;
+  background-color:white;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+	height:34px;
+	width:250px;
+	float:right;" 
+}
+</style> 
     <script type="text/javascript">
 function isWeixnOpen(){
     var ua = navigator.userAgent.toLowerCase();
@@ -216,6 +262,12 @@ $("#city").change(function(){
 		$(".xm").show();
 	}
 });
+var u = navigator.userAgent;
+var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+if(isiOS){
+	$("#preInput").css("width","100px");
+}
 </script>
 </div>
 </body>
