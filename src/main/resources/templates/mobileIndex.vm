@@ -194,7 +194,7 @@ $(document).ready(function(){
 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;margin-bottom:10px;padding-left:10px;padding-right:10px;">获取详情</button>
 </td>
 <td>
-		<img id="indexImg" style="height:50%;width:145px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
+		<img id="indexImg" style="height:50%;width:90px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
 </td>
 </tr>
 </table>
