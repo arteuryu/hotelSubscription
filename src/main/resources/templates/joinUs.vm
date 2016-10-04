@@ -76,10 +76,13 @@ select {
 
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
 /*   padding-right: 20px; */
-	border-radius:3px;
+	border-radius:5px;
 	text-align:center;
 	width:120%;
 	height:34px;
+}
+button{
+	border-radius:5px;
 }
 </style>
 </body>
