@@ -32,13 +32,13 @@
     		<option value="1">事业发展部</option>
 		</select>
 	</div>
-	<div style="float:left;padding-left:50px;">
+	<div style="float:left;padding-left:20px;">
 		<select style="font-size:16px;" data-role="none" id="unit2">
   	  		<option value="1">发展副总监</option>
 		</select>
 	</div>
-	<div style="float:left;padding-left:50px;">
-		<button style="font-size:16px;background-color:red;border:none;color:white;height:34px;width:60px;" data-role="none">搜索</button>
+	<div style="float:left;padding-left:20px;">
+		<button style="font-size:16px;background-color:red;border:none;color:white;height:34px;width:80px;" data-role="none">搜索</button>
 	</div>
 </div>
 <button data-role="none" style="background-color:#f6f6f6;height:50px;width:100%;border:none;font-size:16px;margin-top:20px;"><font style="float:left;">发展副总监（事业发展部）</button>
