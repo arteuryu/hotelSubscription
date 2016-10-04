@@ -26,22 +26,22 @@
 <p style="text-indent:2em">联络地址:厦门鹭江道12号厦门瑞颐大酒店 4楼 行政办公室 361001</p>
 <hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
 <div data-role="content">
-<div class="ui-grid-b">        
-	<div class="ui-block-a">
-		<select style="font-size:14px;" data-role="none" id="unit1">
+<div>        
+	<div style="float:left;">
+		<select style="font-size:16px;" data-role="none" id="unit1">
     		<option value="1">事业发展部</option>
 		</select>
 	</div>
-	<div class="ui-block-b">
-		<select style="font-size:14px;" data-role="none" id="unit1">
+	<div style="float:left;padding-left:50px;">
+		<select style="font-size:16px;" data-role="none" id="unit2">
   	  		<option value="1">发展副总监</option>
 		</select>
 	</div>
-	<div class="ui-block-c">
-		<button style="font-size:14px;background-color:red;" data-role="none">搜索</button>
+	<div style="float:left;padding-left:50px;">
+		<button style="font-size:16px;background-color:red;border:none;color:white;height:34px;width:60px;" data-role="none">搜索</button>
 	</div>
 </div>
-<textarea disabled="disabled" style="padding-top:13px;">发展副总监（事业发展部）</textarea>
+<button data-role="none" style="background-color:#f6f6f6;height:50px;width:100%;border:none;font-size:16px;margin-top:20px;"><font style="float:left;">发展副总监（事业发展部）</button>
 <p>性别：			不限<br>
  年龄：			不限<br>
  要求：			直接向董事长汇报。<br>
@@ -57,6 +57,26 @@
 <style>
 #pageone{
 	background-color:white;
+}
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 90% center transparent;
+  background-size:10px 10px;
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+	width:150%;
+	height:34px;
 }
 </style>
 </body>
