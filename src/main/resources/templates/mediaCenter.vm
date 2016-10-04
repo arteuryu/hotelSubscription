@@ -10,12 +10,6 @@
 </head>
 <body>
 <div data-role="page" id="pageone">
-<style>
-.mediaImg{
-	height:80%;
-	padding-top:10px;
-}
-</style>
 <div data-role="header" id="pageHeader">
 	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
   	<h1>媒体中心</h1>
@@ -56,7 +50,8 @@
       <li>
         <img class="mediaImg" src="/assets/images/mediaCenter/meiti07.png">
         <h3>2013年度中国会议酒店前100</h3>
-        <p>Best 100奖项是经MICE China编辑独立审核、评估，由MICE China主编及出版人签名颁发的中国会议行业最高奖项。Best 100的表彰对象为会议设施齐备、能提供优质会议服务、积极开展市场行销活动、在会议业界广为认知的会议型酒店及会议场地。本奖由雅士国际媒体有限公司出 版的，亚太地区发行量最大的会议行业杂志MICE China颁发。</p>
+        <pre>MICE China主编及出版人签名颁发的
+中国会议行业最高奖项。</pre>
       </li>
       <li>
         <img class="mediaImg" src="/assets/images/mediaCenter/meiti08.png">
@@ -64,13 +59,24 @@
         <p>本次奖项评选基于慧评网收录的2013年度600万条真实的住客点评 授奖单位：携程、慧评网</p>
       </li>
       <li>
-        <img class="mediaImg" style="padding-left:17px;"src="/assets/images/mediaCenter/meiti09.png">
+        <img class="mediaImg" style="padding-left:10px;"src="/assets/images/mediaCenter/meiti09.png">
         <h3>世界酒店五洲钻石奖</h3>
         <p>南昌瑞颐大酒店荣获世界酒店 五洲钻石奖 年度最佳新开业酒店殊荣</p>
       </li>
     </ul>
 
 	</div>
+<style>
+li{
+	height:100px;	
+	vertical-align:middle;
+}
+.mediaImg{
+	height:80%;
+	vertical-align:middle;
+	padding-top:20px;
+}
+</style>
 	<script type="text/javascript">
 function isWeixnOpen(){
     var ua = navigator.userAgent.toLowerCase();
