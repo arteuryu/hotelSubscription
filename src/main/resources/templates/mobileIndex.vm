@@ -211,10 +211,10 @@ $(document).ready(function(){
 <table style="-webkit-padding-start:80px;">
 <tr align="center" valign="middle">
 <td style=padding-right:10px>
-		<a href="#popUpContact" data-rel="popup" data-transition="pop">联系我们</a>
+		<a href="#popUpContact" style="color:black; text-decoration:none;" data-rel="popup" data-transition="pop">联系我们</a>
 </td>
 <td height=8px align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
-		<a href="/hotelPage/privacy">隐私政策</a>
+		<a href="/hotelPage/privacy" style="color:black; text-decoration:none;">隐私政策</a>
 </td>
 </tr>
 </table>
