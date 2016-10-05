@@ -115,7 +115,7 @@ $(document).ready(function(){
 	<img src="/assets/images/index/right.png">
 </div>
 <hr style="clear:both;">
-<pre style="font-size:16px;float:left;color:#999999";>选择酒店</pre><pre style="float:left;font-size:16px;">   厦门瑞颐大酒店</pre>
+<pre style="font-size:16px;float:left;color:black";>选择酒店</pre><pre style="float:left;font-size:16px;color:#999999">   厦门瑞颐大酒店</pre>
 <div style="float:right;padding-top:14px;background-color:white;">
 	<img src="/assets/images/index/right.png">
 </div>
@@ -180,11 +180,11 @@ $(document).ready(function(){
       </ul>
       <p align="center"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
       <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
-      <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelect"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
- 	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
-      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/mediaCenter" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
-      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/joinUs" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
-<table data-role="none" style="margin-top:15px;margin-left:20px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;">
+      <div style="margin-left:10px;margin-top:20px;margin-right:10px;"><a href="/hotelPage/hotelSelect"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
+ 	  <div style="margin-left:10px;margin-top:10px;margin-right:10px;"><a href="/hotelPage/about" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
+      <div style="margin-left:10px;margin-top:10px;margin-right:10px;"><a href="/hotelPage/mediaCenter" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
+      <div style="margin-left:10px;margin-top:10px;margin-right:10px;"><a href="/hotelPage/joinUs" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
+<table data-role="none" style="margin-top:15px;margin-left:10px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;">
 <tr align="center" style="margin:0px;">
 <td>
 		<pre style="font-size:12px;"> 一年365日，我们竭力为您的 </pre>
@@ -192,7 +192,7 @@ $(document).ready(function(){
 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;margin-bottom:10px;padding-left:10px;padding-right:10px;">获取详情</button>
 </td>
 <td>
-		<img id="indexImg" style="height:50%;width:60px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
+		<img id="indexImg" style="height:50%;width:90px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
 </td>
 </tr>
 </table>
@@ -206,7 +206,7 @@ $(document).ready(function(){
 	</div>
 </div> 
 <br>
-<table style="-webkit-padding-start:1000px;">
+<table style="-webkit-padding-start:100px;">
 <tr align="center" valign="middle">
 <td style=padding-right:10px>
 		<a href="#popUpContact" style="color:black; text-decoration:none;" data-rel="popup" data-transition="pop">联系我们</a>
