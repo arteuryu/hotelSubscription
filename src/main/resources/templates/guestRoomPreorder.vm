@@ -191,8 +191,8 @@
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:71px;;
-  height:36px;
+  width:55px;;
+  height:31px;
   float:left;
   border-radius:3px;
 }
