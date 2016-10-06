@@ -16,8 +16,8 @@
   <h1>客房预订</h1>
   </div>
 <div data-role="none" style="background-color:#f6f6f6">
-	<table data-role="none">  
-		<tbody data-role="none" style="background-color:#f6f6f6">
+	<table data-role="none" style="border:none;">  
+		<tbody data-role="none" style="background-color:#f6f6f6;">
         <tr data-role="none" style="height:50px;background-color:#f6f6f6">  
             <td data-role="none" style="padding-left:17px;">选择酒店</td>  
             <td data-role="none" style="padding-left:20px;">
@@ -30,7 +30,7 @@
         </tbody>
       </table>
 </div>
-<hr style="-webkit-margin-before: 0em;-webkit-margin-after: 0em;"color=#dedede data-role="none">      
+<hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div data-role="none" style="background-color:white">        
 	<div style="font-size:16px;display:inline;float:left;padding-left:20px;">
 		<p>时间</p>
@@ -43,7 +43,7 @@
 		<img src="/assets/images/index/right.png">
 	</div>
 </div>
-<hr style="clear:both;"color=#dedede noshade="noshade">
+<hr style="clear:both;-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="padding-top:10px;padding-left:20px;background-color:white;">        
 		<label style="float:left;color:#999999;padding-top:5px;width:80px;">预订间数:</label>
 		<select id="selectCount" data-role="none">
@@ -60,7 +60,7 @@
 		<label style="color:#999999;float:left;padding-left:10px;width:80px;padding-top:5px;">预订代码:</label>
 		<input id="preInput" data-role="none"></input>
 </div>
-<button style="background-color:#8B0000;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
+<button style="background-color:#d71619;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
 <hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
   <div data-role="main" class="ui-content"  data-theme="d" style="margin-top:0px;">
       <ul data-role="listview" id="listView" data-theme="d">
@@ -191,9 +191,10 @@
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:80px;;
-  height:30px;
+  width:71px;;
+  height:36px;
   float:left;
+  border-radius:3px;
 }
 #selectCount {
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
@@ -213,7 +214,7 @@
 	border-radius:3px;
 	text-align:center;
 	height:40px;
-	width:70px;
+	width:75px;
 	float:left;
 }
 #city{
@@ -266,7 +267,7 @@ var u = navigator.userAgent;
 var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 if(isiOS){
-	$("#preInput").css("width","80px");
+//	$("#preInput").css("width","80px");
 }
 </script>
 </div>

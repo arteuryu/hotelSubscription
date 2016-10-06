@@ -15,7 +15,7 @@
   <h1>餐厅预订</h1>
   </div>
   <div data-role="none" style="background-color:#f6f6f6">
-	<table data-role="none">  
+	<table data-role="none" style="border:none;">  
 		<tbody data-role="none" style="background-color:#f6f6f6">
         <tr data-role="none" style="height:50px;background-color:#f6f6f6">  
             <td data-role="none" style="padding-left:17px;">选择酒店</td>  
