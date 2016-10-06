@@ -74,7 +74,7 @@ li{
 .mediaImg{
 	height:80%;
 	vertical-align:middle;
-	padding-top:10px;
+	padding-top:12px;
 }
 </style>
 	<script type="text/javascript">
