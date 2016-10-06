@@ -225,7 +225,7 @@ $(document).ready(function(){
 	</ul>
 </div>
 <div data-role="popup" id="popUpContact" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
-<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+<!-- <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> -->
 <h3 style="font-weight:100;" align="center">联系我们</h3>
 <hr>
 <p style="font-weight:100;color:#666666;">瑞颐集团办公室  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865925709110">86 592 5709110</a></p>
@@ -236,7 +236,7 @@ $(document).ready(function(){
 <p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@swissinternationalnanchang.com.cn">info@swissinternationalnanchang.com.cn</a>
 <hr>
 <div style="text-align:center; width:100%;height:100%;margin:0px;">
-<button data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:16px;margin:0 auto;">关闭</button>
+<span data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:16px;margin:0 auto;font-weight:100;text-decoration:none;color:#666666;">关闭</span>
 </div>
 </div>
 <div data-role="popup" id="popUpLang" data-theme="a" class="ui-content" data-position-to="#lang" style="font-size:15px;width:80px;margin-top:10px;">
