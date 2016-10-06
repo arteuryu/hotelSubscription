@@ -90,7 +90,7 @@ $(document).ready(function(){
 </script>
 <table id="tableMain" style="background-color:white;margin-top:20px;border-collapse:collapse;>
 <tr align="center" valign="middle">
-<td style="padding-bottom:0px;padding-left:20px;padding-right:10px;">
+<td style="padding-bottom:0px;padding-left:25px;padding-right:10px;">
 		<a href="/hotelPage/guestRoomPreorder"><img class="mainIconImg" src="/assets/images/index/kefang.png"></img></a>
 		<p>客房预订</p>
 </td>
