@@ -224,16 +224,16 @@ $(document).ready(function(){
 	</li>
 	</ul>
 </div>
-<div data-role="popup" id="popUpContact" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;filter:alpha(opacity=96); "data-position-to="window">
+<div data-role="popup" id="popUpContact" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-<h3 align="center">联系我们</h3>
+<h3 style="font-weight:100;" align="center">联系我们</h3>
 <hr>
-<p>瑞颐集团办公室  电话:<br><a href="tel:865925709110">86 592 5709110</a></p>
-<p>邮箱:<br><a href="mailto:info@sihotels.com">info@sihotels.com</a>
-<p>厦门瑞颐大酒店  电话:<br><a href="tel:865926366666">86 592 6366666</a></p>
-<p>邮箱:<br><a href="mailto:info@swissinternationalxiamen.com.cn">info@swissinternationalxiamen.com.cn</a>
-<p>南昌瑞颐大酒店  电话:<br><a href="tel:865925709110">86 791 87777777</a></p>
-<p>邮箱:<br><a href="mailto:info@swissinternationalnanchang.com.cn">info@swissinternationalnanchang.com.cn</a>
+<p style="font-weight:100;color:#666666;">瑞颐集团办公室  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865925709110">86 592 5709110</a></p>
+<p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@sihotels.com">info@sihotels.com</a>
+<p style="font-weight:100;color:#666666;">厦门瑞颐大酒店  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865926366666">86 592 6366666</a></p>
+<p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@swissinternationalxiamen.com.cn">info@swissinternationalxiamen.com.cn</a>
+<p style="font-weight:100;color:#666666;">南昌瑞颐大酒店  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865925709110">86 791 87777777</a></p>
+<p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@swissinternationalnanchang.com.cn">info@swissinternationalnanchang.com.cn</a>
 <hr>
 <div style="text-align:center; width:100%;height:100%;margin:0px;">
 <button data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:16px;margin:0 auto;">关闭</button>
