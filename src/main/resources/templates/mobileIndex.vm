@@ -249,7 +249,7 @@ $(document).ready(function(){
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/hotelSelect">瑞颐酒店</a></p>
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
-<p><a style="color:#ffffff;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
+<p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
 </div>
 <style type="text/css">
 #pageone{  
