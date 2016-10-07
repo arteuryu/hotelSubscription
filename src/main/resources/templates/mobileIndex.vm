@@ -22,12 +22,12 @@
 		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
 	</li>
 		<li style="display:inline;float:right; list-style:none">
-		<select style="font-size:16px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;" data-role="none">
+		<select style="font-size:14px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;" data-role="none">
 			<option>EN</option>
 			<option>简</option>
 			<option>繁</option>			
 		</select>
-<!-- 		<span id="lang" style="font-size:16px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">EN</span> -->
+<!-- 		<span id="lang" style="font-size:14px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">EN</span> -->
 		<img  style="height:10px;width:10px;"src="/assets/images/index/down.png"></img>
 	</li>
 </ul>
@@ -88,55 +88,55 @@ $(document).ready(function(){
 
 });
 </script>
-<table id="tableMain" style="background-color:white;margin-top:20px;border-collapse:collapse;>
+<table id="tableMain" style="background-color:white;margin-top:20px;border-collapse:collapse;">
 <tr align="center" valign="middle">
-<td style="padding-bottom:0px;padding-left:25px;padding-right:10px;">
-		<a href="/hotelPage/guestRoomPreorder"><img class="mainIconImg" src="/assets/images/index/kefang.png"></img></a>
-		<p>客房预订</p>
+<td style="padding-bottom:0px;padding-left:20px;">
+		<a href="/hotelPage/guestRoomPreorder"><img class="mainIconImg"  src="/assets/images/index/kefang.png"></img></a>
+		<p style="font-size:14px;padding-top:10px;">客房预订</p>
 </td>
-<td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:13px;padding-right:10px;padding-bottom:0px>
+<td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-bottom:0px>
 		<a style="vertical-align:middle;text-align:center;" href="/hotelPage/meetingPreorder"><img class="mainIconImg" src="/assets/images/index/huiyi.png"></img></a>
-		<p>会议宴会</p>
+		<p style="font-size:14px;padding-top:10px;">会议宴会</p>
 </td>
-<td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
+<td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img class="mainIconImg" src="/assets/images/index/canyin.png"></img></a>
-		<p>餐饮预订</p>
+		<p style="font-size:14px;padding-top:10px;">餐饮预订</p>
 </td>
-<td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px;padding-bottom:0px>
+<td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-bottom:0px>
 		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img class="mainIconImg" src="/assets/images/index/shangcheng.png"></img></a>
-		<p>酒店商城</p>
+		<p style="font-size:14px;padding-top:10px;">酒店商城</p>
 </td>
 </tr>
 </table>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 <div style="padding-left:10px;background-color:white;">
 <p><font color=red size="5px">|</font>&nbsp;&nbsp;客房预订</p>
-<pre style="font-size:16px;float:left;">酒店位置     我的附近  </pre><pre style="float:left;font-size:16px;color:#999999" >位置/酒店/关键词</pre>
+<pre style="font-size:14px;color:#999999;float:left;">酒店位置</pre><pre style="font-size:14px;color:black;float:left;">     我的附近  </pre><pre style="float:left;font-size:14px;color:#999999" >位置/酒店/关键词</pre>
 <div style="float:right;padding-top:14px;padding-right:14px;">
 	<img src="/assets/images/index/right.png">
 </div>
 <hr style="clear:both;">
-<pre style="font-size:16px;float:left;color:black";>选择酒店</pre><pre style="float:left;font-size:16px;color:#999999">     厦门瑞颐大酒店</pre>
+<pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">     厦门瑞颐大酒店</pre>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:14px;">
 	<img src="/assets/images/index/right.png">
 </div>
 </div>
 <hr style="clear:both;">
 <div style="padding-left:10px;background-color:white;">        
-	<div style="font-size:16px;display:inline;padding-top:10px;float:left;">
-		<p>时间</p>
+	<div style="font-size:14px;display:inline;padding-top:10px;float:left;">
+		<p style="font-size:14px;float:left;color:#999999;">时间</p>
 	</div>
-	<div style="font-size:16px;padding-left:60px;display:inline;float:left;">
-		<p>8月16日<font style="padding-left:15px;" size="3" color="#999999">今天入住时间</font></p>
-		<p>8月17日<font style="padding-left:15px;" size="3" color="#999999">明天离店一天</font></p>		
+	<div style="font-size:14px;padding-left:52px;padding-bottom:10px;display:inline;float:left;">
+		<p>8月16日<font style="padding-left:15px;" size="2" color="#999999">今天入住时间</font></p>
+		<p>8月17日<font style="padding-left:15px;" size="2" color="#999999">明天离店一天</font></p>		
 	</div>
-	<div style="float:right;padding-top:30px;padding-right:14px;">
+	<div style="float:right;padding-top:10px;padding-right:14px;">
 		<img src="/assets/images/index/right.png">
 	</div>
 </div>
 <hr style="clear:both;">
 <div data-role="none" style="padding-top:10px;padding-left:10px;">        
-		<label style="float:left;color:#999999;padding-top:5px;width:70px;">预订间数:</label>
+		<label style="float:left;color:#999999;padding-top:5px;width:60px;font-size:14px;">预订间数:</label>
 		<select id="selectCount" data-role="none">
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
@@ -148,10 +148,10 @@ $(document).ready(function(){
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option>
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option>
 		</select>
-		<label style="color:#999999;float:left;padding-left:10px;width:70px;padding-top:5px;">预订代码:</label>
+		<label style="color:#999999;float:left;padding-left:5px;width:60px;padding-top:5px;font-size:14px;">预订代码:</label>
 		<input id="preInput" data-role="none"></input>
 </div>
-<button style="background-color:#d71619;margin-top:20px;margin-left:20px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;" data-role="none"><font size="4">搜索</font></button>
+<button style="background-color:#d71619;margin-top:20px;margin-left:18px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 	<ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
@@ -190,7 +190,7 @@ $(document).ready(function(){
 <td>
 		<pre style="font-size:12px;"> 一年365日，我们竭力为您的 </pre>
 		<pre style="font-size:12px;"> 出行提供源源不断的优惠和礼遇 </pre>
-		<button data-role="none" style="border:none;background-color:#a3854a;color:white;margin-bottom:10px;padding-left:10px;padding-right:10px;">获取详情</button>
+		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button>
 </td>
 <td>
 		<img id="indexImg" style="height:50%;width:150px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
@@ -198,12 +198,12 @@ $(document).ready(function(){
 </tr>
 </table>
  <div class="ui-grid-a" style="margin-top:30px;">        
-	<div class="ui-block-a">
-		<p style="color:red;padding-left:40px;">瑞颐微信公众号</p>
-        <img style="width:150px;align:center;padding-left:40px;" src="/assets/images/index/footerLogo.png">
+	<div class="ui-block-a" style="padding-left:25px;">
+		<p style="color:red;">瑞颐微信公众号</p>
+        <img style="width:150px;align:center;" src="/assets/images/index/footerLogo.png">
 	</div>
-	<div class="ui-block-b" style="padding-right:30px;">
-		<img class="iconImg" id="scanCode" style="padding-left:30px;p" src="/assets/images/index/scanCode.png">
+	<div class="ui-block-b">
+		<img class="iconImg" id="scanCode" style="padding-left:35px;" src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
@@ -236,7 +236,7 @@ $(document).ready(function(){
 <p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@swissinternationalnanchang.com.cn">info@swissinternationalnanchang.com.cn</a>
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="text-align:center; width:100%;height:100%;margin-top:10px;">
-<span data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:16px;padding-top:15px;font-weight:100;text-decoration:none;color:#666666;">关闭</span>
+<span data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#666666;">关闭</span>
 </div>
 </div>
 <div data-role="popup" id="popUpLang" data-theme="a" class="ui-content" data-position-to="#lang" style="font-size:15px;width:80px;margin-top:10px;">
@@ -310,12 +310,12 @@ background:black;
 }
 #preInput{
   border: solid 1px #dedede;
-  font-size:16px;
+  font-size:14px;
   /*很关键：将默认的select选择框样式清除*/
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:55px;
+  width:100px;
   height:31px;
   float:left;
   margin-left:10px;
@@ -325,7 +325,7 @@ background:black;
 #selectCount {
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
   border: solid 1px #dedede;
-  font-size:16px;
+  font-size:14px;
   /*很关键：将默认的select选择框样式清除*/
   appearance:none;
   -moz-appearance:none;
@@ -340,13 +340,18 @@ background:black;
 	border-radius:3px;
 	text-align:center;
 	height:40px;
-	width:75px;
+	width:70px;
 	float:left;
 	margin-left:10px;
 	margin-right:10px;	
 }
 button{
-	border-radius:5px;
+	border-radius:3px;
+	border-width:1px;
+}
+p{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
 </style>
 <script src="/assets/js/jquery.SuperSlide.2.1.1.js"></script> 

@@ -5,8 +5,10 @@
 }
 .mainIconImg{
 	display: block;     
-	height: 60px;     
-	width: 60px; 
+	height: 40px;     
+	width: 40px; 
+	padding-left:20px;
+	padding-right:20px;
 }
 /* .ui-grid-b{ */
 /* 	background-color:black; */
