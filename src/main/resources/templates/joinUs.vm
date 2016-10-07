@@ -22,16 +22,16 @@
 <div data-role="content">
 <div>        
 	<div style="float:left;">
-		<select style="font-size:16px;background:#fafafa;" data-role="none" id="unit1">
+		<select style="font-size:16px;background-color:#fafafa;" data-role="none" id="unit1">
     		<option value="1">事业发展部</option>
 		</select>
 	</div>
-	<div style="float:left;padding-left:30px;">
-		<select style="font-size:16px;background:#fafafa;" data-role="none" id="unit2">
+	<div style="float:left;padding-left:10px;">
+		<select style="font-size:16px;background-color:#fafafa;" data-role="none" id="unit2">
   	  		<option value="1">发展副总监</option>
 		</select>
 	</div>
-	<div style="float:left;padding-left:30px;">
+	<div style="float:left;padding-left:10px;">
 		<button style="font-size:16px;background-color:#d41b23;border:none;color:white;height:34px;width:80px;" data-role="none">搜索</button>
 	</div>
 </div>
@@ -54,6 +54,7 @@
 <style>
 #pageone{
 	background:white;
+	color:#333333;
 }
 .ui-content{  
      background:white;  
@@ -72,14 +73,17 @@ select {
   background-size:10px 10px;
 
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
-/*   padding-right: 20px; */
+    padding-left: 10px; 
 	border-radius:5px;
 	text-align:center;
-	width:130%;
+ 	width:120px; 
 	height:34px;
 }
 button{
 	border-radius:5px;
+}
+p{
+	color:#333333;
 }
 </style>
 </body>
