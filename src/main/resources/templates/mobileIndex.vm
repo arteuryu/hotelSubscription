@@ -199,11 +199,11 @@ $(document).ready(function(){
 </table>
  <div class="ui-grid-a" style="margin-top:30px;">        
 	<div class="ui-block-a" style="padding-left:25px;">
-		<p style="color:red;">瑞颐微信公众号</p>
-        <img style="width:150px;align:center;" src="/assets/images/index/footerLogo.png">
+		<p style="color:#dc291e;">瑞颐微信公众号</p>
+        <img style="width:200px;align:center;padding-top:20px;" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img class="iconImg" id="scanCode" style="padding-left:35px;" src="/assets/images/index/scanCode.png">
+		<img class="iconImg" id="scanCode" style="padding-left:70px;" src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
@@ -356,7 +356,7 @@ p{
 .iconImg {    
 	display: block;     
 	height: auto;     
-	width: 70%; 
+	width: 50%; 
 }
 .mainIconImg{
 	display: block;     
