@@ -353,6 +353,18 @@ p{
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
+.iconImg {    
+	display: block;     
+	height: auto;     
+	width: 70%; 
+}
+.mainIconImg{
+	display: block;     
+	height: 40px;     
+	width: 40px; 
+	padding-left:20px;
+	padding-right:20px;
+}
 </style>
 <script src="/assets/js/jquery.SuperSlide.2.1.1.js"></script> 
 <script type="text/javascript">
