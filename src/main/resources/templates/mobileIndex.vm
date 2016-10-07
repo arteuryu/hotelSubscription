@@ -179,7 +179,7 @@ $(document).ready(function(){
  		<span>CNY:<font color=red>1236</font></span>             
       </li>
       </ul>
-      <p align="center"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
+      <p align="center" style="padding-top:10px;"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
       <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
       <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelect"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
  	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
