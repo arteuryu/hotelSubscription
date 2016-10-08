@@ -8,6 +8,7 @@
 <!-- <script src="/assets/js/common.js"></script> -->
 <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
+<title>首页</title>
 <body>
 <div data-role="page" id="pageone">
 <div data-role="header">
