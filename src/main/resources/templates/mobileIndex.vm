@@ -90,20 +90,20 @@ $(document).ready(function(){
 </script>
 <table id="tableMain" style="background-color:white;margin-top:20px;border-collapse:collapse;">
 <tr align="center" valign="middle">
-<td style="padding-bottom:0px;padding-left:20px;">
-		<a href="/hotelPage/guestRoomPreorder"><img class="mainIconImg"  src="/assets/images/index/kefang.png"></img></a>
+<td id="firstTd" style="padding-bottom:0px;">
+		<a href="/hotelPage/guestRoomPreorder" target="_blank"><img class="mainIconImg"  src="/assets/images/index/kefang.png"></img></a>
 		<p style="font-size:14px;padding-top:10px;">客房预订</p>
 </td>
 <td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-bottom:0px>
-		<a style="vertical-align:middle;text-align:center;" href="/hotelPage/meetingPreorder"><img class="mainIconImg" src="/assets/images/index/huiyi.png"></img></a>
+		<a style="vertical-align:middle;text-align:center;" href="/hotelPage/meetingPreorder" target="_blank"><img class="mainIconImg" src="/assets/images/index/huiyi.png"></img></a>
 		<p style="font-size:14px;padding-top:10px;">会议宴会</p>
 </td>
 <td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-bottom:0px>
-		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder"><img class="mainIconImg" src="/assets/images/index/canyin.png"></img></a>
+		<a style="vertical-align:middle;" href="/hotelPage/restaurantPreorder" target="_blank"><img class="mainIconImg" src="/assets/images/index/canyin.png"></img></a>
 		<p style="font-size:14px;padding-top:10px;">餐饮预订</p>
 </td>
 <td height=25 align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-bottom:0px>
-		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex"><img class="mainIconImg" src="/assets/images/index/shangcheng.png"></img></a>
+		<a style="vertical-align:middle;" href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex" target="_blank"><img class="mainIconImg" src="/assets/images/index/shangcheng.png"></img></a>
 		<p style="font-size:14px;padding-top:10px;">酒店商城</p>
 </td>
 </tr>
@@ -111,14 +111,14 @@ $(document).ready(function(){
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 <div style="padding-left:10px;background-color:white;">
 <p><font color=red size="5px">|</font>&nbsp;&nbsp;客房预订</p>
-<pre style="font-size:14px;color:#999999;float:left;">酒店位置</pre><pre style="font-size:14px;color:black;float:left;">     我的附近  </pre><pre style="float:left;font-size:14px;color:#999999" >位置/酒店/关键词</pre>
+<pre style="font-size:14px;color:#999999;float:left;">酒店位置</pre><pre style="font-size:14px;color:black;float:left;">   我的附近  </pre><pre style="float:left;font-size:14px;color:#999999" >位置/酒店/关键词</pre>
 <div style="float:right;padding-top:14px;padding-right:14px;">
 	<img src="/assets/images/index/right.png">
 </div>
 </div>
 <hr style="clear:both;">
 <div style="padding-left:10px;background-color:white;">
-<pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">     厦门瑞颐大酒店</pre>
+<pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">   厦门瑞颐大酒店</pre>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:14px;">
 	<img src="/assets/images/index/right.png">
 </div>
@@ -128,9 +128,9 @@ $(document).ready(function(){
 	<div style="font-size:14px;display:inline;padding-top:10px;float:left;">
 		<p style="font-size:14px;color:#999999;">时间</p>
 	</div>
-	<div style="font-size:14px;padding-left:52px;padding-bottom:10px;display:inline;float:left;">
-		<p>8月16日<font style="padding-left:15px;" size="2" color="#999999">今天入住时间</font></p>
-		<p>8月17日<font style="padding-left:15px;" size="2" color="#999999">明天离店一天</font></p>		
+	<div style="font-size:14px;padding-left:45px;padding-bottom:10px;display:inline;float:left;">
+		<p>8月16日<font style="padding-left:10px;" size="2" color="#999999">今天入住时间</font></p>
+		<p>8月17日<font style="padding-left:10px;" size="2" color="#999999">明天离店一天</font></p>		
 	</div>
 	<div style="float:right;padding-top:10px;padding-right:14px;">
 		<img src="/assets/images/index/right.png">
@@ -183,19 +183,19 @@ $(document).ready(function(){
       </ul>
       <p align="center" style="padding-top:10px;"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
       <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
-      <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelect"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
- 	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
-      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/mediaCenter" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
-      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/joinUs" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
+      <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelect" target="_blank"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
+ 	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
+      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/mediaCenter"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
+      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/joinUs" target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
 <table data-role="none" style="margin-top:15px;margin-left:20px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;">
 <tr align="center" style="margin:0px;">
 <td>
-		<pre style="font-size:12px;"> 一年365日，我们竭力为您的 </pre>
-		<pre style="font-size:12px;"> 出行提供源源不断的优惠和礼遇 </pre>
+		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre>
+		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre>
 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button>
 </td>
 <td>
-		<img id="indexImg" style="height:50%;width:150px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
+		<img id="indexImg" style="height:50%;width:125px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
 </td>
 </tr>
 </table>
@@ -205,7 +205,7 @@ $(document).ready(function(){
         <img style="width:180px;align:center;padding-top:20px;" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img class="iconImg" id="scanCode" style="padding-left:70px;" src="/assets/images/index/scanCode.png">
+		<img class="iconImg" id="scanCode" style="padding-left:60px;" src="/assets/images/index/scanCode.png">
 	</div>
 </div> 
 <br>
@@ -215,7 +215,7 @@ $(document).ready(function(){
 		<a href="#popUpContact" style="color:black; text-decoration:none;" data-rel="popup" data-transition="pop">联系我们</a>
 </td>
 <td height=8px align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
-		<a href="/hotelPage/privacy" style="color:black; text-decoration:none;">隐私政策</a>
+		<a href="/hotelPage/privacy" style="color:black; text-decoration:none;" target="_blank">隐私政策</a>
 </td>
 </tr>
 </table>
@@ -317,8 +317,8 @@ background:black;
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:110px;
-  height:31px;
+  width:80px;
+  height:26px;
   float:left;
   margin-left:10px;
   border-radius:3px;	
@@ -341,8 +341,8 @@ background:black;
 /*   padding-right: 20px; */
 	border-radius:3px;
 	text-align:center;
-	height:40px;
-	width:70px;
+	height:35px;
+	width:60px;
 	float:left;
 	margin-left:10px;
 	margin-right:10px;	
@@ -364,8 +364,8 @@ p{
 	display: block;     
 	height: 40px;     
 	width: 40px; 
-	padding-left:20px;
-	padding-right:20px;
+	padding-left:18px;
+	padding-right:18px;
 }
 </style>
 <script src="/assets/js/jquery.SuperSlide.2.1.1.js"></script> 
@@ -395,6 +395,15 @@ if(isiOS){
 // 	$("#scanCode").css("padding-right","20px");
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
+}
+if($(document.body).width()>330){
+	$("#city").css("width","250px");
+	$("#selectCount").css("width","80px");
+	$("#preInput").css("width","100px");
+	$("#search").css("width","90%");	
+	$("#firstTd").css("padding-left","27px");
+	$("#indexImg").css("width","185px");	
+	$("#scanCode").css("padding-left","75px");
 }
 </script>
 </div>

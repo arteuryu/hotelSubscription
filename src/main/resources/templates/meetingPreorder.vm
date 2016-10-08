@@ -38,7 +38,7 @@
 	border-radius:3px;
 	text-align:center;
 	height:34px;
-	width:250px;
+	width:200px;
 	float:right;" 
 }
 </style>
@@ -100,6 +100,9 @@ $("#city").change(function(){
 		$(".xm").show();
 	}
 });
+if($(document.body).width()>310){
+	$("#city").css("width","250px");
+}
 </script>
 </div>
 </body>
