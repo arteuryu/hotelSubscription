@@ -115,7 +115,9 @@ $(document).ready(function(){
 <div style="float:right;padding-top:14px;padding-right:14px;">
 	<img src="/assets/images/index/right.png">
 </div>
+</div>
 <hr style="clear:both;">
+<div style="padding-left:10px;background-color:white;">
 <pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">     厦门瑞颐大酒店</pre>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:14px;">
 	<img src="/assets/images/index/right.png">
@@ -124,7 +126,7 @@ $(document).ready(function(){
 <hr style="clear:both;">
 <div style="padding-left:10px;background-color:white;">        
 	<div style="font-size:14px;display:inline;padding-top:10px;float:left;">
-		<p style="font-size:14px;float:left;color:#999999;">时间</p>
+		<p style="font-size:14px;color:#999999;">时间</p>
 	</div>
 	<div style="font-size:14px;padding-left:52px;padding-bottom:10px;display:inline;float:left;">
 		<p>8月16日<font style="padding-left:15px;" size="2" color="#999999">今天入住时间</font></p>
@@ -136,7 +138,7 @@ $(document).ready(function(){
 </div>
 <hr style="clear:both;">
 <div data-role="none" style="padding-top:10px;padding-left:10px;">        
-		<label style="float:left;color:#999999;padding-top:5px;width:60px;font-size:14px;">预订间数:</label>
+		<label style="float:left;color:#999999;padding-top:5px;width:60px;font-size:14px;">预订间数</label>
 		<select id="selectCount" data-role="none">
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
@@ -148,10 +150,10 @@ $(document).ready(function(){
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option>
 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option>
 		</select>
-		<label style="color:#999999;float:left;padding-left:5px;width:60px;padding-top:5px;font-size:14px;">预订代码:</label>
+		<label style="color:#999999;float:left;padding-left:5px;width:60px;padding-top:5px;font-size:14px;">预订代码</label>
 		<input id="preInput" data-role="none"></input>
 </div>
-<button style="background-color:#d71619;margin-top:20px;margin-left:18px;margin-bottom:20px;width:90%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
+<button style="background-color:#d71619;margin-top:20px;margin-left:10px;margin-right:10px;margin-bottom:20px;width:94%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 	<ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
@@ -200,7 +202,7 @@ $(document).ready(function(){
  <div class="ui-grid-a" style="margin-top:30px;">        
 	<div class="ui-block-a" style="padding-left:25px;">
 		<p style="color:#dc291e;">瑞颐微信公众号</p>
-        <img style="width:200px;align:center;padding-top:20px;" src="/assets/images/index/footerLogo.png">
+        <img style="width:180px;align:center;padding-top:20px;" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
 		<img class="iconImg" id="scanCode" style="padding-left:70px;" src="/assets/images/index/scanCode.png">
@@ -315,7 +317,7 @@ background:black;
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:100px;
+  width:110px;
   height:31px;
   float:left;
   margin-left:10px;
