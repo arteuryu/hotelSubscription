@@ -318,7 +318,7 @@ background:black;
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:75px;
+  width:70px;
   height:26px;
   float:left;
   margin-left:10px;
@@ -403,7 +403,7 @@ if($(document.body).width()>330){
 	$("#preInput").css("width","100px");
 	$("#search").css("width","90%");	
 	$("#firstTd").css("padding-left","27px");
-	$("#indexImg").css("width","185px");	
+	$("#indexImg").css("width","177px");	
 	$("#scanCode").css("padding-left","75px");
 }
 </script>
