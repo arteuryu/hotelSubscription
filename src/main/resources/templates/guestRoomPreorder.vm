@@ -192,7 +192,7 @@
   -moz-appearance:none;
   -webkit-appearance:none;
   width:60px;
-  height:27px;
+  height:34px;
   float:left;
 /*   margin-left:10px; */
   border-radius:3px;	
