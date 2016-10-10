@@ -198,7 +198,7 @@ $(document).ready(function(){
 	
 	<li style="float:right;margin-left: 10px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
 			<label style="font-size: 14px;color: #999999;">预定代码</label>
-			<input id="preInput" data-role="none" style="width: 55%;height: 26px;"></input>
+			<input id="preInput" data-role="none" style="width: 52%;height: 26px;"></input>
 	</li>
 </ul>
 <button style="background-color:#d71619;margin-top:20px;margin-left:10px;margin-right:10px;margin-bottom:20px;width:94%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
