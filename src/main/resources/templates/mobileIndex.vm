@@ -232,8 +232,8 @@ $(document).ready(function(){
 		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre>
 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button>
 	</li>
-	<li style="width:40%;text-align:center;float:left;height: 109px;">
-		<img class="iconImg" style="width: 100%;" src="/assets/images/index/drink.png">
+	<li style="width:40%;text-align:center;float:left;height:109px;">
+		<img class="iconImg" style="width:100%;height:109px;" src="/assets/images/index/drink.png">
 	<li>
 </ul>
  <div class="ui-grid-a" style="margin-top:30px;">        
