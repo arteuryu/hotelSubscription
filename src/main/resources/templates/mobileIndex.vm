@@ -346,7 +346,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 .banner-box .bd li a{width:100%;display:block;background-size:auto;}
 .banner-box .bd li a img{width:100%;}
 
-.banner-btn{width:1210px;position:absolute;top:80px;left:50%;margin-left:-605px;}
+.banner-btn{width:1210px;position:absolute;top:120px;left:50%;margin-left:-605px;}
 .banner-btn a{display:block;width:49px;height:104px;position:absolute;top:0;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;}
 .banner-btn a.prev{left:20px;background:url(../images/foot.png) no-repeat 0 0;} 
 .banner-btn a.next{right:20px;background:url(../images/foot.png) no-repeat -49px 0;}
