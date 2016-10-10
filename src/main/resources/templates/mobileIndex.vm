@@ -181,7 +181,7 @@ $(document).ready(function(){
 <!-- 		<input id="preInput" data-role="none"></input> -->
 <!-- </div> -->
 <ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
-	<li style="float:left;margin-left: 10px;width: 45%;">
+	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
 			<label style="font-size: 14px;color: #999999;">预定间数</label>
 			<select id="selectCount" data-role="none" style="width: 58%;height: 30px;">
 				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
@@ -196,7 +196,7 @@ $(document).ready(function(){
 			</select>
 	</li>
 	
-	<li style="float:right;margin-left: 10px;width: 45%;margin-right: 10px;text-align: right;">
+	<li style="float:right;margin-left: 10px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
 			<label style="font-size: 14px;color: #999999;">预定代码</label>
 			<input id="preInput" data-role="none" style="width: 56%;height: 26px;"></input>
 	</li>
