@@ -44,22 +44,27 @@
 	</div>
 </div>
 <hr style="clear:both;">
-<div data-role="none" style="padding-top:10px;padding-left:20px;">        
-		<label style="float:left;color:#999999;padding-top:5px;width:70px;font-size:16px;">预订间数</label>
-		<select id="selectCount" data-role="none">
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;1</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;2</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;3</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;4</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;5</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;6</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;7</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;8</option>
-			<option>&nbsp;&nbsp;&nbsp;&nbsp;9</option>
-		</select>
-		<label style="color:#999999;float:left;padding-left:5px;width:70px;padding-top:5px;font-size:16px;">预订代码</label>
-		<input id="preInput" data-role="none"></input>
-</div>
+<ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
+	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
+			<label style="font-size: 14px;color: #999999;">预定间数</label>
+			<select id="selectCount" data-role="none" style="width: 58%;height: 30px;">
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option>
+			</select>
+	</li>
+	
+	<li style="float:right;margin-left: 10px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
+			<label style="font-size: 14px;color: #999999;">预定代码</label>
+			<input id="preInput" data-role="none" style="width: 52%;height: 30px;box-sizing:border-box;"></input>
+	</li>
+</ul>
 <button id="search" style="background-color:#d71619;margin-top:20px;margin-left:20px;margin-bottom:20px;width:88%;height:40px;color:white;border:none;font-size:16px;" data-role="none">搜&nbsp;索</button>
 <hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
   <div data-role="main" class="ui-content"  data-theme="d" style="margin-top:0px;">
