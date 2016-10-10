@@ -114,25 +114,25 @@ $(document).ready(function(){
 		<a href=" ">
 			<img class="mainIconImg" style="margin: 0 auto;"  src="/assets/images/index/kefang.png">
 		</a >
-		<p style="font-size:10px;text-align:center;margin-top: 10px;">客房预订</p >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">客房预订</p >
 	</li> 
 	<li style="width:24.6%;text-align:center;float:left;border-right:solid 1px #dedede">
 		<a href="#">
 			<img class="mainIconImg" style="margin: 0 auto;" src="/assets/images/index/huiyi.png">
 		</a >
-		<p style="font-size:10px;text-align:center;margin-top: 10px;">会议宴会</p >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">会议宴会</p >
 	</li> 
 	<li style="width:24.6%;text-align:center;float:left;border-right:solid 1px #dedede">
 		<a href="#">
 			<img class="mainIconImg" style="margin: 0 auto;" src="/assets/images/index/canyin.png">
 		</a >
-		<p style="font-size:10px;text-align:center;margin-top: 10px;">餐饮预订</p >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">餐饮预订</p >
 	</li> 
 	<li style="width:24.6%;text-align:center;float:left;">
 		<a href="#">
 			<img class="mainIconImg" style="margin: 0 auto;" src="/assets/images/index/shangcheng.png">
 		</a >
-		<p style="font-size:10px;text-align:center;margin-top: 10px;">酒店商城</p >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">酒店商城</p >
 	</li> 
 </ul>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
@@ -214,18 +214,28 @@ $(document).ready(function(){
  	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
       <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/mediaCenter"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
       <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/joinUs" target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
-<table data-role="none" style="margin-top:15px;margin-left:20px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;">
-<tr align="center" style="margin:0px;">
-<td>
+<!-- <table data-role="none" style="margin-top:15px;margin-left:20px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;"> -->
+<!-- <tr align="center" style="margin:0px;"> -->
+<!-- <td> -->
+<!-- 		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre> -->
+<!-- 		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre> -->
+<!-- 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button> -->
+<!-- </td> -->
+<!-- <td> -->
+<!-- 		<img id="indexImg" style="height:50%;width:125px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png"> -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- </table> -->
+<ul data-role="none" style="overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0; margin: 20px;background-color: #ede9e2;border-radius: 5px;">
+	<li style="width:60%;text-align:center;float:left;padding-top: 5px;padding-bottom: 5px;">
 		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre>
 		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre>
 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button>
-</td>
-<td>
-		<img id="indexImg" style="height:50%;width:125px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png">
-</td>
-</tr>
-</table>
+	</li>
+	<li style="width:40%;text-align:center;float:left;height: 109px;">
+		<img class="iconImg" style="width: 100%;" src="/assets/images/index/drink.png">
+	<li>
+</ul>
  <div class="ui-grid-a" style="margin-top:30px;">        
 	<div class="ui-block-a" style="padding-left:25px;">
 		<p style="color:#dc291e;">瑞颐微信公众号</p>
