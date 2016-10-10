@@ -186,6 +186,7 @@
 	border-width:thin;
 	margin:5px;
 }
+ul{list-style:none ;}
 #pageone{  
      background:white;  
 } 
@@ -196,9 +197,9 @@
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  width:60px;
-  height:34px;
-  float:left;
+/*   width:60px; */
+/*   height:34px; */
+/*   float:left; */
 /*   margin-left:10px; */
   border-radius:3px;	
   border-radius:3px;
@@ -220,11 +221,11 @@
 /*   padding-right: 20px; */
 	border-radius:3px;
 	text-align:center;
-	height:38px;
-	width:60px;
-	float:left;
-/* 	margin-left:10px; */
-	margin-right:10px;	
+/* 	height:38px; */
+/* 	width:60px; */
+/* 	float:left; */
+/* /* 	margin-left:10px; */ */
+/* 	margin-right:10px;	 */
 }
 #city{
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
