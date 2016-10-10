@@ -257,15 +257,15 @@ $(document).ready(function(){
 		<img class="iconImg" style="width:100%;height:109px;" src="/assets/images/index/drink.png">
 	<li>
 </ul>
- <div class="ui-grid-a" style="margin-top:30px;">        
-	<div class="ui-block-a" style="padding-left:25px;">
-		<p style="color:#dc291e;">瑞颐微信公众号</p>
+<div class="ui-grid-a" style="margin-top:30px;">        
+	<div class="ui-block-a" style="padding-left:25px;padding-top: 6px;">
+		<p style="color:#dc291e;">瑞颐微信公众号</p >
         <img style="width:180px;align:center;padding-top:20px;" src="/assets/images/index/footerLogo.png">
 	</div>
 	<div class="ui-block-b">
-		<img class="iconImg" id="scanCode" style="padding-left:60px;" src="/assets/images/index/scanCode.png">
+		<img class="iconImg" id="scanCode" style="float: right;margin-right: 10px;" src="/assets/images/index/scanCode.png">
 	</div>
-</div> 
+</div>
 <br>
 <table style="-webkit-padding-start:100px;">
 <tr align="center" valign="middle">
