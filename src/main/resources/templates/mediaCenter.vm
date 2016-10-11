@@ -70,9 +70,13 @@
 li{
 	height:80px;	
 	vertical-align:middle;
+	
+}
+.ui-li-static.ui-li-has-thumb{
+	padding-top: 0;
+    padding-bottom: 4px;
 }
 .mediaImg{
-	height:80%;
 	vertical-align:middle;
 	padding-top:12px;
 }

@@ -21,19 +21,19 @@
 <p style="padding-left:10px;">联络地址:厦门鹭江道12号厦门瑞颐大酒店 4楼 行政办公室 361001</p>
 <hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
 <div data-role="content">
-<div>        
-	<div style="float:left;">
-		<select style="background-color:#fafafa;" data-role="none" id="unit1">
+<div style="width: 100%;">        
+	<div style="float:left;width: 30%;">
+		<select style="background-color:#fafafa;width:100%;text-align: center;" data-role="none" id="unit1">
     		<option value="1">事业发展部</option>
 		</select>
 	</div>
-	<div style="float:left;padding-left:10px;">
-		<select style="background-color:#fafafa;" data-role="none" id="unit2">
+	<div style="float:left;width: 30%;margin-left: 5%;">
+		<select style="background-color:#fafafa;width:100%;" data-role="none" id="unit2">
   	  		<option value="1">发展副总监</option>
 		</select>
 	</div>
-	<div style="float:left;padding-left:10px;">
-		<button style="background-color:#d41b23;border:none;color:white;height:34px;width:80px;" data-role="none">搜索</button>
+	<div style="float:left;width: 30%;margin-left: 5%;">
+		<button style="background-color:#d41b23;border:none;color:white;height:34px;width:100%;" data-role="none">搜索</button>
 	</div>
 </div>
 <button data-role="none" style="background:#fafafa;height:50px;width:100%;border:none;font-size:16px;margin-top:20px;padding-left:20px;"><font style="float:left;">发展副总监<font color=#8f8f8f size=2px>&nbsp;&nbsp;(事业发展部)</font></button>

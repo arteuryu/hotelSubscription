@@ -139,18 +139,18 @@ $(document).ready(function(){
 <div style="padding-left:10px;background-color:white;">
 <p><font color=red size="5px">|</font>&nbsp;&nbsp;客房预订</p>
 <pre style="font-size:14px;color:#999999;float:left;">酒店位置</pre><pre style="font-size:14px;color:black;float:left;">   我的附近  </pre><pre style="float:left;font-size:14px;color:#999999" >位置/酒店/关键词</pre>
-<div style="float:right;padding-top:14px;padding-right:14px;">
+<div style="float:right;padding-top:14px;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
 </div>
 </div>
-<hr style="clear:both;">
+<hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
 <div style="padding-left:10px;background-color:white;">
 <pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">   厦门瑞颐大酒店</pre>
-<div style="float:right;padding-top:14px;background-color:white;padding-right:14px;">
+<div style="float:right;padding-top:14px;background-color:white;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
 </div>
 </div>
-<hr style="clear:both;">
+<hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
 <div style="padding-left:10px;background-color:white;">        
 	<div style="font-size:14px;display:inline;padding-top:10px;float:left;">
 		<p style="font-size:14px;color:#999999;">时间</p>
@@ -159,11 +159,11 @@ $(document).ready(function(){
 		<p>8月16日<font style="padding-left:10px;" size="2" color="#999999">今天入住时间</font></p>
 		<p>8月17日<font style="padding-left:10px;" size="2" color="#999999">明天离店一天</font></p>		
 	</div>
-	<div style="float:right;padding-top:10px;padding-right:14px;">
+	<div style="float:right;padding-top:10px;padding-right:10px;">
 		<img src="/assets/images/index/right.png">
 	</div>
 </div>
-<hr style="clear:both;">
+<hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
 <!-- <div data-role="none" style="padding-top:10px;padding-left:10px;">         -->
 <!-- 		<label style="float:left;color:#999999;padding-top:5px;width:60px;font-size:14px;">预订间数</label> -->
 <!-- 		<select id="selectCount" data-role="none"> -->
@@ -182,8 +182,8 @@ $(document).ready(function(){
 <!-- </div> -->
 <ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
 	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
-			<label style="font-size: 14px;color: #999999;">预定间数</label>
-			<select id="selectCount" data-role="none" style="width: 58%;height: 30px;">
+			<label style="font-size: 14px;color: #999999;margin-right: 4px;">预定间数</label>
+			<select id="selectCount" data-role="none" style="width: 52%;height: 30px;">
 				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
 				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
 				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
@@ -196,12 +196,14 @@ $(document).ready(function(){
 			</select>
 	</li>
 	
-	<li style="float:right;margin-left: 10px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
-			<label style="font-size: 14px;color: #999999;">预定代码</label>
+	<li style="float:right;margin-left: 2px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
+			<label style="font-size: 14px;color: #999999;margin-right: 4px;">预定代码</label>
 			<input id="preInput" data-role="none" style="width: 52%;height: 30px;box-sizing:border-box;"></input>
 	</li>
 </ul>
-<button style="background-color:#d71619;margin-top:20px;margin-left:10px;margin-right:10px;margin-bottom:20px;width:94%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
+<div style="padding-left: 10px;padding-right: 10px;">
+<button style="background-color:#d71619;margin-top:20px;margin-bottom:10px;width:100%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
+</div>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 	<ul data-role="listview" id="listView" data-theme="d">
       <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
@@ -248,12 +250,12 @@ $(document).ready(function(){
 <!-- </tr> -->
 <!-- </table> -->
 <ul data-role="none" style="overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0; margin: 20px;background-color: #ede9e2;border-radius: 5px;">
-	<li style="width:60%;text-align:center;float:left;padding-top: 5px;padding-bottom: 5px;">
+	<li style="width:62%;text-align:center;float:left;padding-top: 5px;padding-bottom: 5px;">
 		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre>
 		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre>
 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button>
 	</li>
-	<li style="width:40%;text-align:center;float:left;height:109px;">
+	<li style="width:38%;text-align:center;float:left;height:109px;">
 		<img class="iconImg" style="width:100%;height:109px;" src="/assets/images/index/drink.png">
 	<li>
 </ul>
