@@ -103,7 +103,7 @@ if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
 if($(document.body).width()>330){
-	$("select").css("width","120px");
+	$("select").css("width","100%");
 	$("select").css("font-size","16px");
 	$("button").css("font-size","16px");
 }
