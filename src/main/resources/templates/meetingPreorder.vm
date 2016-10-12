@@ -64,7 +64,7 @@
   <div data-role="main" class="ui-content">
 
       <ul data-role="listview" id="listView" data-theme="d">
- 		<li class="nc" href="/hotelPage/meetingDetailNc">
+ 		<li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
         <img class="hotelImg" src="/assets/images/meetingRoom/nc.jpg">
         <h3>豪华宴会厅（3楼）</h3>
         <p>7.5米挑高无柱，尽显大气典雅。可容纳多达1000人的会议或者800人的宴会</p>

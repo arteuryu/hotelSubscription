@@ -43,7 +43,7 @@
 		<img src="/assets/images/index/right.png">
 	</div>
 </div>
-<hr style="clear:both;">
+<hr style="clear:both;" size="0" noshade="noshade" color=#dedede data-role="none">
 <ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
 	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
 			<label style="font-size: 14px;color: #999999;">预定间数</label>

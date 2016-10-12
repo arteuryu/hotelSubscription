@@ -31,7 +31,7 @@
 </div>
   <div data-role="main" class="ui-content">
       <ul data-role="listview" id="listView" data-theme="d">
-      <li  class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
+      <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/hotel/pic_cy01.png">
         <h3>红泰餐厅 [2楼]</h3>
         <p>最地道的泰式料理，最豪华的泰厨阵容，最惬意的用餐环境，不可错过的味觉狂欢！</p>
