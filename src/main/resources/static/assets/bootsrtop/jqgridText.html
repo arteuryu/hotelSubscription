@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
+<!--<link href="assets/css/jquery-ui-1.8.2.custom.css" rel="stylesheet" type="text/css" />--->
+<link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.full.min.css" />
+<script src="assets/js/jquery-2.0.3.min.js" type="text/javascript">
+	
+</script>
+<script src="assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+<script src="assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+	
+</script>
+</head>
+<body>
+	<!-----用来计算单元格内容实际长度的--------->
+	<div class="ui-jqgrid ui-widget ui-widget-content ui-corner-all"
+		style="position: absolute; top: -9999px">
+		<div class="ui-jqgrid-view">
+			<div class="ui-jqgrid-bdiv">
+				<div style="position: relative;">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<tr class="ui-widget-content jqgrow ui-row-ltr"
+							style="table-layout: table">
+							<td id="tdCompute" style="background: #eee; width: auto"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-----用来计算单元格内容实际长度的--------->
+	<table id="grid"></table>
+	<div id="pager"></div>
+	<input type="button" value="刷新"
+		onclick='jQuery("#grid").trigger("reloadGrid");' />
+	<script type="text/javascript">
+		$(function() {
+			jQuery("#grid")
+					.jqGrid(
+							{
+								datastr : '{"pageNo":1,"pageSize":4,"list":[{"age":"1","id":"1","name":"test1"},{"age":"2","id":"16c798763c4541138db69f02674183a0","name":"16c798763c4541138db69f02674183a0"},{"age":"3","id":"2","name":"test3"},{"age":"4","id":"3","name":"test4"}],"totalCount":8,"totalPage":2,"success":true}',
+								datatype : "jsonstring",
+								viewrecords : true,
+								jsonReader : {
+									repeatitems : false,
+									total : "lastPageNo",
+									page : "pageNo",
+									records : "totalCount",
+									root : "list"
+								},
+								gridComplete : function() {
+									doResize()
+								},
+								prmNames : {
+									page : "pageNo", // 表示请求页码的参数名称  
+									rows : "pageSize", // 表示请求行数的参数名称  
+									sort : "sort", // 表示用于排序的列名的参数名称  
+									order : "dir" // 表示采用的排序方式的参数名称  
+								},
+								height : 200,
+								colModel : [ {
+									name : 'id',
+									index : 'id'
+								}, {
+									name : 'name',
+									index : 'name'
+								}, {
+									name : 'age',
+									index : 'age'
+								} ],
+								rowNum : 10,
+								rowList : [ 10, 20, 30 ],
+								caption : "jqgrid自适应宽度"
+							});
+		});
+		function doResize() {
+			var td = $('#tdCompute')//获取计算实际列长度的容器
+			, tds//临时保存列
+			, arr = [];//用于保存最大的列宽
+			//遍历每行获得每行中的最大列宽
+			$('#gview_grid .ui-jqgrid-htable tr,#grid tr:gt(0)')
+					.each(
+							function() {
+								$(this)
+										.find('td,th')
+										.each(
+												function(idx) {
+													arr[idx] = Math
+															.max(
+																	arr[idx] ? arr[idx]
+																			: 0,
+																	td
+																			.html($(
+																					this)
+																					.text())[0].offsetWidth);
+												})
+							});
+			$('#gview_grid th').each(function(idx) {
+				this.style.width = arr[idx] + 'px'
+			});//设置页头单元格宽度       
+			$('#grid tr:eq(0) td').each(function(idx) {
+				this.style.width = arr[idx] + 'px'
+			});//设置内容表格中控制单元格宽度的单元格，在第一行
+
+			var total = $('#grid').closest('.ui-jqgrid-bdiv')[0].scrollWidth;//获取表格宽度
+			$('#grid,#gview_grid .ui-jqgrid-htable').css({
+				width : total
+			});//设置表头表格和内容表格宽度
+			$('#gbox_grid,#gview_grid,#gview_grid>div:gt(0)').css({
+				width : total + 15
+			});//设置表头表格和内容表格父容器的宽度
+		}
+	</script>
+</body>
+</html>

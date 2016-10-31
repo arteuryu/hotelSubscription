@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<title>创建首页广告图</title>
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<link href="../css/text1.css" rel="stylesheet" type="text/css">
+<link href="../css/btnUtil.css" rel="stylesheet" />
+<link href="../bootsrtop/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="../bootsrtop/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="../bootsrtop/assets/css/ace.min.css" />
+<link rel="stylesheet" href="../bootsrtop/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="../bootsrtop/assets/css/ace-skins.min.css" />
+<script src="../bootsrtop/assets/js/ace-extra.min.js"></script>
+
+<script src="../bootsrtop/assets/js/ace-extra.min.js"></script>
+<script src="../bootsrtop/assets/js/jquery-2.0.3.min.js"></script>
+<script src="../bootsrtop/assets/js/bootstrap.min.js"></script>
+<script src="../bootsrtop/assets/js/typeahead-bs2.min.js"></script>
+<script src="../bootsrtop/assets/js/ace-elements.min.js"></script>
+<script src="../bootsrtop/assets/js/ace.min.js"></script>
+<script type="text/javascript" src="../js/ace/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../js/layer/layer.js"></script>
+<script type="text/javascript" src="../js/layer/extend/layer.ext.js"></script>
+<script type="text/javascript" src="../js/ace/mainframe.js"></script>
+
+<style type="text/css">
+	.form-group input{height:32px;}
+</style>
+
+<script type="text/javascript">
+var roomIndex = 0;
+roomIndex = Number($("#roomItemBody tr").length + 1);
+var roomCkArr = new Array();
+var attachRoomId;
+var roomPrizeName;
+var roomBreakfast;
+var roomWifi;
+var roomPrize;
+var roomPayType;
+function setEleArr(){
+	attachRoomId = new Array();
+	roomPrizeName = new Array();
+	roomBreakfast = new Array();
+	roomWifi = new Array();
+	roomPrize = new Array();
+	roomPayType = new Array();
+}
+$(document).ready(function(){
+	$("#roomCkArr").click(function() {
+		var roomCkArrFlag = $("#roomCkArr").prop("checked");//选中状态
+		$("#roomItemBody tr input[name='roomCk']:enabled").each(function(){
+			var trId1 = this.id.substring(this.name.length);//循环得到需要选中的tr的id
+			var obj1 =  $("#room" + trId1);
+			obj1.find("input[name='roomCk']").prop("checked", roomCkArrFlag);
+			obj1.find("input[type='text']").attr("disabled", !roomCkArrFlag);
+			obj1.find("select").attr("disabled", !roomCkArrFlag);
+			obj1.find("textarea").attr("disabled", !roomCkArrFlag);
+			obj1.find("input[type='button'][name='prizeFullPathBtn']").attr("disabled", !roomCkArrFlag);
+			roomCkArr[trId1] = roomCkArrFlag;
+		});
+	});	
+});
+
+function deleteTrEvent(obj) {
+	$(obj).parent().parent().remove();
+}
+	
+function addTrEvent() {
+	$("#roomItemBody tbody").append($("#roomModel").text());
+	$("#roomItemBody tr:last").attr("id","room" + roomIndex);
+	var obj1 =  $("#room" + roomIndex);
+    obj1.find("input[name='roomCk']").attr("id","roomCk" + roomIndex);
+    obj1.find("input[name='roomCk']").attr("checked",true);
+    obj1.find("input[name='attachRoomId']").attr("id","attachRoomId" + roomIndex);
+    obj1.find("select[name='roomPrizeName']").attr("id","roomPrizeName" + roomIndex);
+    obj1.find("select[name='roomBreakfast']").attr("id","roomBreakfast" + roomIndex);
+    obj1.find("input[name='roomWifi']").attr("id","roomWifi" + roomIndex);
+    obj1.find("input[name='roomPrize']").attr("id","roomPrize" + roomIndex);
+    obj1.find("input[name='roomPayType']").attr("id","roomPayType" + roomIndex);
+    roomIndex++;
+    roomCkArr[roomIndex] = true;
+}
+
+function getData() {
+    setEleArr(); 
+    var tid;
+    var obj1;
+    var tempck1 = $("#roomItemBody tr input[name='roomCk']");
+    for(var i = j = 0; i < tempck1.length; i++){
+       tid = tempck1[i].id.substring(tempck1[i].name.length); 
+       obj1 = $("#room" + tid);
+       var attachRoomIdTemp = obj1.find("input[name='attachRoomId']")[0].value;
+       if(tempck1[i].checked || attachRoomIdTemp == 'undefined' || attachRoomIdTemp == ''){
+    	   attachRoomId[j] = attachRoomIdTemp == 'undefined' ?"" :attachRoomIdTemp;
+    	   roomPrizeName[j] = obj1.find("input[name='roomPrizeName']")[0].value;
+    	   roomBreakfast[j] = obj1.find("select[name='roomBreakfast']")[0].value;
+	       roomWifi[j] = obj1.find("select[name='roomWifi']")[0].value;
+	       roomPrize[j] = obj1.find("input[name='roomPrize']")[0].value;
+	       roomPayType[j]= obj1.find("select[name='roomPayType']")[0].value;
+	       j++;
+       }        
+    }
+}
+
+function saveAll(){
+	getData();
+	var roomInfoMap = {};
+	if(roomPrizeName.join(";") != ""){
+		roomInfoMap.roomPrizeName = roomPrizeName.join(";");
+		roomInfoMap.roomBreakfast  = roomBreakfast.join(";");
+		roomInfoMap.roomWifi = roomWifi.join(";");
+		roomInfoMap.roomPrize = roomPrize.join(";");
+		roomInfoMap.roomPayType = roomPayType.join(";");
+	}
+	$.ajax({
+        type: "post",
+        async: false,
+        url: "/cms/submitRoomInfo",
+        data: {
+        	"roomInfoMap" : JSON.stringify(roomInfoMap),
+        	"roomRegion" : $("input[name='roomRegion']:checked").val(),
+        	"roomName" : $("input[name='roomName']").val(),
+        	"roomPic" : $("#roomPicUpload img").attr("src"),
+        	"roomDesc" : $("#roomDesc").val()
+        },
+        dataType: "json",
+        success: function (data) {
+        	alert("操作成功！");
+        }
+    });
+	
+}
+
+var addWindowIndex = 0;
+function uploadRoomPic(){
+	addWindowIndex = layer.open({
+		type: 2,
+		title: '新增',
+		shadeClose: true,
+		shade: true,
+		shade: [0.3],
+		maxmin: true, //开启最大化最小化按钮
+		area: ['320px', '400px'],
+		content: 'bannerUpload.vm'
+	});
+}
+
+function finishOpen(win) {
+	$(win.document).find("#fileUploadForm").append('<input type="hidden" name="uploadType" value="roomPic" />');
+}
+
+function finishUpload(imageUrl,imgName){
+	$("#roomPicUpload img").attr("src",imageUrl);
+	if($("#roomPicUpload img").attr("src") != null && $("#roomPicUpload img").attr("src") != ""){
+		$("#roomPicUpload").show();
+	}
+	$("#roomPic").val(imgName);
+	layer.close(addWindowIndex);
+}
+
+
+</script>
+	</head>
+	<body>
+	<div class="page-content" style="background-color: #ffffff;">
+	<table id="roomItemBody" class="table table-striped table-bordered table-hover" style="font-size: 12px;">
+		<tbody >
+			<tr id="prizeItemBodyHead" align="center" style="font-weight: bold;">
+				<td style="display:none;">
+					<input type="checkbox" id="roomCkArr" name="ckAll">全选
+				</td>
+				<td>价格名称</td>
+				<td>早餐</td>
+				<td>无线宽带</td>
+				<td>平均房价</td>
+				<td>支付方式</td>
+				<td>操作</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="font-size:12px;">
+		<tr align="right">
+			<td colspan="10" align="center">
+				<input type="button" value="新增" class="btn-d2" id="addPrize" onclick="addTrEvent()" />&nbsp;
+			</td>
+		</tr>
+	</table>
+	<div id="roomRegionDIV" class="form-group clearfix" style="margin-top: 5px;">
+			<label><font>*</font>区域</label>
+		    <input name="roomRegion" style="width: 15px; margin-top: 5px;" type="radio" value="01" /><span>南昌</span>
+		    <input name="roomRegion" style="width: 15px; margin-top: 5px;" type="radio" value="02" /><span>厦门</span>
+    </div>
+    
+    <div id="roomNameDIV" class="form-group clearfix">
+		    <label><font>*</font>餐厅名称</label>
+		    <input class="form-control w392" id="roomName" name="roomName" type="text" value="">
+	</div>
+	
+	<div style="display: none;" class="form-group clearfix" id="roomPicUpload">
+			<label style="filter:alpha(opacity=0);opacity:0;">图片</label>
+			<img src="" width="300" height="200" />
+	   </div>
+   <div class="form-group clearfix" id="roomPicDiv">
+		<label><font>*</font>图片</label>
+		<input class="form-control input-w510 " type="text" style="width:200px !important;" name="roomPic" id="roomPic" size="40" maxlength="50" readonly="readonly">
+		<i class="Upload" onclick="uploadRoomPic()">上传图片</i>
+   </div>
+   
+   <div class="form-group clearfix" id="roomDescDIV">
+   		<label><font>*</font>介绍</label>
+   		<textarea  id="roomDesc"></textarea>
+   </div>
+   
+<table width="100%" style="font-size:12px;">
+   <tr align="right">
+     <td colspan="10" align="center">
+    	<input type="button" value="保存全部 " class="btn-t1" id="saveAll" onclick="saveAll()" />
+   	 </td>
+  </tr>
+</table>
+<textarea  id="roomModel" style="visibility: hidden;">
+ <tr bgcolor="#ffffff" align="center">
+ <td style="display:none;">
+  	<input type="checkbox" name="roomCk"> 
+  		<input type="hidden" name="attachRoomId">
+ </td>
+   <td>
+   
+		<input type="text" name="roomPrizeName"  />
+   </td>	
+    <td>
+     <select name="roomBreakfast">
+       <option value="00">无早</option>
+       <option value="01">双早</option>
+       <option value="02">三早</option>
+     </select>
+   </td>
+   <td>
+   	  <select name="roomWifi">
+       <option value="Y">免费</option>
+       <option value="N">收费</option>
+     </select>
+   </td>
+   <td>
+     <input type="text" name="roomPrize"  maxlength="10" />
+   </td>
+   <td>
+   	  <select name="roomPayType">
+	      <option value="00">预付</option>
+	      <option value="01">前台付现</option>
+      </select>
+   </td>
+   <td>
+   		<input type="button" value="删除" class="btn-d2" id="deletePrize" onclick="deleteTrEvent(this)" />
+   </td>
+   
+  </tr>
+</textarea>
+</div>
+</body>
+</html>

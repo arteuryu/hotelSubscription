@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>JQ实现鼠标经过显示大图效果-柯乐义</title>
+<meta name="description" content="JQ实现鼠标经过显示大图效果 柯乐义" />
+<meta name="keywords" content="JQ实现鼠标经过显示大图效果 keleyi.com" />
+<script type="text/javascript"
+	src="http://keleyi.com/keleyi/pmedia/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var x = 10;
+		var y = 20;
+		$("a.tooltip-keleyi-com")
+				.mouseover(
+						function(e) {
+							this.myTitle = this.title;
+							this.title = "";
+							var imgTitle = this.myTitle ? "<br />"
+									+ this.myTitle + " 产品预览图" : "";
+							var tooltip_keleyi_com = "<div id='tooltip-keleyi-com'><img src='" + this.href + "' alt='产品预览图' width='765' height='574' />"
+									+ imgTitle + "</div>";
+							$("body").append(tooltip_keleyi_com);
+							$("#tooltip-k" + "eleyi-com").css({
+								"top" : (e.pageY + y) + "px",
+								"left" : (e.pageX + x) + "px"
+							}).show("fast");
+						}).mouseout(function(e) {
+					this.title = this.myTitle;
+					$("#tooltip-keleyi-com").remove();
+				}).mousemove(function(e) {
+					$("#tooltip-keley" + "i-com").css({
+						"top" : (e.pageY + y) + "px",
+						"left" : (e.pageX + x) + "px"
+					});
+				});
+	})
+</script>
+<style>
+ul {
+	margin: 30px auto;
+	width: 1440px;
+}
+
+ul li {
+	float: left;
+	padding-right: 20px;
+	list-style: none;
+}
+
+ul li img {
+	width: 77px;
+	height: 57px;
+	padding: 6px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	-webkit-border-radius: 8px;
+}
+
+#tooltip-keleyi-com {
+	position: absolute;
+	background-color: #eee;
+	border: 1px solid #999;
+	width: 765px;
+	height: 590px;
+	-webkit-border-radius: 8px;
+	font-family: "微软雅黑";
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><a
+				href="http://keleyi.com/keleyi/phtml/image/img/bmw_m1_hood.jpg"
+				title="柯乐义1" class="tooltip-keleyi-com"><img
+					src="http://keleyi.com/keleyi/phtml/image/img/bmw_m1_hood.jpg"
+					alt="柯乐义1" />
+			</a>
+			</li>
+			<li><a
+				href="http://keleyi.com/keleyi/phtml/image/img/bmw_m1_side.jpg"
+				title="柯乐义2" class="tooltip-keleyi-com"><img
+					src="http://keleyi.com/keleyi/phtml/image/img/bmw_m1_side.jpg"
+					alt="柯乐义2" />
+			</a>
+			</li>
+			<li><a
+				href="http://keleyi.com/keleyi/phtml/image/img/bmw_m3_gt.jpg"
+				title="柯乐义3" class="tooltip-keleyi-com"><img
+					src="http://keleyi.com/keleyi/phtml/image/img/bmw_m3_gt.jpg"
+					alt="柯乐义3" />
+			</a>
+			</li>
+			<li><a
+				href="http://keleyi.com/keleyi/phtml/image/img/corvette_pitstop.jpg"
+				title="柯乐义4" class="tooltip-keleyi-com"><img
+					src="http://keleyi.com/keleyi/phtml/image/img/corvette_pitstop.jpg"
+					alt="柯乐义4" />
+			</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
