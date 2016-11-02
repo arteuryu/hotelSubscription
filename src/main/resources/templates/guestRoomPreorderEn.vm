@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<!-- <script src="/assets/js/common.js"></script> -->
+<!-- <link rel="stylesheet" href="../assets/css/guestRoomPreorder.css" /> -->
+
+</head>
+<body>
+<div data-role="page" id="pageone">
+<div data-role="header" id="pageHeader">
+  	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+  <h1>Room reservation</h1>
+  </div>
+<div data-role="none" style="background-color:#f6f6f6">
+	<table data-role="none" style="border:none;">  
+		<tbody data-role="none" style="background-color:#f6f6f6;">
+        <tr data-role="none" style="height:50px;background-color:#f6f6f6">  
+            <td data-role="none" style="padding-left:17px;">Hotel</td>  
+            <td data-role="none" style="padding-left:20px;">
+            	<select id="city" data-role="none">  
+              		<option value="nc">&nbsp;&nbsp;&nbsp;南昌</option> 
+         			<option value="xm">&nbsp;&nbsp;&nbsp;厦门</option>  
+            	</select>
+            </td>  
+        </tr>  
+        </tbody>
+      </table>
+</div>
+<hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
+<div style="padding-left:20px;background-color:white;">        
+	<div style="font-size:16px;display:inline;padding-top:10px;float:left;">
+		<p style="font-size:16px;float:left;color:#999999;">Time</p>
+	</div>
+	<div style="font-size:16px;padding-left:52px;display:inline;float:left;">
+		<p>8/16<font style="padding-left:15px;" size="2" color="#999999">Check Time</font></p>
+		<p>8/17<font style="padding-left:15px;" size="2" color="#999999">Leave Time</font></p>		
+	</div>
+	<div style="float:right;padding-top:35px;padding-right:16px;">
+		<img src="/assets/images/index/right.png">
+	</div>
+</div>
+<hr style="clear:both;" size="0" noshade="noshade" color=#dedede data-role="none">
+<ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
+	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
+			<label style="font-size: 14px;color: #999999;">Num</label>
+			<select id="selectCount" data-role="none" style="width: 58%;height: 30px;">
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option>
+			</select>
+	</li>
+	
+	<li style="float:right;margin-left: 10px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
+			<label style="font-size: 14px;color: #999999;">Code</label>
+			<input id="preInput" data-role="none" style="width: 52%;height: 30px;box-sizing:border-box;"></input>
+	</li>
+</ul>
+<button id="search" style="background-color:#d71619;margin-top:20px;margin-left:20px;margin-bottom:20px;width:88%;height:40px;color:white;border:none;font-size:16px;" data-role="none">Search</button>
+<hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
+  <div data-role="main" class="ui-content"  data-theme="d" style="margin-top:0px;">
+      <ul data-role="listview" id="listView" data-theme="d">
+      <li  class="detailItem nc" style ="border-top-width:0px;" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
+        <h3>名仕复式套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
+        <h3>豪华家庭房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/05.png">
+        <h3>豪华江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/06.png">
+        <h3>豪华江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/07.png">
+        <h3>行政江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/08.png">
+        <h3>女皇江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn" style="padding-top:10px">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/09.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" style ="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/01.png">
+        <h3>豪华大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/02.png">
+        <h3>豪华双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
+        <h3>豪华海景大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/04.png">
+        <h3>豪华海景双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/05.png">
+        <h3>豪华城景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/06.png">
+        <h3>家庭亲子套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/07.png">
+        <h3>行政海景大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/02.png">
+        <h3>行政海景双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/09.png">
+        <h3>行政海景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/10.png">
+        <h3>行政公寓套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/11.png">
+        <h3>栀椤崎套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/12.png">
+        <h3>皇家海景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+    </ul>
+    </div>
+    <style type="text/css"> 
+.hotelImg{
+	height:80%;
+	width:80%;
+	padding:2px;
+	border-style:solid;
+	border-color:#dedede;	
+	border-width:thin;
+	margin:5px;
+}
+ul{list-style:none ;}
+#pageone{  
+     background:white;  
+} 
+#preInput{
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+/*   width:60px; */
+/*   height:34px; */
+/*   float:left; */
+/*   margin-left:10px; */
+  border-radius:3px;	
+  border-radius:3px;
+}
+#selectCount {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 90% center transparent;
+  background-size:10px 10px;
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+/* 	height:38px; */
+/* 	width:60px; */
+/* 	float:left; */
+/* /* 	margin-left:10px; */ */
+/* 	margin-right:10px;	 */
+}
+#city{
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:16px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 95% center transparent;
+  background-size:10px 10px;
+  background-color:white;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+	height:34px;
+	width:200px;
+	float:right;" 
+}
+button{
+	border-radius:3px;
+}
+</style> 
+    <script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+$(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
+$(".xm").hide();
+$("#city").change(function(){
+	if($(this).val()=="nc"){
+		$(".nc").show();
+		$(".xm").hide();
+	}else{
+		$(".nc").hide();
+		$(".xm").show();
+	}
+});
+var u = navigator.userAgent;
+var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+if(isiOS){
+//	$("#preInput").css("width","80px");
+}
+//  alert($(document.body).width());
+//  alert($(document.body).height());
+if($(document.body).width()>330){
+	$("#city").css("width","250px");
+// 	$("#selectCount").css("width","80px");
+	$("#preInput").css("width","100px");
+	$("#search").css("width","90%");	
+}
+</script>
+</div>
+</body>
+</html>

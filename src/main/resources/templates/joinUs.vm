@@ -14,6 +14,10 @@
 	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
     <h1>加入我们</h1>
   </div>
+  <div style="margin:30px;">
+  <img style="width:100%;" src="/assets/images/joinUs/joinUs.jpeg">
+  <button style="background-color:#d71619;margin-top:20px;margin-bottom:10px;width:100%;height:30px;color:white;border:none;font-size:14px;" data-role="none">加入我们</button>
+  </div>
   <p style="padding-left:10px;">在瑞颐集团，我们的目标是确保有天赋和才能的专业人才在酒店行业有成功和绝佳的发展机会。</p>
   <p style="padding-left:10px;">更好地了解瑞颐的职业发展机会，并加入瑞颐找到属于您的理想位置，请联系我们。</p>
 <p style="padding-left:10px;">电子邮箱:hr@sihotels.com</p>
