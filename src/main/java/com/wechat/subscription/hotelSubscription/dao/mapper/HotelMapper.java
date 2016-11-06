@@ -128,15 +128,13 @@ public interface HotelMapper {
 			+ "where p.ID=#{confidId}")
 	public void modConfig(Map paramMap);
 	
-	@Select("select ID as id,"
+	@Select("select restaurant_name as restaurantName,"
 			+ "room_pic as roomPic,"
-			+ "restaurant_name as restaurantName,"
-			+ "room_prize_name as roomPrizeName,"
 			+ "room_desc as roomDesc,"
-			+ "room_prize as roomPrize,"
 			+ "updated_by as updatedBy "
-			+ "from cms_room_info t "
-			+ "where t.room_status = 'Y' "
+			+ "from cms_room_info "
+			+ "where room_status = 'Y' "
+			+ "group by restaurant_name,room_pic,room_desc,updated_by  "
 			+ "limit #{beginNum},#{endNum}")
 	public List<Map<String,Object>> getRoomInfoList(Map paramMap);
 	

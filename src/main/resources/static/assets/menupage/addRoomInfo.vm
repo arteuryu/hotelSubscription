@@ -52,6 +52,27 @@ function setEleArr(){
 	roomPayType = new Array();
 }
 $(document).ready(function(){
+	$("input[name='flag']").val(window.parent.flag);
+	$("input[name='roomType']").val(window.parent.roomType);
+	if($("input[name='flag']").val=="mod"){
+		$.ajax({
+		    url:'/cms/roomInfoDetail', 
+		    data:{
+		    	roomType = $("input[name='roomType']").val()
+		    },  
+		    type:'post',  
+		    cache:false,
+		    async: false,
+		    dataType:'json',  
+		    success:function(result){
+		    	if(result.flag == "Y"){
+		    		
+		    	}else{
+		    		alert("error");
+		    	}
+			}
+		});
+	}
 	$("#roomCkArr").click(function() {
 		var roomCkArrFlag = $("#roomCkArr").prop("checked");//选中状态
 		$("#roomItemBody tr input[name='roomCk']:enabled").each(function(){
@@ -169,6 +190,8 @@ function finishUpload(imageUrl,imgName){
 	</head>
 	<body>
 	<div class="page-content" style="background-color: #ffffff;">
+	<input type="hidden" name="roomType" id='roomType'>
+	<input type="hidden" name="flag"  id="flag">
 	<table id="roomItemBody" class="table table-striped table-bordered table-hover" style="font-size: 12px;">
 		<tbody >
 			<tr id="prizeItemBodyHead" align="center" style="font-weight: bold;">

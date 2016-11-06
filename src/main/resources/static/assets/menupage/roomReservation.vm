@@ -41,9 +41,6 @@ var roomInfoLists = [];
 var flag = "ad"//子页面类型：新增/修改
 $(function(){
 	tities = [
-  		{key: "id", title: "编号",width: "16%", filter: function(value, index, row) {
-  			return value;
-  		}},
   		{key: "roomPic", title: "图片",width: "16%", filter: function(value, index, row) {
   			return '<img src="' + value + '" width="80px;" height="50px;"/>';
   		}},
@@ -53,15 +50,12 @@ $(function(){
   		{key: "roomDesc", title: "介绍", width: "16%", filter: function(value, index, row) {
   			return value;
   		}},
-  		{key: "roomPrize", title: "价格", width: "16%", filter: function(value, index, row) {
-  			return value;
-  		}},
   		{key: "updatedBy", title: "发布人", width: "16%", filter: function(value, index, row) {
   			return value;
   		}},
   		{key: "ctrl", title: "操作",width: "20%", filter: function(value, index, row) {
 			var html = "";
-			html += '<input type="button" value="修改" class="btn-d2" onclick="modifyRoomInfo(\'' + row.ID + '\')" />';
+			html += '<input type="button" value="修改" class="btn-d2" onclick="modifyRoomInfo(\'' + row.restaurantName + '\')" />';
 			return html;
 		}}
   	];
@@ -102,7 +96,7 @@ function gotoPage(pageNum) {
 	});
 }
 
-//新增成员
+//新增房型
 var addWindowIndex = 0;
 function addRoomInfo(){
 	flag = "add"
@@ -118,11 +112,11 @@ function addRoomInfo(){
 	});
 	layer.full(addWindowIndex);
 }
-//修改成员
-var roomId = "";
+//修改房型
+var roomType = "";
 function modifyRoomInfo(temp){
 	flag = "mod";
-	roomId = temp;
+	roomType = temp;
 	addWindowIndex = layer.open({
 		type: 2,
 		title: '修改',

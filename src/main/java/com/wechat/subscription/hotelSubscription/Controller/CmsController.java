@@ -445,4 +445,24 @@ public class CmsController {
 		return resultMap;
 	}
 	
+	/***
+	 * 客房查询详情 
+	 * @param request
+	 * @param response
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/roomInfoDetail")
+	@ResponseBody
+	public Map roomInfoDetail(HttpServletRequest request,HttpServletResponse response) throws Exception{
+		Map paramMap = new HashMap();
+		String roomType = request.getParameter("roomType");
+//		List roomInfoDetail = hotelService.roomInfoDetail(paramMap);
+		
+		Map resultMap = new HashMap();
+		resultMap.put("flag", "Y");
+//		resultMap.put("roomInfoList", roomInfoDetail);
+		return resultMap;
+	}
+	
 }
