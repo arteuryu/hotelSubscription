@@ -134,4 +134,68 @@ public class HotelPageController {
 	public String comingsoonEn(){
 		return "comingsoonEn";
 	}
+	@RequestMapping("/historyTra")
+	public String getHistoryTraPage(){
+		return "historyTra";
+	}
+	@RequestMapping("/privacyTra")
+	public String getPrivacyTraPage(){
+		return "privacyTra";
+	}
+	@RequestMapping("/aboutTra")
+	public String getAboutTraPage(){
+		return "aboutTra";
+	}
+	@RequestMapping("/commingSoonTra")
+	public String commingSoonTraPage(){
+		return "commingSoonTra";
+	}
+	@RequestMapping("/hotelSelectTra")
+	public String getHotelPreorderTra(){
+		return "hotelSelectTra";
+	}
+	@RequestMapping("/restaurantPreorderTra")
+	public String getRestaurantPreorderTra(){
+		return "restaurantPreorderTra";
+	}
+	@RequestMapping("/brandOverviewTra")
+	public String getBrandOverviewTra(){
+		return "brandOverviewTra";
+	}
+	@RequestMapping("/guestRoomPreorderTra")
+	public String getGuestRoomPreorderTra(){
+		return "guestRoomPreorderTra";
+	}
+	@RequestMapping("/meetingPreorderTra")
+	public String getMeetingPreorderTra(){
+		return "meetingPreorderTra";
+	}
+	@RequestMapping("/meetingDetailNcTra")
+	public String getMeetingDetailNcTra(){
+		return "meetingDetailNcTra";
+	}
+	@RequestMapping("/meetingDetailXmTra")
+	public String getMeetingDetailXmTra(){
+		return "meetingDetailXmTra";
+	}
+	@RequestMapping("/mediaCenterTra")
+	public String getMediaCenterTra(){
+		return "mediaCenterTra";
+	}
+	@RequestMapping("/mediaDetailTra")
+	public String getMediaDetailTra(){
+		return "mediaDetailTra";
+	}
+	@RequestMapping("/joinUsTra")
+	public String joinUsTra(){
+		return "joinUsTra";
+	}
+	@RequestMapping("/indexTra")
+	public String indexTra(){
+		return "mobileIndexTra";
+	}
+	@RequestMapping("/comingsoonTra")
+	public String comingsoonTra(){
+		return "comingsoonTra";
+	}
 }

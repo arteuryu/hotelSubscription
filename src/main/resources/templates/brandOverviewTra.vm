@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+<!--   	<a href="#" data-icon="arrow-l"></a> -->
+    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+    <h1>品牌概覽</h1>
+  </div>
+<div data-role="content" style="text-indent:2em">
+<h3>國際化的品質，本土化的親切感</h3>
+<p>總部設於瑞士格朗，集團遵循以下標誌性的八大“瑞士品質”</p>
+<img src="/assets/images/about/pic_06.png" style="width:100%">
+<p>
+瑞頤打造出的環境將讓您擁抱成功，不斷的感受到卓越、品質和成就。集團對於這些價值的追求滲透在方方面面的細節中，從公司運營的管道，到將公司的品牌展示給市場的舉措無不體現其熱忱之心。</p>
+<img src="/assets/images/about/pic_07.png" style="width:100%">
+<p>瑞頤國際酒店集團於2011年正式登入中國，現時已經進駐廈門（已於2012年4月下旬開業運營），南昌（已於2015開業），上海（預計2018年開業），北京、杭州（預計2019年開業）。即將簽約項目涵蓋中國主要的大中城市。在上海、蘇州、成都、臺灣、大連、天津、海口、西安、中山、常州和淮南等地。
+</p>
+<img src="/assets/images/about/pic_08.png" style="width:100%">
+<p>
+瑞頤標識的覈心部分SWISS正是代表著瑞頤的正宗的瑞士血統，對瑞頤來說，不僅僅是五個字母的簡單涵義，其中更融入了品牌的精髓：瑞士品質、精英團隊、量身定制、生態環保、卓越回報。
+</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>
