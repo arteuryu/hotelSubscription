@@ -1,6 +1,7 @@
 package com.wechat.subscription.hotelSubscription.service.impl;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,5 +25,7 @@ public class HotelServiceImpl implements HotelService{
 	public List menuTest() throws Exception {
 		return hotelDAO.menuTest();
 	}
-	
+	public List<Map<String,Object>> roomList(String city) throws Exception{
+		return hotelDAO.roomList(city);
+	}
 }

@@ -1,6 +1,7 @@
 package com.wechat.subscription.hotelSubscription.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,5 +17,9 @@ public class HotelDAO {
 	}
 	public List menuTest() {
 		return hotelMapper.menuTest();
+	}
+	
+	public List<Map<String,Object>> roomList(String city){
+		return hotelMapper.getRoomList(city);
 	}
 }

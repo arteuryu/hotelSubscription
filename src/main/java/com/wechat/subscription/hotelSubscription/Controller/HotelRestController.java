@@ -1,5 +1,9 @@
 package com.wechat.subscription.hotelSubscription.Controller;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,5 +41,15 @@ public class HotelRestController {
 		}
 		return "authenrize fail";		
 	}
-
+	@RequestMapping("/getRoomList")
+	public List<Map<String,Object>> getRoomList(@RequestParam("city") String city){
+		List<Map<String,Object>> roomList = new ArrayList<Map<String,Object>>();
+		try {
+			roomList = hotelService.roomList(city);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return roomList;
+	}
 }

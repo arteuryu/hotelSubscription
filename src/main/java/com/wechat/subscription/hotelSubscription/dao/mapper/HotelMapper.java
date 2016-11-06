@@ -17,4 +17,7 @@ public interface HotelMapper {
 	
 	@Select("select * from cms_menu_info order by menu_code")
 	public List<Map<String,Object>> menuTest();
+	
+	@Select("select * from cms_room_info where restaurant_region=#{city}")
+	public List<Map<String,Object>> getRoomList(String city);
 }  
