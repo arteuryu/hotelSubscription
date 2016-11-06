@@ -23,7 +23,7 @@
 		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
 	</li>
 	<li class="smallIcon" style="display:inline;float:right; padding-top:5px;list-style:none">
-		<a href="#popUpLang" data-rel="popup" data-transition="pop"><span id="lang" style="font-size:14px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">简</span></a>
+		<a href="#popUpLang" data-rel="popup" data-transition="pop"><span id="lang" style="font-size:14px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">En</span></a>
 		<img  style="height:10px;width:10px;"src="/assets/images/index/down.png"></img>
 	</li>
 </ul>
