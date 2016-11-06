@@ -22,13 +22,13 @@
 	<li class="smallIcon" style="display:inline;float:right; list-style:none">
 		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
 	</li>
-		<li class="smallIcon" style="display:inline;float:right; list-style:none">
+		<li class="smallIcon" style="display:inline;float:right; padding-top:5px;list-style:none">
 <!-- 		<select style="font-size:14px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;" data-role="none" onchange="self.location.href=options[selectedIndex].value"> -->
 <!-- 			<option >繁</option>			 -->
 <!-- 			<option value="/hotelPage/indexEn">EN</option> -->
 <!-- 			<option value="/hotelPage/index">简</option>			 -->
 <!-- 		</select> -->
-		<span id="lang" style="font-size:14px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">EN</span>
+		<a href="#popUpLang" data-rel="popup" data-transition="pop"><span id="lang" style="font-size:14px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">繁</span></a>
 		<img  style="height:10px;width:10px;"src="/assets/images/index/down.png"></img>
 	</li>
 </ul>
@@ -253,17 +253,17 @@ $(document).ready(function(){
 <span data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#666666;">關閉</span>
 </div>
 </div>
-<div data-role="popup" id="popUpLang" data-theme="a" class="ui-content" data-position-to="#lang" style="font-size:15px;width:80px;margin-top:10px;">
+<div data-role="popup" id="popUpLang" data-theme="a" class="ui-content" data-position-to="#lang" style="font-size:15px;margin-top:10px;">
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/index" target="_blank">简</a></p>
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">繁</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/index">简</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/indexEn">En</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/indexEn" target="_blank">En</a></p>
 </div>
 <div data-role="popup" id="popUpMenu" data-theme="a" class="ui-content" data-position-to="#indexMenu" style="font-size:15px;width:80px;margin-top:10px;">
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">首頁</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/hotelSelectTra">瑞頤酒店</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/aboutTra">關於瑞頤</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenterTra">媒體中心</a></p>
-<p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUsTra">加入我們</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/hotelSelectTra" target="_blank">瑞頤酒店</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/aboutTra" target="_blank">關於瑞頤</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenterTra" target="_blank">媒體中心</a></p>
+<p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUsTra" target="_blank">加入我們</a></p>
 </div>
 <style type="text/css">
 #pageone{  
