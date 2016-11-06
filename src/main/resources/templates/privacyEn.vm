@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<title>Privacy Policy</title>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+<!--   	<a href="#" data-icon="arrow-l"></a> -->
+	<a class="pageHeader" href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>
+    <h1>Privacy Policy</h1>
+  </div>
+<div data-role="content" style="text-indent:2em">
+<p>The privacy and security of your personal information is very important to us. We do not share your personal information in ways without your informed permission. We value your trust very highly, and we strive to protect the confidentiality and appropriate use of any personal information you provide to us.</p>
+<p>1. WE WILL NOT sell, rent, or lease your personal information;</p>
+<p>2. WE WILL NOT keep you on our mailing lists if you have requested to be removed; </p>
+<p>3. WE WILL NOT share your information with any trading partners unless you have requested information, products, or services that can be best handled by another company.</p>
+<p>We will treat your privacy very seriously and will adhere to this Privacy Statement. We will promote this Privacy Statement internally so all employees abide by it. We will keep this Privacy Statement accurate. This Privacy Statement is subject to change so check often.</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>
