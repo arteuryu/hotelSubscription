@@ -185,25 +185,25 @@ $(document).ready(function(){
 </div>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 	<ul data-role="listview" id="listView" data-theme="d">
-      <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=en">
         <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
         <h3>豪华海景大床房<span style="float:right"><font size="2px">查看详情</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
         <span>CNY:<font color=red>1236</font></span>
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=en">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
         <h3>名仕复式套房<span style="float:right"><font size="2px">查看详情</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
 		<span>CNY:<font color=red>1236</font></span>      
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=en">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
         <h3>豪华家庭房<span style="float:right"><font size="2px">查看详情</font></span></h3>
         <p>58平方米的宽敞豪华城景房</p>
 		<span>CNY:<font color=red>1236</font></span>             
       </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=en">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
         <h3>高级大床房<span style="float:right"><font size="2px">查看详情</font></span></h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
