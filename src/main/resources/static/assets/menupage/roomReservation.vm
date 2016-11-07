@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<title>客房预订</title>
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<link href="../css/text1.css" rel="stylesheet" type="text/css">
+<link href="../css/btnUtil.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/ace/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../js/ace/mainframe.js"></script>
+<script type="text/javascript" src="../js/ace/common.js"></script>
+<script type="text/javascript" src="../js/ace/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../js/layer/layer.js"></script>
+<script type="text/javascript" src="../js/layer/extend/layer.ext.js"></script>
+
+<style type="text/css">
+	.form-group input{height:24px;}
+</style>
+</head>
+<body>
+	<div class="clearfix">
+	</div>
+	<div class="clearfix" style="margin-top: 20px;">
+		<input type="button" class="btn-f1 inquire-btn add-btn l" value="新增客房" onclick="addRoomInfo()" />
+	</div>
+	<div class="clear"></div>
+	<div class="Home-manage-List">
+		<table id="dataTable" cellpadding="0" cellspacing="0" border="0" width="100%" class="data-table-1"></table>
+	</div>
+</body>
+<script type="text/javascript">
+var tities = [];
+var pageIndex = 1;
+var tableId = "dataTable";
+var roomInfoLists = [];
+var flag = "ad"//子页面类型：新增/修改
+$(function(){
+	tities = [
+  		{key: "roomPic", title: "图片",width: "16%", filter: function(value, index, row) {
+  			return '<img src="' + value + '" width="80px;" height="50px;"/>';
+  		}},
+  		{key: "restaurantName", title: "房型", width: "16%", filter: function(value, index, row) {
+  			return value;
+  		}},
+  		{key: "roomDesc", title: "介绍", width: "16%", filter: function(value, index, row) {
+  			return value;
+  		}},
+  		{key: "updatedBy", title: "发布人", width: "16%", filter: function(value, index, row) {
+  			return value;
+  		}},
+  		{key: "ctrl", title: "操作",width: "20%", filter: function(value, index, row) {
+			var html = "";
+			html += '<input type="button" value="修改" class="btn-d2" onclick="modifyRoomInfo(\'' + row.restaurantName + '\')" />';
+			return html;
+		}}
+  	];
+	initTable(tableId, tities, true);
+	gotoPage(1)
+});
+
+function gotoPage(pageNum) {
+	var pageSize = 2;//每页多少条
+	var pageWidth = 9; //有几页;
+	$.ajax({
+		url: '/cms/queryRooms',
+		type: "POST",
+		dataType:"json",
+		cache: false,
+		data: {
+			"pageNum" : pageNum,
+			"pageSize" : pageSize
+		},
+		beforeSend: function(XMLHttpRequest){
+		},
+		success: function(result) {
+			if (result.flag == 'Y') {
+				roomInfoLists = result.roomInfoList;
+				var rows = result.roomInfoList;
+				setPager(tableId, 'gotoPage', result.dataCount, pageNum, pageSize, pageWidth);
+				setData(tableId, tities, rows);
+				pageIndex = pageNum;
+			} else {
+				alert("fail");
+			}
+	    },
+	    error: function(xmlHttpRequest, textStatus, errorThrown) {
+			//alert("error");
+		},
+		complete: function(XMLHttpRequest, textStatus){
+		}
+	});
+}
+
+//新增房型
+var addWindowIndex = 0;
+function addRoomInfo(){
+	flag = "add"
+	addWindowIndex = layer.open({
+		type: 2,
+		title: '新增',
+		shadeClose: true,
+		shade: true,
+		shade: [0.3],
+		maxmin: true, //开启最大化最小化按钮
+		area: ['1000px', '600px'],
+		content: 'addRoomInfo.vm'
+	});
+	layer.full(addWindowIndex);
+}
+//修改房型
+var roomType = "";
+function modifyRoomInfo(temp){
+	flag = "mod";
+	roomType = temp;
+	addWindowIndex = layer.open({
+		type: 2,
+		title: '修改',
+		shadeClose: true,
+		shade: true,
+		shade: [0.3],
+		maxmin: true, //开启最大化最小化按钮
+		area: ['1000px', '600px'],
+		content: 'addRoomInfo.vm'
+	});
+	layer.full(addWindowIndex);
+}
+
+</script>
+</html>

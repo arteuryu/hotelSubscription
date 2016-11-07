@@ -1,0 +1,1022 @@
+/* -------------------------------- 整体页面默认样式 ----------------------------- */
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+	scrollbar-face-color: #B8CBF6;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #F3F1EC;
+	scrollbar-darkshadow-color: #9FB5D2;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #ffffff;
+	background-color: #EBEEF7;
+}
+
+td,table {
+	font-size: 13px;
+	color: #000000;
+	word-break: break-all;
+}
+/*
+p {
+	text-indent: 0em;
+}
+*/
+li,input,select {
+	font-size: 12px;
+	color: #000000;
+	word-break: break-all;
+}
+
+/* -------------------------------- 导航菜单样式 ----------------------------- */
+.navigation {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	color: #4F5B75;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.navigation a:link {
+	color: #4F5B75;
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	color: #4F5B75;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	text-decoration: underline;
+}
+
+.navigation a:active {
+	color: #4F5B75;
+	text-decoration: none;
+}
+
+.navigation1 {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.navigation1 a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navigation1 a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navigation1 a:hover {
+	text-decoration: underline;
+}
+
+.navigation1 a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navigation2 {
+	PADDING-RIGHT: 6px;
+	PADDING-LEFT: 6px;
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #FFFFFF;
+	line-height: 16px;
+}
+
+.navigation2 a:link {
+	PADDING-RIGHT: 6px;
+	PADDING-LEFT: 6px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navigation2 a:visited {
+	PADDING-RIGHT: 6px;
+	PADDING-LEFT: 6px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navigation2 a:hover {
+	PADDING-RIGHT: 6px;
+	PADDING-LEFT: 6px;
+	text-decoration: underline;
+	color: #FFFFFF;
+	BACKGROUND-COLOR: #A1B5D8;
+}
+
+.navigation2 a:active {
+	PADDING-RIGHT: 6px;
+	PADDING-LEFT: 6px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* -------------------------------- 顶部快捷菜单文字样式 ----------------------------- */
+.linka {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.linka a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.linka a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.linka a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.linka a:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* -------------------------------- 下拉菜单控件样式 ----------------------------- */
+.TopGroup {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-RIGHT: #57566f 0px solid;
+	BORDER-TOP: #696885 0px solid;
+	BORDER-LEFT: #696885 0px solid;
+	CURSOR: hand;
+	BORDER-BOTTOM: #57566f 0px solid;
+}
+
+.MenuGroup {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-RIGHT: #4e5358 1px solid;
+	BORDER-TOP: #4e5358 1px solid;
+	BORDER-LEFT: #4e5358 1px solid;
+	CURSOR: hand;
+	BORDER-BOTTOM: #4e5358 1px solid;
+	BACKGROUND-COLOR: #f5f5f5;
+}
+
+.TopMenuItem {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 13px;
+	CURSOR: hand;
+	COLOR: white;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.TopMenuItemHover {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 13px;
+	CURSOR: hand;
+	COLOR: white;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	BACKGROUND-COLOR: #A1B5D8;
+}
+
+.MenuItem {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-RIGHT: #f5f5f5 1px solid;
+	BORDER-TOP: #f5f5f5 1px solid;
+	FONT-SIZE: 12px;
+	BORDER-LEFT: #f5f5f5 1px solid;
+	CURSOR: hand;
+	COLOR: #00025c;
+	BORDER-BOTTOM: #f5f5f5 1px solid;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.MenuItemHover {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-RIGHT: #57566f 1px solid;
+	BORDER-TOP: #9190ac 1px solid;
+	FONT-SIZE: 12px;
+	BORDER-LEFT: #9190ac 1px solid;
+	CURSOR: hand;
+	COLOR: #333333;
+	BORDER-BOTTOM: #57566f 1px solid;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	BACKGROUND-COLOR: #ffeec2;
+}
+
+.MenuItemExpanded {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-RIGHT: #9190ac 1px solid;
+	BORDER-TOP: #57566f 1px solid;
+	FONT-SIZE: 12px;
+	BORDER-LEFT: #57566f 1px solid;
+	CURSOR: hand;
+	COLOR: #333333;
+	BORDER-BOTTOM: #9190ac 1px solid;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	BACKGROUND-COLOR: #ffeec2;
+}
+
+.MenuBreak {
+	WIDTH: 100%;
+	HEIGHT: 2px;
+	BACKGROUND-COLOR: silver;
+}
+
+/* -------------------------------- 登录者信息文字样式 ----------------------------- */
+.info {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #999999;
+	padding-left: 2px;
+}
+
+/* -------------------------------- 当前时间文字样式 ----------------------------- */
+.time {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #000000;
+	line-height: 20px;
+}
+
+/* -------------------------------- 版权声明文字样式 ----------------------------- */
+.copyright {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #4F6FA8;
+}
+
+/* -------------------------------- 在线人数文字样式 ----------------------------- */
+.people {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #cccccc;
+}
+
+/* -------------------------------- 页面当前位置文字样式 ----------------------------- */
+.address {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+	line-height: 20px;
+}
+
+.address a:link {
+	color: #A63E19;
+	text-decoration: none;
+}
+
+.address a:visited {
+	color: #A63E19;
+	text-decoration: none;
+}
+
+.address a:hover {
+	color: #A63E19;
+	text-decoration: underline;
+}
+
+.address a:active {
+	color: #A63E19;
+	text-decoration: none;
+}
+
+/* -------------------------------- 查询表单文字样式 ----------------------------- */
+.form_text {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	color: #000000;
+	line-height: 20px;
+}
+
+/* -------------------------------- 正文文字样式 ----------------------------- */
+.text {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+	line-height: 20px;
+}
+
+/* -------------------------------- 文章正标题样式 ----------------------------- */
+.text_title {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+}
+
+/* -------------------------------- 文章副标题样式 ----------------------------- */
+.text_title2 {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #666666;
+	font-weight: bold;
+}
+
+/* -------------------------------- 文章发布时间样式 ----------------------------- */
+.text_time {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+/* -------------------------------- 文章类别或者发布部门说明样式 ----------------------------- */
+.text_type {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+/* -------------------------------- 文章来源，出处，作者样式 ----------------------------- */
+.text_author {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+/* -------------------------------- 新闻列表文字样式 ----------------------------- */
+.news {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #999999;
+}
+
+.news a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.news a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.news a:hover {
+	color: #A63E19;
+	text-decoration: underline;
+}
+
+.news a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* -------------------------------- 公告列表文字样式 ----------------------------- */
+.affiche {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+}
+
+.affiche a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.affiche a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.affiche a:hover {
+	color: #A63E19;
+	text-decoration: underline;
+}
+
+.affiche a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* -------------------------------- 更多或者详细内容字体样式 ----------------------------- */
+.more {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #666666;
+}
+
+.more a:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+.more a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+.more a:hover {
+	color: #A63E19;
+	text-decoration: underline;
+}
+
+.more a:active {
+	color: #666666;
+	text-decoration: none;
+}
+
+/* -------------------------------- 翻页,页数等文字样式 ----------------------------- */
+.pages {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+}
+
+.pages a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.pages a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.pages a:hover {
+	color: #F15A23;;
+	text-decoration: underline;
+}
+
+.pages a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* -------------------------------- 登录页面文字样式 ----------------------------- */
+.logon {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+	line-height: 20px;
+}
+
+/* -------------------------------- 表格样式 ----------------------------- */
+.table_1 {
+	border: 1px solid #95a7bf;
+	border-collapse: collapse;
+}
+
+/* -------------------------------- 一级文字表格样式(表头标题) ----------------------------- */
+.td_1 {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	color: #4f5b75;
+	background-color: #b7c1d7;
+	font-weight: bold;
+	border: 1px solid #95a7bf;
+	border-collapse: collapse;
+}
+
+/* -------------------------------- 一级文字表格样式二 ----------------------------- */
+.td_2 {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+	background-color: #FFF9F4;
+	border: 1px solid #95a7bf;
+	border-collapse: collapse;
+}
+
+/* -------------------------------- 次级文字表格样式 ----------------------------- */
+.td_3 {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	color: #000000;
+	border: 1px solid #95a7bf;
+	border-collapse: collapse;
+}
+
+.td_3 a:link {
+	color: #000000;
+}
+
+.td_3 a:visited {
+	color: #000000;
+}
+
+.td_3 a:hover {
+	color: #F15A23;
+}
+
+.td_3 a:active {
+	color: #000000;
+}
+
+/* -------------------------------- 输入框特殊定制样式 ----------------------------- */
+.input1 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	border: 1px #666666 solid;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	height: 17px;
+	background-color: #FFFFFF;
+}
+
+/* -------------------------------- 输入框不可用时变灰处理样式 ----------------------------- */
+.input2 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	height: 17px;
+	background-color: #DDDDDD;
+}
+
+/* -------------------------------- 文本域特殊定制样式 ----------------------------- */
+.text_area_1 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	border: 1px #666666 solid;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	background-color: #FFFFFF;
+}
+
+/* -------------------------------- 按钮样式 ----------------------------- */
+.button1 {
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../images/button_bg1.gif);
+	width: 60px;
+	height: 27px;
+	border: 0px solid;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 1px;
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	cursor: hand;
+}
+
+.button2 {
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../images/button_bg2.gif);
+	width: 60px;
+	height: 27px;
+	border: 0px solid;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 1px;
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+/* -------------------------------- 日期输入控件样式 ----------------------------- */
+.calendar {
+	position: relative;
+	display: none;
+	border-top: 2px solid #FFFFFF;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-left: 2px solid #FFFFFF;
+	font-size: 12px;
+	color: #000000;
+	cursor: default;
+	background: #FFDDD1;
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.calendar table {
+	border-top: 1px solid #000000;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #000000;
+	font-size: 12px;
+	color: #000000;
+	cursor: default;
+	background: #F5F5F5;
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.calendar .button {
+	text-align: center;
+	padding: 1px;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #FFFFFF;
+}
+
+.calendar .nav {
+	background: transparent url(../images/menuarrow.gif) no-repeat 100% 100%;
+}
+
+.calendar thead .title {
+	font-weight: bold;
+	padding: 1px;
+	border: 1px solid #000000;
+	background: #FFDDD1;
+	color: #CC0000;
+	text-align: center;
+}
+
+.calendar thead .headrow {
+	
+}
+
+.calendar thead .daynames {
+	
+}
+
+.calendar thead .name {
+	border-bottom: 1px solid #000000;
+	padding: 2px;
+	text-align: center;
+	background: #CCCCCC;
+}
+
+.calendar thead .weekend {
+	color: #F00000;
+}
+
+.calendar thead .hilite {
+	border-top: 2px solid #FFFFFF;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-left: 2px solid #FFFFFF;
+	padding: 0px;
+	background-color: #D7D7D7;
+}
+
+.calendar thead .active {
+	padding: 2px 0px 0px 2px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #000000;
+	background-color: #CCCCCC;
+}
+
+.calendar tbody .day {
+	width: 2em;
+	text-align: right;
+	padding: 2px 4px 2px 2px;
+}
+
+.calendar tbody .day.othermonth {
+	font-size: 80%;
+	color: #333333;
+}
+
+.calendar tbody .day.othermonth.oweekend {
+	color: #faa;
+}
+
+.calendar table .wn {
+	padding: 2px 3px 2px 2px;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+}
+
+.calendar tbody .rowhilite td {
+	background: #E7E7E7;
+}
+
+.calendar tbody .rowhilite td.wn {
+	background: #EFEFEF;
+}
+
+.calendar tbody td.hilite {
+	padding: 1px 3px 1px 1px;
+	border: 1px solid;
+	border-color: #FFFFFF #000000 #000000 #FFFFFF;
+}
+
+.calendar tbody td.active {
+	padding: 2px 2px 0px 2px;
+	border: 1px solid;
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.calendar tbody td.selected {
+	font-weight: bold;
+	padding: 2px 2px 0px 2px;
+	border: 1px solid;
+	border-color: #000000 #ffffff #ffffff #000000;
+	background: #CCCCCC;
+}
+
+.calendar tbody td.weekend {
+	color: #f00000;
+}
+
+.calendar tbody td.today {
+	font-weight: bold;
+	color: #0000F0;
+}
+
+.calendar tbody .disabled {
+	color: #999999;
+}
+
+.calendar tbody .emptycell {
+	visibility: hidden;
+}
+
+.calendar tbody .emptyrow {
+	display: none;
+}
+
+.calendar tfoot .footrow {
+	
+}
+
+.calendar tfoot .ttip {
+	padding: 1px;
+	border: 1px solid #000000;
+	background: #788084;
+	color: #ffffff;
+	text-align: center;
+}
+
+.calendar tfoot .hilite {
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #ffffff;
+	padding: 1px;
+	background: #cccccc;
+}
+
+.calendar tfoot .active {
+	padding: 2px 0px 0px 2px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	border-left: 1px solid #000000;
+}
+
+.calendar .combo {
+	position: absolute;
+	display: none;
+	width: 4em;
+	top: 0px;
+	left: 0px;
+	cursor: default;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #ffffff;
+	background: #E0E0E0;
+	font-size: 12px;
+	padding: 1px;
+	z-index: 100;
+}
+
+.calendar .combo .label,.calendar .combo .label-IEfix {
+	text-align: center;
+	padding: 1px;
+}
+
+.calendar .combo .label-IEfix {
+	width: 4em;
+}
+
+.calendar .combo .active {
+	background: #cccccc;
+	padding: 0px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	border-left: 1px solid #000000;
+}
+
+.calendar .combo .hilite {
+	background: #666666;
+	color: #FFFFFF;
+}
+
+.calendar td.time {
+	border-top: 1px solid #000;
+	padding: 1px 0px;
+	text-align: center;
+	background-color: #E1E1E1;
+}
+
+.calendar td.time .hour,.calendar td.time .minute,.calendar td.time .ampm
+	{
+	padding: 0px 3px 0px 4px;
+	border: 1px solid #666666;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+.calendar td.time .ampm {
+	text-align: center;
+}
+
+.calendar td.time .colon {
+	padding: 0px 2px 0px 3px;
+	font-weight: bold;
+}
+
+.calendar td.time span.hilite {
+	border-color: #000000;
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.calendar td.time span.active {
+	border-color: #f00000;
+	background-color: #000000;
+	color: #00FF00;
+}
+
+/* -------------------------------- 公告板信息文字样式 ----------------------------- */
+.mission {
+	font-family: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 14px;
+	color: #FF6000;
+	font-weight: bold;
+}
+
+.mission a:link {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.mission a:visited {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.mission a:hover {
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+.mission a:active {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+/* -------------------------------- 树形菜单样式 ----------------------------- */
+.TreeView {
+	PADDING-LEFT: 1px;
+	CURSOR: hand;
+	PADDING-TOP: 4px;
+	BACKGROUND-COLOR: white
+}
+
+.TreeNode {
+	color: #4F5B75;
+	CURSOR: hand;
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	PADDING-BOTTOM: 1px;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.GrayedTreeNode {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	PADDING-BOTTOM: 1px;
+	CURSOR: hand;
+	COLOR: gray;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.HoverTreeNode {
+	color: #F15A23;
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	PADDING-BOTTOM: 1px;
+	CURSOR: hand;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	TEXT-DECORATION: underline
+}
+
+.SelectedTreeNode {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	PADDING-BOTTOM: 1px;
+	CURSOR: hand;
+	COLOR: white;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	BACKGROUND-COLOR: #849ACA;
+}
+
+.NodeEdit {
+	BORDER-RIGHT: gray 1px solid;
+	BORDER-TOP: gray 1px solid;
+	FONT-SIZE: 12px;
+	BORDER-LEFT: gray 1px solid;
+	BORDER-BOTTOM: gray 1px solid;
+	FONT-FAMILY: "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+/* -------------------------------- 上传业务员信息样式 ----------------------------- */
+.table_type1 {
+	width: 100%;
+	border-collapse: collapse;
+	border: #CCCCCC 1px solid;
+}
+
+.table_type1 td {
+	padding: 6px 0px;
+	border: 1px solid #CCCCCC;
+}
+
+.table_type1 .option {
+	text-align: right;
+	text-align: center;
+	width: 100px;
+	background: url(../images/bkg_tableOption.gif) repeat-x 0px 0px #f6f6f6;
+}
+
+.table_type1 .inputBox {
+	padding-left: 6px;
+}
+
+.table_type1 .editProjectInf {
+	float: right;
+	margin-right: 12px;
+	color: #FF6600;
+}
+
+.table_type1 .option2 {
+	text-align: center;
+	background: url(../images/bkg_tableOption.gif) repeat-x 0px 0px #f6f6f6;
+}
+
+.input_1 {
+	width: 200px;
+	height: 22px;
+	line-height: 22px;
+	border: #999999 1px solid;
+}
