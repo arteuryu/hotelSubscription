@@ -93,6 +93,7 @@ public class HotelDAO {
 	
 	public void delRoomInfo (Map paramMap) {
 		hotelMapper.delRoomInfo(paramMap);
+	}
 	public List<Map<String,Object>> roomList(String city){
 		return hotelMapper.getRoomList(city);
 	}
