@@ -409,12 +409,19 @@ public class CmsController {
 	 */
 	@RequestMapping("/submitRoomInfo")
 	@ResponseBody
-	public Map submitRoomInfo(HttpServletRequest request,HttpServletResponse response) throws Exception{
+	public Map submitRoomInfo(HttpServletRequest request,HttpServletResponse response) throws Exception{ 
 		String roomInfoStr = (String)request.getParameter("roomInfoMap");
 		String roomRegion = (String) request.getParameter("roomRegion");
 		String roomName = (String) request.getParameter("roomName");
 		String roomPic = (String) request.getParameter("roomPic");
 		String roomDesc = (String) request.getParameter("roomDesc");
+		String pageFlag = (String) request.getParameter("flag");
+		if("mod".equals(pageFlag)){
+			String roomNameOrign = (String) request.getParameter("roomNameOrign");
+			Map paramMap =new HashMap<String, String>();
+			paramMap.put("roomNameOrign", roomNameOrign);
+			hotelService.delRoomInfo(paramMap);
+		}
 		Map roomInfoMap = formatStringToMap(roomInfoStr);
 		String roomPrizeName = (String) roomInfoMap.get("roomPrizeName");
 		String roomBreakfast = (String) roomInfoMap.get("roomBreakfast");
@@ -457,11 +464,11 @@ public class CmsController {
 	public Map roomInfoDetail(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		Map paramMap = new HashMap();
 		String roomType = request.getParameter("roomType");
-//		List roomInfoDetail = hotelService.roomInfoDetail(paramMap);
-		
+		paramMap.put("roomType", roomType);
+		List roomInfoDetailList = hotelService.roomInfoDetail(paramMap);
 		Map resultMap = new HashMap();
 		resultMap.put("flag", "Y");
-//		resultMap.put("roomInfoList", roomInfoDetail);
+		resultMap.put("roomInfoDetailList", roomInfoDetailList);
 		return resultMap;
 	}
 	

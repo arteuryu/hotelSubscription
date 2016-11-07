@@ -86,4 +86,12 @@ public class HotelDAO {
 	public void submitRoonInfo(Map tmpMap) {
 		hotelMapper.submitRoonInfo(tmpMap);
 	}
+	
+	public List roomInfoDetail(Map paramMap) {
+		return hotelMapper.roomInfoDetail(paramMap);
+	}
+	
+	public void delRoomInfo (Map paramMap) {
+		hotelMapper.delRoomInfo(paramMap);
+	}
 }

@@ -97,4 +97,12 @@ public class HotelServiceImpl implements HotelService{
 		hotelDAO.submitRoonInfo(tmpMap);
 	}
 	
+	public List roomInfoDetail(Map paramMap) throws Exception {
+		return hotelDAO.roomInfoDetail(paramMap);
+	}
+	
+	public void delRoomInfo(Map paramMap) throws Exception{
+		hotelDAO.delRoomInfo(paramMap);
+	}
+	
 }

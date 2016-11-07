@@ -35,7 +35,6 @@
 
 <script type="text/javascript">
 var roomIndex = 0;
-roomIndex = Number($("#roomItemBody tr").length + 1);
 var roomCkArr = new Array();
 var attachRoomId;
 var roomPrizeName;
@@ -43,6 +42,8 @@ var roomBreakfast;
 var roomWifi;
 var roomPrize;
 var roomPayType;
+var roomNameOrign = "";
+var maxCount;
 function setEleArr(){
 	attachRoomId = new Array();
 	roomPrizeName = new Array();
@@ -54,11 +55,11 @@ function setEleArr(){
 $(document).ready(function(){
 	$("input[name='flag']").val(window.parent.flag);
 	$("input[name='roomType']").val(window.parent.roomType);
-	if($("input[name='flag']").val=="mod"){
+    if($("input[name='flag']").val()=="mod"){
 		$.ajax({
 		    url:'/cms/roomInfoDetail', 
 		    data:{
-		    	roomType = $("input[name='roomType']").val()
+		    	"roomType" : $("input[name='roomType']").val()
 		    },  
 		    type:'post',  
 		    cache:false,
@@ -66,13 +67,36 @@ $(document).ready(function(){
 		    dataType:'json',  
 		    success:function(result){
 		    	if(result.flag == "Y"){
-		    		
+		    		var roomInfoDetailList = result.roomInfoDetailList;
+		    		maxCount = roomInfoDetailList.length;
+		    		roomNameOrign = roomInfoDetailList[0].restaurantName;
+					for(var i=0; i<roomInfoDetailList.length; i++ ){
+						tempRoomTr = '<tr bgcolor="#ffffff" align="center" id="room'+(i+2)+'">'
+						+'<td style="display:none;"><input type="checkbox" name="roomCk" id="roomCk'+(i+2)+'"><input type="hidden" name="attachRoomId" id="attachRoomId'+(i+2)+'" value="'+roomInfoDetailList[i].id+'"></td>'
+						+'<td><input type="text" name="roomPrizeName" id="roomPrizeName'+(i+2)+'" value="'+roomInfoDetailList[i].roomPrizeName+'"/></td>'
+						+'<td><select name="roomBreakfast" id="roomBreakfast'+(i+2)+'"><option value="00">无早</option><option value="01">双早</option><option value="02">三早</option></select></td>'
+						+'<td><select name="roomWifi" id="roomWifi'+(i+2)+'"><option value="Y">免费</option><option value="N">收费</option></select></td>'
+						+'<td><input type="text" name="roomPrize" id="roomPrize'+(i+2)+'" maxlength="10" value="'+roomInfoDetailList[i].roomPrize+'"/></td>'
+						+'<td><select name="roomPayType" id="roomPayType'+(i+2)+'"><option value="00">预付</option><option value="01">前台付现</option></select></td>'
+						+'<td><input type="button" value="删除" class="btn-d2" id="deletePrize" onclick="deleteTrEvent(this)"/></td>'
+						+'</tr>';
+						$("#roomItemBody").append(tempRoomTr);
+						$("#roomBreakfast" + (i+2)).find("option[value="+roomInfoDetailList[i].roomBreakfast+"]").prop("selected",true);
+						$("#roomWifi" + (i+2)).find("option[value="+roomInfoDetailList[i].roomWifi+"]").prop("selected",true);
+						$("#roomPayType" + (i+2)).find("option[value="+roomInfoDetailList[i].roomPayType+"]").prop("selected",true);
+		    		}
+					$("#roomCkArr").prop("checked",true);
+					$("#roomCkArr").click();
 		    	}else{
 		    		alert("error");
 		    	}
 			}
 		});
 	}
+    
+    roomIndex = Number($("#roomItemBody tr").length + 1);
+    
+    
 	$("#roomCkArr").click(function() {
 		var roomCkArrFlag = $("#roomCkArr").prop("checked");//选中状态
 		$("#roomItemBody tr input[name='roomCk']:enabled").each(function(){
@@ -99,7 +123,7 @@ function addTrEvent() {
     obj1.find("input[name='roomCk']").attr("id","roomCk" + roomIndex);
     obj1.find("input[name='roomCk']").attr("checked",true);
     obj1.find("input[name='attachRoomId']").attr("id","attachRoomId" + roomIndex);
-    obj1.find("select[name='roomPrizeName']").attr("id","roomPrizeName" + roomIndex);
+    obj1.find("input[name='roomPrizeName']").attr("id","roomPrizeName" + roomIndex);
     obj1.find("select[name='roomBreakfast']").attr("id","roomBreakfast" + roomIndex);
     obj1.find("input[name='roomWifi']").attr("id","roomWifi" + roomIndex);
     obj1.find("input[name='roomPrize']").attr("id","roomPrize" + roomIndex);
@@ -113,19 +137,18 @@ function getData() {
     var tid;
     var obj1;
     var tempck1 = $("#roomItemBody tr input[name='roomCk']");
+    alert(tempck1.length);
     for(var i = j = 0; i < tempck1.length; i++){
        tid = tempck1[i].id.substring(tempck1[i].name.length); 
        obj1 = $("#room" + tid);
        var attachRoomIdTemp = obj1.find("input[name='attachRoomId']")[0].value;
-       if(tempck1[i].checked || attachRoomIdTemp == 'undefined' || attachRoomIdTemp == ''){
-    	   attachRoomId[j] = attachRoomIdTemp == 'undefined' ?"" :attachRoomIdTemp;
-    	   roomPrizeName[j] = obj1.find("input[name='roomPrizeName']")[0].value;
-    	   roomBreakfast[j] = obj1.find("select[name='roomBreakfast']")[0].value;
-	       roomWifi[j] = obj1.find("select[name='roomWifi']")[0].value;
-	       roomPrize[j] = obj1.find("input[name='roomPrize']")[0].value;
-	       roomPayType[j]= obj1.find("select[name='roomPayType']")[0].value;
-	       j++;
-       }        
+   	   attachRoomId[j] = attachRoomIdTemp == 'undefined' ?"" :attachRoomIdTemp;
+   	   roomPrizeName[j] = obj1.find("input[name='roomPrizeName']")[0].value;
+   	   roomBreakfast[j] = obj1.find("select[name='roomBreakfast']")[0].value;
+       roomWifi[j] = obj1.find("select[name='roomWifi']")[0].value;
+       roomPrize[j] = obj1.find("input[name='roomPrize']")[0].value;
+       roomPayType[j]= obj1.find("select[name='roomPayType']")[0].value;
+       j++;     
     }
 }
 
@@ -147,8 +170,11 @@ function saveAll(){
         	"roomInfoMap" : JSON.stringify(roomInfoMap),
         	"roomRegion" : $("input[name='roomRegion']:checked").val(),
         	"roomName" : $("input[name='roomName']").val(),
+        	"roomNameOrign" : roomNameOrign,
         	"roomPic" : $("#roomPicUpload img").attr("src"),
-        	"roomDesc" : $("#roomDesc").val()
+        	"roomDesc" : $("#roomDesc").val(),
+        	"flag" : $("input[name='flag']").val()
+        	
         },
         dataType: "json",
         success: function (data) {
@@ -251,10 +277,9 @@ function finishUpload(imageUrl,imgName){
  <tr bgcolor="#ffffff" align="center">
  <td style="display:none;">
   	<input type="checkbox" name="roomCk"> 
-  		<input type="hidden" name="attachRoomId">
+  	<input type="hidden" name="attachRoomId">
  </td>
    <td>
-   
 		<input type="text" name="roomPrizeName"  />
    </td>	
     <td>

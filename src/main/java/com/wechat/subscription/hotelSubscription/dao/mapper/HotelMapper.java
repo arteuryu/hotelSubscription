@@ -5,6 +5,7 @@ package com.wechat.subscription.hotelSubscription.dao.mapper;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -164,4 +165,21 @@ public interface HotelMapper {
 			+ "#{roomPayType},"
 			+ "#{roomDesc},'Y',now())")
 	public void submitRoonInfo(Map tmpMap);
-}  
+	
+	@Select("select ID as id,"
+			+ "restaurant_name as restaurantName,"
+			+ "restaurant_region as restaurantRgion,"
+			+ "room_pic as roomPic,"
+			+ "room_prize_name as roomPrizeName,"
+			+ "room_breakfast as roomBreakfast,"
+			+ "room_wifi as roomWifi,"
+			+ "room_prize as roomPrize,"
+			+ "room_pay_type as roomPayType,"
+			+ "room_desc as roomDesc "
+			+ "from cms_room_info "
+			+ "where restaurant_name = #{roomType}")
+	public List<Map<String,Object>> roomInfoDetail(Map paramMap);
+	
+	@Delete("delete from cms_room_info where restaurant_name = #{roomNameOrign}")
+	public void delRoomInfo(Map paramMap);
+}

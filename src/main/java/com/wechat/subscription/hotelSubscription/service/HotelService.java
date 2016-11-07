@@ -47,5 +47,9 @@ public interface HotelService {
 	public Integer getRoomInfoCount(Map paramMap) throws Exception;
 	
 	public void submitRoonInfo(Map tmpMap) throws Exception;
+	
+	public List roomInfoDetail(Map paramMap) throws Exception;
+	
+	public void delRoomInfo(Map paramMap) throws Exception;
 		
 }
