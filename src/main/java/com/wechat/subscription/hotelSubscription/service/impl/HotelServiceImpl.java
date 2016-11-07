@@ -105,4 +105,7 @@ public class HotelServiceImpl implements HotelService{
 		hotelDAO.delRoomInfo(paramMap);
 	}
 	
+	public List<Map<String,Object>> roomList(String city) throws Exception{
+		return hotelDAO.roomList(city);
+	}
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+<!--   	<a href="#" data-icon="arrow-l"></a> -->
+    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+    <h1>品牌概览</h1>
+  </div>
+<div data-role="content" style="text-indent:2em">
+<h3>国际化的品质，本土化的亲切感</h3>
+<p>总部设于瑞士格朗，集团遵循以下标志性的八大“瑞士品质”</p>
+<img src="/assets/images/about/pic_06.png" style="width:100%">
+<p>
+瑞颐打造出的环境将让您拥抱成功，不断的感受到卓越、品质和成就。集团对于这些价值的追求渗透在方方面面的细节中，从公司运营的方式，到将公司的品牌展示给市场的举措无不体现其热忱之心。</p>
+<img src="/assets/images/about/pic_07.png" style="width:100%">
+<p>瑞颐国际酒店集团于2011年正式登陆中国，目前已经进驻厦门（已于2012年4月下旬开业运营），南昌（已于2015开业），上海（预计2018年开业），北京、杭州（预计2019年开业）。即将签约项目涵盖中国主要的大中城市。在上海、苏州、成都、台湾、大连、天津、海口、西安、中山、常州和淮南等地。
+</p>
+<img src="/assets/images/about/pic_08.png" style="width:100%">
+<p>
+瑞颐标识的核心部分SWISS正是代表着瑞颐的正宗的瑞士血统, 对瑞颐来说，不仅仅是五个字母的简单涵义，其中更融入了品牌的精髓：瑞士品质、精英团队、量身定制、生态环保、卓越回报。 
+</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>

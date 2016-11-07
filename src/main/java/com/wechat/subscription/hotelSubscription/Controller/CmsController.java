@@ -5,6 +5,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -38,9 +41,28 @@ public class CmsController {
 	public String index(){
 		return "blank";
 	}
+	@RequestMapping("/testFileupload")
+	public String testFile(){
+		return "file";
+	}
 	@RequestMapping("/fileUpload")
-	public String FileUpload(@RequestParam("file") MultipartFile file){
-		return "";
+	@ResponseBody
+	public String FileUpload(@RequestParam("name") String name,
+			@RequestParam("file") MultipartFile file){
+		if (!file.isEmpty()) {
+            try {
+                byte[] bytes = file.getBytes();
+                BufferedOutputStream stream =
+                        new BufferedOutputStream(new FileOutputStream(new File("/tmp/images/"+name + "-uploaded")));
+                stream.write(bytes);
+                stream.close();
+                return "You successfully uploaded " + name + " into " + name + "-uploaded !";
+            } catch (Exception e) {
+                return "You failed to upload " + name + " => " + e.getMessage();
+            }
+        } else {
+            return "You failed to upload " + name + " because the file was empty.";
+        }
 	}
 	@RequestMapping("/login")
 	public String login(){

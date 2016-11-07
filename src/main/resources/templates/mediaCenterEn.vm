@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<title>Media Center</title>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<!-- <link rel="stylesheet" href="/assets/css/mediaCenter.css" /> -->
+</head>
+<body>
+<div data-role="page" id="pageone">
+<div data-role="header" id="pageHeader">
+	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+  	<h1>Media Center</h1>
+  </div>
+
+  <div data-role="content">
+  <ul data-role="listview" id="listView" data-theme="d">
+      <li id="mediaDetail" href="/hotelPage/mediaDetail">
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti01.png">
+        <h3>2012 Best Business Hotel-Global Hospitality Industry-Golden Champion</h3>
+        <p>Gold Champion</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti02.png">
+        <h3>2Best Management Company for Investment Potential of Global Hospitality Industory</h3>
+        <p>Gold Champion</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti03.png">
+        <h3>Certificate of Excellence for the year 2012</h3>
+        <p>	The award base on Tripadvisor rating</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti04.png">
+        <h3>Management Group Awards-Most Progressive Hotel Group of the Year</h3>
+        <p>The Centre of Asia Hotel Forum</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti05.png">
+        <h3>Best Value Vacation Deals</h3>
+        <p>Forbeslife 2013 Top 10 Best Vacation Deals Awarded </p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti06.png">
+        <h3>Certificate of Excellence for the year 2013</h3>
+        <p>The award base on Tripadvisor rating</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti07.png">
+        <h3>2013 MICE China Best 100</h3>
+        <pre>MICE China editorial  Team</pre>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti08.png">
+        <h3>Hotel Best Location</h3>
+        <p>The award base on 6 million guest comments of 2013 from www.brandwisdom.cn</p>
+      </li>
+      <li>
+        <img class="mediaImg" style="padding-left:10px;"src="/assets/images/mediaCenter/meiti09.png">
+        <h3>Continental Diamond Annual Best Newly-Opened Hotel Award</h3>
+        <p>The award base on Tripadvisor rating</p>
+      </li>
+    </ul>
+
+	</div>
+<style>
+li{
+	height:80px;	
+	vertical-align:middle;
+	
+}
+.ui-li-static.ui-li-has-thumb{
+	padding-top: 0;
+    padding-bottom: 4px;
+}
+.mediaImg{
+	vertical-align:middle;
+	padding-top:12px;
+}
+</style>
+	<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+$("#mediaDetail").on("tap",function(){window.location.href=$(this).attr("href");});
+</script>
+</div>
+</body>
+
+</html>

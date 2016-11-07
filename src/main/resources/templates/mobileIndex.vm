@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<!-- <script src="/assets/js/common.js"></script> -->
+<link rel="stylesheet" href="/assets/css/index.css" />
+</head>
+<title>首页</title>
+<body>
+<div data-role="page" id="pageone">
+<div data-role="header">
+  <ul data-role="none" style="height:40px;linear-gradient(#3c3c3c,#111);list-style:none;margin:0px;padding：0px;-webkit-padding-start:10px;">
+	<li class="smallIcon" style="display:inline;float:left;list-style:none">
+			<img style="width:100px;height:20px;padding-top:5px"  src="/assets/images/index/logo.png"></img>
+	</li >
+	<li class="smallIcon" style="display:inline;float:right; list-style:none">
+		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px;padding-top:5px" src="/assets/images/index/setting.png"></img></a>
+	</li>
+	<li class="smallIcon" style="display:inline;float:right; list-style:none">
+		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
+	</li>
+	<li class="smallIcon" style="display:inline;float:right; padding-top:5px;list-style:none">
+		<a href="#popUpLang" data-rel="popup" data-transition="pop"><span id="lang" style="font-size:14px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">简</span></a>
+		<img  style="height:10px;width:10px;"src="/assets/images/index/down.png"></img>
+	</li>
+</ul>
+</div>
+<!-- <iframe> -->
+<div class="banner-box">
+	<div id="bd" class="bd" style="height: 200px;">
+        <ul id="ulImg" style="height: 200px;">          	    
+            <li class="lImg" style="background:white;">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>
+            <li class="lImg" style="background:white">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner02.jpg" /></a>
+                </div>
+            </li>
+            <li class="lImg" style="background:white;">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>
+            <li class="lImg" style="background:white">
+                <div class="m-width">
+                <a href="javascript:void(0);"><img src="/assets/images/index/banner01.png" /></a>
+                </div>
+            </li>  
+         
+        </ul>
+    </div>
+    <div class="banner-btn">
+        <a class="prev" href=" "></a >
+        <a class="next" href="javascript:void(0);"></a >
+        <div class="hd" style="position: absolute;top: 80px;left: 50%;margin-left: -36px;"><ul style="-webkit-padding-start: 0px;"></ul></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".prev,.next").hover(function(){
+		$(this).stop(true,false).fadeTo("show",0.9);
+	},function(){
+		$(this).stop(true,false).fadeTo("show",0.4);
+	});
+	
+	$(".banner-box").slide({
+		titCell:".hd ul",
+		mainCell:".bd ul",
+		effect:"fold",
+		interTime:3500,
+		delayTime:500,
+		autoPlay:true,
+		autoPage:true, 
+		trigger:"click" 
+	});
+
+});
+</script>
+<ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 20px;padding-bottom: 20px;border-bottom: solid 1px #dedede;"> 
+	<li style="width:24.6%;text-align:center;float:left;border-right:solid 1px #dedede">
+		<a href="/hotelPage/guestRoomPreorder" target="_blank">
+			<img class="mainIconImg" style="margin: 0 auto;"  src="/assets/images/index/kefang.png">
+		</a>
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">客房预订</p >
+	</li> 
+	<li style="width:24.6%;text-align:center;float:left;border-right:solid 1px #dedede">
+		<a href="/hotelPage/meetingPreorder" target="_blank">
+			<img class="mainIconImg" style="margin: 0 auto;" src="/assets/images/index/huiyi.png">
+		</a >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">会议宴会</p >
+	</li> 
+	<li style="width:24.6%;text-align:center;float:left;border-right:solid 1px #dedede">
+		<a href="/hotelPage/restaurantPreorder" target="_blank">
+			<img class="mainIconImg" style="margin: 0 auto;" src="/assets/images/index/canyin.png">
+		</a >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">餐饮预订</p >
+	</li> 
+	<li style="width:24.6%;text-align:center;float:left;">
+		<a  href="http://xmry.yiwosoft.com/MRE/Shop/ShopIndex" target="_blank">
+			<img class="mainIconImg" style="margin: 0 auto;" src="/assets/images/index/shangcheng.png">
+		</a >
+		<p style="font-size:14px;text-align:center;margin-top: 10px;">酒店商城</p >
+	</li> 
+</ul>
+<hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;-webkit-margin-before: 0;-webkit-margin-after: 0;"></hr>
+<div style="padding-left:10px;background-color:white;">
+<p><font color=red size="5px">|</font>&nbsp;&nbsp;客房预订</p>
+<pre style="font-size:14px;color:#999999;float:left;">酒店位置</pre><pre style="font-size:14px;color:black;float:left;">   我的附近  </pre><pre style="float:left;font-size:14px;color:#999999" >位置/酒店/关键词</pre>
+<div style="float:right;padding-top:14px;padding-right:10px;">
+	<img src="/assets/images/index/right.png">
+</div>
+</div>
+<hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
+<div style="padding-left:10px;background-color:white;">
+<pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">   厦门瑞颐大酒店</pre>
+<div style="float:right;padding-top:14px;background-color:white;padding-right:10px;">
+	<img src="/assets/images/index/right.png">
+</div>
+</div>
+<hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
+<div style="padding-left:10px;background-color:white;">        
+	<div style="font-size:14px;display:inline;padding-top:10px;float:left;">
+		<p style="font-size:14px;color:#999999;">时间</p>
+	</div>
+	<div style="font-size:14px;padding-left:45px;padding-bottom:10px;display:inline;float:left;">
+		<p>8月16日<font style="padding-left:10px;" size="2" color="#999999">今天入住时间</font></p>
+		<p>8月17日<font style="padding-left:10px;" size="2" color="#999999">明天离店一天</font></p>		
+	</div>
+	<div style="float:right;padding-top:10px;padding-right:10px;">
+		<img src="/assets/images/index/right.png">
+	</div>
+</div>
+<hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
+<!-- <div data-role="none" style="padding-top:10px;padding-left:10px;">         -->
+<!-- 		<label style="float:left;color:#999999;padding-top:5px;width:60px;font-size:14px;">预订间数</label> -->
+<!-- 		<select id="selectCount" data-role="none"> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option> -->
+<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option> -->
+<!-- 		</select> -->
+<!-- 		<label style="color:#999999;float:left;padding-left:5px;width:60px;padding-top:5px;font-size:14px;">预订代码</label> -->
+<!-- 		<input id="preInput" data-role="none"></input> -->
+<!-- </div> -->
+<ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
+	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
+			<label style="font-size: 14px;color: #999999;margin-right: 4px;">预定间数</label>
+			<select id="selectCount" data-role="none" style="width: 52%;height: 30px;">
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option>
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option>
+			</select>
+	</li>
+	
+	<li style="float:right;margin-left: 2px;width: 45%;margin-right: 10px;text-align: right;height:30px;">
+			<label style="font-size: 14px;color: #999999;margin-right: 4px;">预定代码</label>
+			<input id="preInput" data-role="none" style="width: 52%;height: 30px;box-sizing:border-box;"></input>
+	</li>
+</ul>
+<div style="padding-left: 10px;padding-right: 10px;">
+<button style="background-color:#d71619;margin-top:20px;margin-bottom:10px;width:100%;height:40px;color:white;border:none;font-size:14px;" data-role="none">搜&nbsp;索</button>
+</div>
+<hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
+	<ul data-role="listview" id="listView" data-theme="d">
+      <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
+        <h3>豪华海景大床房<span style="float:right"><font size="2px">查看详情</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+        <span>CNY:<font color=red>1236</font></span>
+      </li>
+      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
+        <h3>名仕复式套房<span style="float:right"><font size="2px">查看详情</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+		<span>CNY:<font color=red>1236</font></span>      
+      </li>
+      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
+        <h3>豪华家庭房<span style="float:right"><font size="2px">查看详情</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+		<span>CNY:<font color=red>1236</font></span>             
+      </li>
+      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
+        <h3>高级大床房<span style="float:right"><font size="2px">查看详情</font></span></h3>
+        <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
+ 		<span>CNY:<font color=red>1236</font></span>             
+      </li>
+      </ul>
+      <p align="center" style="padding-top:10px;"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
+      <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
+      <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelect" target="_blank"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
+ 	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
+      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/mediaCenter"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
+      <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/joinUs" target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
+<!-- <table data-role="none" style="margin-top:15px;margin-left:20px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;"> -->
+<!-- <tr align="center" style="margin:0px;"> -->
+<!-- <td> -->
+<!-- 		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre> -->
+<!-- 		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre> -->
+<!-- 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button> -->
+<!-- </td> -->
+<!-- <td> -->
+<!-- 		<img id="indexImg" style="height:50%;width:125px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png"> -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- </table> -->
+<ul data-role="none" style="overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0; margin: 20px;background-color: #ede9e2;border-radius: 5px;">
+	<li style="width:62%;text-align:center;float:left;padding-top: 5px;padding-bottom: 5px;">
+		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre>
+		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre>
+		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button>
+	</li>
+	<li style="width:38%;text-align:center;float:left;height:109px;">
+		<img class="iconImg" style="width:100%;height:109px;" src="/assets/images/index/drink.png">
+	<li>
+</ul>
+<div class="ui-grid-a" style="margin-top:30px;">        
+	<div class="ui-block-a" style="padding-left:25px;padding-top: 6px;">
+		<p style="color:#dc291e;">瑞颐微信公众号</p >
+        <img style="width:180px;align:center;padding-top:20px;" src="/assets/images/index/footerLogo.png">
+	</div>
+	<div class="ui-block-b">
+		<img class="iconImg" id="scanCode" style="float: right;margin-right: 20px;" src="/assets/images/index/scanCode.png">
+	</div>
+</div>
+<br>
+<table style="-webkit-padding-start:100px;">
+<tr align="center" valign="middle">
+<td style=padding-right:10px>
+		<a href="#popUpContact" style="color:black; text-decoration:none;" data-rel="popup" data-transition="pop">联系我们</a>
+</td>
+<td height=8px align="center" valign="middle" style=border-color:#dedede;border-left-style:solid;border-width:1px;padding-left:10px;padding-right:10px>
+		<a href="/hotelPage/privacy" style="color:black; text-decoration:none;" target="_blank">隐私政策</a>
+</td>
+</tr>
+</table>
+<div data-position="fixed" data-tap-toggle="false">
+	<ul data-role="none" >
+	<li style="display:inline;float:right;list-style:none">
+		<a href="#popUpContact" data-rel="popup" data-transition="pop"><img style="z-index:-1;height:80px;width:80px" src="/assets/images/index/phone.png"></a>
+	</li>
+	</ul>
+</div>
+<div data-role="popup" id="popUpContact" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
+<!-- <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> -->
+<h3 style="font-weight:100;" align="center">联系我们</h3>
+<hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
+<p style="font-weight:100;color:#666666;">瑞颐集团办公室  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865925709110">86 592 5709110</a></p>
+<p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@sihotels.com">info@sihotels.com</a>
+<p style="font-weight:100;color:#666666;">厦门瑞颐大酒店  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865926366666">86 592 6366666</a></p>
+<p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@swissinternationalxiamen.com.cn">info@swissinternationalxiamen.com.cn</a>
+<p style="font-weight:100;color:#666666;">南昌瑞颐大酒店  电话:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="tel:865925709110">86 791 87777777</a></p>
+<p style="font-weight:100;color:#666666;">邮箱:<br><a style="color:#009ce7;font-weight:100;text-decoration:none;" href="mailto:info@swissinternationalnanchang.com.cn">info@swissinternationalnanchang.com.cn</a>
+<hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
+<div style="text-align:center; width:100%;height:100%;margin-top:10px;">
+<span data-role="none" id="closePhonePopup" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#666666;">关闭</span>
+</div>
+</div>
+<div data-role="popup" id="popUpLang" data-theme="a" class="ui-content" data-position-to="#lang" style="font-size:15px;margin-top:10px;">
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">简</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/indexTra" target="_blank">繁</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/indexEn" target="_blank">En</a></p>
+</div>
+<div data-role="popup" id="popUpMenu" data-theme="a" class="ui-content" data-position-to="#indexMenu" style="font-size:15px;width:80px;margin-top:10px;">
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">首页</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/hotelSelect">瑞颐酒店</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
+<p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
+</div>
+<style type="text/css">
+#pageone{  
+     background:white;  
+} 
+a{ 
+	text-decoration: none;
+}
+.smallIcon{ 
+ 	margin: 5px 10px 5px 10px 
+ } 
+.hotelImg{
+	height:80%;
+	width:80%;
+	padding:2px;
+	border-style:solid;
+	border-color:#dedede;	
+	border-width:thin;
+	margin:5px;
+}
+.option{
+	text-align: center;
+}
+#bd,#ulImg,.lImg{padding:0;margin:0;}
+ul{list-style:none ;}
+img{border:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+
+/* banner-box */
+.banner-box{position:relative;overflow:hidden;}
+.banner-box .bd{ width:100% !important;}
+.banner-box .bd li .m-width {width:100%;margin:0 auto;overflow:hidden;}
+.banner-box .bd li{width:100% !important;}
+.banner-box .bd li a{width:100%;display:block;background-size:auto;}
+.banner-box .bd li a img{width:100%;}
+
+.banner-btn{width:1210px;position:absolute;top:82px;left:50%;margin-left:-605px;}
+.banner-btn a{display:block;width:49px;height:104px;position:absolute;top:0;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;}
+.banner-btn a.prev{left:20px;background:url(../images/foot.png) no-repeat 0 0;} 
+.banner-btn a.next{right:20px;background:url(../images/foot.png) no-repeat -49px 0;}
+
+.banner-box .hd {position:absolute;top:80px;left:515px;}
+.banner-box .hd ul li{width:8px;height:8px;border-radius :50%;text-indent:-9999px;margin-right:10px;background:#ccc;float:left;cursor:pointer;}
+.banner-box .hd ul li.on{background:#DA324D;}
+/* ul{ */
+/* 	 background:black;   */
+/* } */
+/* .indexHeader{ */
+/* 	background:black;   */
+/* } */
+#people,#setting
+{
+border: 1px solid black;
+font-weight: bold;
+text-align: right;
+padding: 20px; 
+background:black;  
+}
+#preInput{
+  border: solid 1px #dedede;
+  font-size:14px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+/*   width:70px; */
+/*   height:26px; */
+/*   float:left; */
+/*   margin-left:10px; */
+  border-radius:3px;	
+}
+#selectCount {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:14px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 90% center transparent;
+  background-size:10px 10px;
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+/*   padding-right: 20px; */
+	border-radius:3px;
+	text-align:center;
+/* 	height:30px; */
+/* 	width:50px; */
+/* 	float:left; */
+/* 	margin-left:10px; */
+/* 	margin-right:10px;	 */
+}
+button{
+	border-radius:3px;
+	border-width:1px;
+}
+p{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+.iconImg {    
+	display: block;     
+	height: auto;     
+	width: 50%; 
+}
+.mainIconImg{
+	display: block;     
+	height: 30px;     
+	width: 30px; 
+/* 	padding-left:18px; */
+/* 	padding-right:18px; */
+}
+</style>
+<script src="/assets/js/jquery.SuperSlide.2.1.1.js"></script> 
+<script type="text/javascript">
+// function isWeixnOpen(){
+//     var ua = navigator.userAgent.toLowerCase();
+//     if(ua.match(/MicroMessenger/i)=="micromessenger") {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// if(isWeixnOpen()){
+// 	$("#pageHeader").hide();
+// }
+$(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
+$("#closePhonePopup").click(function(){
+	$("#popUpContact").popup("close");
+});
+var u = navigator.userAgent;
+var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+if(isiOS){
+// 	$("#preInput").css("width","100px");
+// 	$("#indexImg").css("width","160px");
+// 	$("#scanCode").css("padding-right","20px");
+	$("#tableMain").css("padding-right","5px");
+	$("#tableMain").css("padding-left","5px");
+}
+// if($(document.body).width()>330){
+// 	$("#city").css("width","250px");
+// 	$("#selectCount").css("width","80px");
+// 	$("#preInput").css("width","100px");
+// 	$("#search").css("width","90%");	
+// 	$("#firstTd").css("padding-left","27px");
+// 	$("#indexImg").css("width",width+"px");	
+// 	$("#scanCode").css("padding-left","75px");
+// }
+</script>
+</div>
+</body>
+</html>

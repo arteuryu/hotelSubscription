@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+<!--   	<a href="#" data-icon="arrow-l"></a> -->
+    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:22px;" src="/assets/images/index/return.png"></a>	
+    <h1>History</h1>
+  </div>
+<div data-role="content" style="text-indent:2em;">
+<p>
+	The legacy beginning of Swiss International Hotels & Resorts can be chased back more than 30 years in 1982 when the brand was created by an alliance of a group of Swiss hoteliers. These hotel innovators are the guardians of what is now known as Swiss Hospitality Quality. The innovations and persistency of those pioneers not only have they set the cornerstones for the Swiss hospitality industry, they have also shaped the values believed in Swiss International Hotels & Resorts over the past 30 years, thereby extending the Brand into an internationally recognized brand of providing authentic Swiss quality of full services in hotel management.
+	</p>
+	<img src="/assets/images/about/pic_05.png" style="width:100%;height:150px">
+	<p>
+	At Swiss International Hotels & Resorts, we provide Swiss hotel branding services, hotels development and management services. The core of all our services is built on the cornerstone of Swiss quality. The Swiss services quality is also influential in shaping the company’s values in delivering the services to our strategic partners and hotel guests.
+</p><p>
+Swiss International Hotels & Resorts is led by our global CEO Mr. Hanri Kennedie with our headquarters in Gland, Switzerland, and a branch office in Horgen. We also have multiple representative offices in Europe, Africa, the Middle East and Asia.
+</p><p>
+Swiss International Hotels & Resorts entered into the China market at the end of 2011 and opened our first five-star hotel in China, Swiss International Hotel Xiamen, in April 2012. By offering our truly Swiss authenticity, we continue to expand in strategic locations in the Greater China with hotels scheduled to open in Beijing, Shanghai, Hangzhou, Nanchang and Wuyi Mountain within the next three years. Swiss International Hotels & Resorts is represented in China by a group of hotel experts with headquarters inside our flagship hotel in Xiamen.
+</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>

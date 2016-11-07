@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+<!--   	<a href="#" data-icon="arrow-l"></a> -->
+    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+    <h1>Brand Story</h1>
+  </div>
+<div data-role="content" style="text-indent:2em">
+<h3>The quality of internationalization, the localization of intimacy</h3>
+<p>. The Company, headquarters in Gland, Switzerland, follows the hospitality ideals in shaping what is now commonly referred as “Swiss Quality”:
+</p>
+<img src="/assets/images/about/pic_06.png" style="width:100%">
+<p>
+Swiss to create environment will allow you to embrace the success, constantly feel the excellence, quality and achievements. Group for these values of the pursuit of penetration in all aspects of the details, from the way of operation of the company, to the company's brand display to the market initiatives are reflected in their enthusiasm.</p>
+<img src="/assets/images/about/pic_07.png" style="width:100%">
+Swiss International Hotels & Resorts entered into the China at late 2011 with our first five-star hotel opened in Xiamen in 2012. Our second hotel is opened in Nanchang in 2015. We will continue to increase our presence in China with our hotels opening program for Shanghai and Beijing in the first and second quarter of 2018 and 2019 respectively as well as Wuyi Mountain and Guiyang in 2020.
+</p>
+<img src="/assets/images/about/pic_08.png" style="width:100%">
+<p>
+Swiss identifies the core part of SWISS is representing riny authentic Swiss descent, the Rui Yi, is not the simple meaning of five letters, which is integrated into the brand's essence: Swiss quality, elite team, tailored, ecological environmental protection, superior returns.</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>

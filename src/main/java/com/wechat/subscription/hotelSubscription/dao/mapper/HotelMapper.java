@@ -183,3 +183,6 @@ public interface HotelMapper {
 	@Delete("delete from cms_room_info where restaurant_name = #{roomNameOrign}")
 	public void delRoomInfo(Map paramMap);
 }
+	@Select("select * from cms_room_info where restaurant_region=#{city}")
+	public List<Map<String,Object>> getRoomList(String city);
+}  

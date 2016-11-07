@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+<!--   	<a href="#" data-icon="arrow-l"></a> -->
+    	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:22px;" src="/assets/images/index/return.png"></a>	
+    <h1>歷史溯源</h1>
+  </div>
+<div data-role="content" style="text-indent:2em;">
+<p>
+瑞頤的發展歷史可以追溯至1982年，因“友誼”而生的瑞頤由一群瑞士酒店業的精英築夢人，懷揣著對行業的熱情傾注而成，瑞頤始終與瑞士最傑出的酒店業專家以瑞士人的品質堅持塑造著瑞頤的個性，影響著瑞士酒店業的發展。歷經三十多年的錘煉，瑞頤已經成為活躍在飯店經營管理領域的提供全方位酒店業服務的瑞士知名飯店集團。
+	</p>
+	<img src="/assets/images/about/pic_05.png" style="width:100%;height:150px">
+	<p>
+作為一家綜合性的酒店集團，為旗下飯店提供優質的品牌服務，酒店業發展服務和專業的酒店管理服務。集團以瑞士品質為覈心，鑄造呈現酒店業內涵的基石。並將這些品質融入集團的獨創價值體系，融入集團旗下的品牌飯店及每一名瑞頤人的心中。
+</p><p>
+瑞頤的全球總裁亨利（漢斯）肎尼迪領導著一支飯店行業專家隊伍的營運該企業，總部位於格朗（集團總部）並在豪爾根設立商務辦事處，同時在歐洲、美洲、非洲，中東亞洲均設有分支機搆。
+</p><p>
+瑞頤於2011年正式進入中國市場，並於2012年開業了大中華區第一家五星豪華飯店——廈門瑞頤大酒店。瑞頤中國正以瑞士人對品質的執著搭建瑞頤在中國的發展版圖，已簽約項目遍佈北京、上海、杭州、南昌等都市。瑞頤中國總部設立在首個旗艦店的都市——廈門。
+</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>

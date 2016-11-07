@@ -52,4 +52,6 @@ public interface HotelService {
 	
 	public void delRoomInfo(Map paramMap) throws Exception;
 		
+	public List<Map<String,Object>> roomList(String city) throws Exception;
+
 }

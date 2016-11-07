@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="/assets/css/jquery.mobile-1.3.2.min.css">
+<script src="/assets/js/jquery-1.8.3.min.js"></script>
+<script src="/assets/js/jquery.mobile-1.3.2.min.js"></script>
+<!-- <script src="/assets/js/common.js"></script> -->
+<link rel="stylesheet" href="/assets/css/index.css" />
+</head>
+<body>
+<div data-role="page" id="pageone" data-corners="false" data-theme="d">
+<div data-role="header" id="pageHeader">
+  	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+  <h1>详情</h1>
+  </div>
+<div data-role="main" class="ui-content" data-corners="false" data-theme="d">
+<div>
+<p align="center">菩提厅</p>
+<img  src="/assets/images/meetingRoom/pic_04.png" style="width:100%">
+</div>
+<p>可灵活分割成3个独立会议室的300平方米的菩提厅，它将是贵宾接待的最佳场所。无论是婚宴还是晚宴，均是您的最佳选择。</p>
+</div>
+<div style="text-indent:1em">
+<p>楼层平面图</p>
+<img  src="/assets/images/meetingRoom/floorXm.jpg" style="width:100%">
+
+</div>
+<div style="text-indent:1em">
+<p>位置：3楼</p>
+<p>联系电话：12345678</p>
+<p>联系邮箱：12345678@qq.com</p>
+</div>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+</script>
+</html>
