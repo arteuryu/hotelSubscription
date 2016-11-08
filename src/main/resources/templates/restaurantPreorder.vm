@@ -108,7 +108,7 @@
   -webkit-appearance:none;
 
   /*在选择框的最右侧中间显示小箭头图片*/
-  background: url("/assets/images/index/down2.jpg") no-repeat scroll 95% center transparent;
+  background: url("/assets/images/index/down2.png") no-repeat scroll 95% center transparent;
   background-size:10px 10px;
   background-color:white;
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
