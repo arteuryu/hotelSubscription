@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<title>创建首页广告图</title>
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<link href="../css/text1.css" rel="stylesheet" type="text/css">
+<link href="../css/btnUtil.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/ace/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../js/layer/layer.js"></script>
+<script type="text/javascript" src="../js/layer/extend/layer.ext.js"></script>
+<style type="text/css">
+	.form-group input{height:24px;}
+</style>
+<script type="text/javascript">
+jQuery(window).ready(function(){
+	var rows = window.parent.bannerInfoList;//bannerList
+	$("input[name='flag']").val(window.parent.flag);
+	
+	if($("input[name='flag']").val() == "mod"){
+		$("input[name='bannerId']").val(window.parent.bannerId);
+		for (var j = 0; j < rows.length; j++) {
+			var row = rows[j];
+			if(row.ID == $("input[name='bannerId']").val()){
+				$("input[name='bannerName']").val(row.bannerName);
+				$("input[name='bannerPic']").val(row.bannerPicOrignName);
+				if(row.bannerPicOrignName!="" && row.bannerPicOrignName!=null){
+					$("#bannerPicUpload").show();
+					$("#bannerPicUpload img").attr("src",row.bannerPic);
+				}
+				$("input[name='bannerUrl']").val(row.bannerUrl);
+				$("input[name='bannerPriority']").val(row.bannerPriority);
+				$("select[name='bannerStatus']").val(row.bannerStatus);
+
+			}
+		}
+	}
+	
+}); 
+
+var addWindowIndex = 0;
+function uploadBannerPic(){
+	addWindowIndex = layer.open({
+		type: 2,
+		title: '新增',
+		shadeClose: true,
+		shade: true,
+		shade: [0.3],
+		maxmin: true, //开启最大化最小化按钮
+		area: ['320px', '400px'],
+		content: 'bannerUpload.vm'
+	});
+}
+
+function finishOpen(win) {
+	$(win.document).find("#fileUploadForm").append('<input type="hidden" name="uploadType" value="bannerPic" />');
+}
+
+function finishUpload(imageUrl,imgName){
+	$("#bannerPicUpload img").attr("src",imageUrl);
+	if($("#bannerPicUpload img").attr("src") != null && $("#bannerPicUpload img").attr("src") != ""){
+		$("#bannerPicUpload").show();
+	}
+	$("#bannerPic").val(imgName);
+	layer.close(addWindowIndex);
+}
+
+function submitBanner() {
+	if(checkFields()){
+		$.ajax({
+	        type: "post",
+	        async: false,
+	        url: "/cms/submitBanner",
+	        data: {
+	        	"flag":$("input[name='flag']").val(),
+	        	"bannerId":$("input[name='bannerId']").val(),
+	        	"bannerName":$("input[name='bannerName']").val(),
+	        	"bannerPicOrignName":$("input[name='bannerPic']").val(),
+	        	"bannerPic":$("#bannerPicUpload img").attr("src"),
+	        	"bannerUrl":$("input[name='bannerUrl']").val(),
+	        	"bannerPriority":$("input[name='bannerPriority']").val(),
+	        	"bannerStatus":$("select[name='bannerStatus']").val()
+	        },
+	        dataType: "json",
+	        success: function (data) {
+	        	alert("操作成功！");
+	        	window.parent.location.reload();
+	        }
+	    });
+	}
+}
+
+function checkFields(){
+	if($("input[name='bannerName']").val().trim().length < 1){
+		alert("请输入广告图简介！");
+		$("input[name='bannerName']").focus();
+		return false;
+	}
+	if($("input[name='bannerPic']").val().trim().length < 1){
+		alert("请上传广告图片");
+		$("input[name='bannerPic']").focus();
+		return false;
+	}
+	if($("input[name='bannerUrl']").val().trim().length < 1){
+		alert("请输入跳转链接");
+		$("input[name='bannerUrl']").focus();
+		return false;
+	}
+	var priority = $("input[name='bannerPriority']").val();
+	if(priority < 1 || priority > 99){
+		 alert("优先级必须为整数且在1-99范围内!");
+         return false;
+	}
+	return true;
+}
+
+</script>
+</head>
+<body>
+	<input type="hidden" name="flag" id="flag"/>
+	<input type="hidden" name="bannerId" id="bannerId"/>
+   <div>
+		<div id="bannerNameDIV" class="form-group clearfix">
+			<label><font>*</font>banner图简介</label>
+		    <input class="form-control w392" id="bannerName" name="bannerName" type="text" value="">
+	   </div>
+	   <div style="display: none;" class="form-group clearfix" id="bannerPicUpload">
+			<label style="filter:alpha(opacity=0);opacity:0;">banner图片</label>
+			<img src="" width="300" height="200" />
+	   </div>
+	   <div class="form-group clearfix" id="bannerPicDiv">
+			<label><font>*</font>banner图片</label>
+			<input class="form-control input-w510 " type="text" style="width:200px !important;" name="bannerPic" id="bannerPic" size="40" maxlength="50" readonly="readonly">
+			<i class="Upload" onclick="uploadBannerPic()">上传图片</i>
+	   </div>
+	   <div id="bannerUrlDIV" class="form-group clearfix">
+		    <label><font>*</font>banner跳转链接</label>
+		    <input class="form-control w392" id="bannerUrl" name="bannerUrl" type="text" value="">
+	   </div>
+	   <div id="bannerPriorityDIV" class="form-group clearfix">
+		    <label><font>*</font>banner优先级</label>
+		    <input class="form-control w392" id="bannerPriority" name="bannerPriority" type="text" value="">
+	   </div>
+	   <div id="bannerStatusDIV" class="form-group clearfix">
+		    <label><font>*</font>banner状态</label>
+		    <select id="bannerStatus" name="bannerStatus" style="width:250px;">
+		    	<option value="Y">生效</option>
+		    	<option value="N">失效</option>
+		    </select>
+	   </div>
+	   <input id="submitBtn" name="submitBtn" type="button" value="提交 " class="btn-t1" onclick="submitBanner();" style="margin-left: 7%;margin-bottom:40px;"/>
+   </div>
+</body>
+</html>

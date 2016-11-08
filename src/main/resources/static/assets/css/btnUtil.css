@@ -1,0 +1,73 @@
+/* @CHARSET "UTF-8"; */
+
+input.btn-t1{
+	background: #ff6600;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 30px;
+	border: 1px solid #ff6600;
+	color: #fff;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	border-radius:5px;
+}
+
+input.btn-t2{
+	background: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 30px;
+	border: 1px solid #ff6600;
+	color: #ff6600;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	border-radius:5px;
+}
+
+input.btn-d1{
+	background: #fa5625;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 20px;
+	border: 1px solid #fa5625;
+	color: #fff;
+	font-family: Microsoft YaHei;
+	font-size: 12px;
+	border-radius:5px;
+}
+
+input.btn-d2{
+	background: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 20px;
+	border: 1px solid #fa5625;
+	color: #fa5625;
+	font-family: Microsoft YaHei;
+	font-size: 12px;
+	border-radius:5px;
+}
+
+input.btn-f1{
+	background: #1796f6;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 30px;
+	border: 1px solid #1796f6;
+	color: #fff;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	border-radius:5px;
+}
+
+input.btn-f2{
+	background: #1796f6;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 20px;
+	border: 1px solid #1796f6;
+	color: #fff;
+	font-family: Microsoft YaHei;
+	font-size: 12px;
+	border-radius:5px;
+}

@@ -1,0 +1,135 @@
+@CHARSET "UTF-8";
+
+.list_data_table{
+	table-layout:fixed;
+}
+.list_data_table .list_data_td{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-align:left;
+}
+.list_data_table .red{
+	color:red;
+}
+.list_data_table .blue{
+	color:blue;
+}
+.hcss{
+	line-height:32px;
+	 background:url(../../images/cmm/bg_title_act_table.png) repeat-x repeat-y; 
+	 font-weight:bold; 
+	 color:#555555; 
+	 padding-top:3px;
+	 font: bold 12px  "Arial","����","Tahoma",sans-serif;
+	 background-color:#f2f2f2;
+	 text-align:center;
+	 }
+.submit_button {
+    width:55px;
+	height:20px;
+	font-size: 12px;
+	cursor:hand;
+	background:url(../../images/cmm/bgaa_03.gif) no-repeat;
+	border: 0px none #FFFFFF;
+	color: w
+}
+.save_button {                   
+    width:55px;
+	height:20px;
+	font-size: 12px;
+	color: #BD4C27;
+	cursor:hand;
+	background:url(../../images/cmm/bgab_03.gif) no-repeat;
+	border: 0px none #FFFFFF;
+}
+.reset_button{
+	width:62px;
+	height:20px;
+	font-size: 12px;
+	color: #BD4C27;
+	cursor:hand;
+	background:url(../../images/cmm/act_but01.png) no-repeat;
+	border: 0px none #FFFFFF;
+}
+.qued_button{
+	width:69px;
+	height:22px;
+	font-size: 12px;
+	color: #BD4C27;
+	cursor:hand;
+	background:url(../../images/cmm/qued.png) no-repeat;
+	border: 0px none #FFFFFF;
+}
+.jqplot-title {
+	top: 0;
+	left: 0;
+	padding-bottom: .5em;
+	font-size: 12px;
+}
+.jqplot-axis{
+	font-size: 12px;
+}
+.jqplot-point-label {
+	font-size: 12px;
+	z-index: 2;
+}
+.jqplot-series-canvas div{
+	position: absolute; 
+	width: 312px; 
+	height: 252px; 
+	overflow: hidden;
+}
+.aui_inner { background:#FFF; }
+.aui_dialog { box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); }
+.aui_footer, .aui_header, .aui_main { padding:0; }
+.aui_titleBar { position:relative; height:100%; }
+.aui_title { height:28px; line-height:27px; padding:0 28px 0 10px; text-shadow:0 1px 0 rgba(255, 255, 255, .7); background-color:#edf5f8; font-weight:bold; color:#95a7ae; font-family: Tahoma, Arial/9!important; background-color:#bdc6cd; background: linear-gradient(top, #edf5f8, #bdc6cd); background: -moz-linear-gradient(top, #edf5f8, #bdc6cd); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edf5f8), to(#bdc6cd)); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edf5f8', endColorstr='#bdc6cd'); border-top:1px solid #edf5f8; border-bottom:1px solid #b6bec5; }
+.aui_icon { vertical-align: middle; }
+.aui_icon div { width:48px; height:48px; margin:10px 0 10px 10px; background-position: center center; background-repeat:no-repeat; }
+.aui_main { text-align:center; min-width:9em; min-width:0\9/*IE8 BUG*/; }
+.aui_header, .aui_buttons button { font: 12px/1.11 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti; _font-family:Tahoma,Arial,Helvetica,STHeiti; -o-font-family: Tahoma, Arial; }
+.aui_title { overflow:hidden; text-overflow: ellipsis; }
+.aui_content {color:#666;display:inline-block; *zoom:1; *display:inline; text-align:left; border:none 0; }
+.aui_content.aui_state_full { display:block; width:100%; margin:0; padding:0!important; height:100%; }
+
+#div_lock_overlay {
+	position: fixed;/*IE7(IE8)*/
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height: 100%;/*IE7(IE8)*/
+	width: 100%;/*IE7(IE8)*/
+	background: url(../../images/cmm/bg_full.png) repeat;/*IE7(IE8)*/
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src=../../images/cmm/bg_full.png); /*IE6*/
+	_background: none; /*IE6*/
+}
+.dl-bnt{
+	display: block;
+	padding:2px 5px;
+	width:65px;
+	background: #f1f1f1;
+	border:1px #dddddd solid;
+	float:left;
+	margin-top:10px; margin-left:10px; 
+}
+
+.dl-bnt a{color: #66CC99;}
+.dl-bnt a:hover{ text-decoration:none;}
+
+.clear {width:0;height:0;overflow:hidden;clear: both;}
+.loding{ margin-left:20px; }
+.loding i{ font-size:15px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#FFFFFF; line-height:33px;}
+.loding span{ display:block; width:160px; float: left; text-align:center;  color:#cdc9c9; margin:0 0px;;}
+.loding  font{  display:block; margin-left:-120px;}
+
+.scheduleon,.scheduleing,.schedule{ display:block; background:url(../images/scheduleon.png) no-repeat; width:33px; height:33px; margin:5px 0 10px 0px; float: left; }
+.scheduleing{ background: url(../images/scheduleing.png)}
+.schedulelineon,.scheduleline{display: block;
+background: url(../images/schedulelineon.png) repeat-x 0 17px;
+width: 127px;
+height: 33px;
+float: left;}
+.scheduleline{ background: url(../images/scheduleline.png) repeat-x  0 17px}
+.schedule{ background:url(../images/schedule.png)}
+.scheduleoff{ display:block; background:url(../images/scheduleoff.png) no-repeat; width:33px; height:33px; margin:5px 0 10px 0px; float: left; }

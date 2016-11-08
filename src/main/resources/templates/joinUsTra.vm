@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<link rel="stylesheet" href="/assets/css/joinUs.css" />
+</head>
+<title>加入我们</title>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" id="pageHeader">
+	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+    <h1>加入我们</h1>
+  </div>
+  <div style="margin:30px;">
+  <img style="width:100%;" src="/assets/images/joinUs/joinUs.jpeg">
+  <button style="background-color:#d71619;margin-top:20px;margin-bottom:10px;width:100%;height:30px;color:white;border:none;font-size:14px;" data-role="none">加入我们</button>
+  </div>
+  <p style="padding-left:10px;">在瑞颐集团，我们的目标是确保有天赋和才能的专业人才在酒店行业有成功和绝佳的发展机会。</p>
+  <p style="padding-left:10px;">更好地了解瑞颐的职业发展机会，并加入瑞颐找到属于您的理想位置，请联系我们。</p>
+<p style="padding-left:10px;">电子邮箱:hr@sihotels.com</p>
+<p style="padding-left:10px;">联系电话:+86（592）5709 195</p>
+<p style="padding-left:10px;">联络地址:厦门鹭江道12号厦门瑞颐大酒店 4楼 行政办公室 361001</p>
+<hr style="height:20px;background-color:#f6f6f6;border:none;"></hr>
+<div data-role="content">
+<div style="width: 100%;">        
+	<div style="float:left;width: 30%;">
+		<select style="background-color:#fafafa;width:100%;text-align: center;" data-role="none" id="unit1">
+    		<option value="1">事业发展部</option>
+		</select>
+	</div>
+	<div style="float:left;width: 30%;margin-left: 5%;">
+		<select style="background-color:#fafafa;width:100%;" data-role="none" id="unit2">
+  	  		<option value="1">发展副总监</option>
+		</select>
+	</div>
+	<div style="float:left;width: 30%;margin-left: 5%;">
+		<button style="background-color:#d41b23;border:none;color:white;height:34px;width:100%;" data-role="none">搜索</button>
+	</div>
+</div>
+<button data-role="none" style="background:#fafafa;height:50px;width:100%;border:none;font-size:16px;margin-top:20px;padding-left:20px;"><font style="float:left;">发展副总监<font color=#8f8f8f size=2px>&nbsp;&nbsp;(事业发展部)</font></button>
+<p style="font-size:15px">性别：			不限<br>
+ 年龄：			不限<br>
+ 要求：			直接向董事长汇报。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;全面负责大中华区范围内拓展酒店品牌<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理项目开发及特许经营项目开发。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;潜在酒店项目评估，酒店市场调研分析。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;发展部的管理运行，维护客户、<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;政企关系。6年以上酒店集团相关岗位<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作经验。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国际联号发展部工作经验优先考虑。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;专科以上学历。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;英语读写交流流畅。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;电脑水平要求娴熟。<br>
+</p>
+</div>
+<style>
+#pageone{
+	background:white;
+	color:#333333;
+}
+.ui-content{  
+     background:white;  
+} 
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #dedede;
+  font-size:12px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("/assets/images/index/down2.png") no-repeat scroll 90% center transparent;
+  background-size:10px 10px;
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-left: 10px; 
+	border-radius:5px;
+	text-align:center;
+ 	width:90px; 
+	height:34px;
+}
+button{
+	border-radius:5px;
+	font-size:12px;
+}
+p{
+	color:#333333;
+}
+</style>
+</body>
+<script type="text/javascript">
+function isWeixnOpen(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if(isWeixnOpen()){
+	$("#pageHeader").hide();
+}
+if($(document.body).width()>330){
+	$("select").css("width","100%");
+	$("select").css("font-size","12px");
+	$("button").css("font-size","12px");
+}
+</script>
+</html>
