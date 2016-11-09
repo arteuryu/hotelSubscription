@@ -16,10 +16,10 @@
   </div>
 <div data-role="main" class="ui-content" data-corners="false" data-theme="d">
 <div>
-<p align="center">豪华宴会厅</p>
-<img  src="/assets/images/meetingRoom/pic_04.png" style="width:100%">
+<p align="center">${data.title}</p>
+<img  src="${data.url}" style="width:100%">
 </div>
-<p>8米挑高无柱，尽显大气典雅。可容纳多达1,000人的会议或650人的宴会；豪华宴会厅还可按不同需求，灵活分割成3间独立的宴会厅，它拥有最先进的视听设备，无论是社交宴会还是更大规模的会议与活动，均能成功举办。</p>
+<p>${data.text}</p>
 </div>
 <div style="text-indent:1em">
 <p>楼层平面图</p>
