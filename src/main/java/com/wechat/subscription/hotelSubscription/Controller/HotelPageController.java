@@ -1,7 +1,12 @@
 package com.wechat.subscription.hotelSubscription.Controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/hotelPage")  
@@ -42,9 +47,16 @@ public class HotelPageController {
 	public String getMeetingPreorder(){
 		return "meetingPreorder";
 	}
-	@RequestMapping("/meetingDetailNc")
-	public String getMeetingDetailNc(){
-		return "meetingDetailNc";
+	@RequestMapping("/meetingDetail")
+	public ModelAndView getMeetingDetailNc(@RequestParam String title,@RequestParam String text,@RequestParam String url){
+		ModelAndView mav = new ModelAndView();  
+		mav.setViewName("meetingDetail");
+		Map<String,String> map = new HashMap<String,String>();  
+        map.put("title", title);  
+        map.put("text", text);  
+        map.put("url", url);  
+        mav.addObject("data",map);  
+		return mav;
 	}
 	@RequestMapping("/meetingDetailXm")
 	public String getMeetingDetailXm(){
