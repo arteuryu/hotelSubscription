@@ -16,13 +16,13 @@
   </div>
 <div data-role="main" class="ui-content" data-corners="false">
 <div data-corners="false">
-<p align="center">2012年全球酒店业金樽奖最佳商务酒店</p>
-<img data-corners="false" src="/assets/images/mediaCenter/meiti01.png" style="width:100%">
+<p align="center">${data.title}</p>
+<img data-corners="false" src="${data.url}" style="width:100%">
 </div>
 <div>
 <p>奖项详情</p>
 <hr>
-<p>金樽奖</p>
+<p>${data.text}</p>
 </div>
 <div>
 <img width="100%" src="/assets/images/mediaCenter/pic_10.png">

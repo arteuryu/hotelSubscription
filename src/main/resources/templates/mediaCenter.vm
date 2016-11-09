@@ -17,7 +17,7 @@
 
   <div data-role="content">
   <ul data-role="listview" id="listView" data-theme="d">
-      <li id="mediaDetail" href="/hotelPage/mediaDetail">
+      <li>
         <img class="mediaImg" src="/assets/images/mediaCenter/meiti01.png">
         <h3>2012年全球酒店业金樽奖最佳商务酒店</h3>
         <p>金樽奖</p>
@@ -94,7 +94,11 @@ function isWeixnOpen(){
 if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
-$("#mediaDetail").on("tap",function(){window.location.href=$(this).attr("href");});
+$("li").on("tap",function(){
+	var href = "/hotelPage/mediaDetail?title="+$(this).children("h3").text()+"&text="+$(this).children("p").text()+"&url="+$(this).children("img").attr("src");
+// 	alert(href);
+	window.location.href=href;
+});
 </script>
 </div>
 </body>

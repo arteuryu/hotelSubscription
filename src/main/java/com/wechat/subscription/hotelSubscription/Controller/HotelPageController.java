@@ -67,8 +67,15 @@ public class HotelPageController {
 		return "mediaCenter";
 	}
 	@RequestMapping("/mediaDetail")
-	public String getMediaDetail(){
-		return "mediaDetail";
+	public ModelAndView getMediaDetail(@RequestParam String title,@RequestParam String text,@RequestParam String url){
+		ModelAndView mav = new ModelAndView();  
+		mav.setViewName("mediaDetail");
+		Map<String,String> map = new HashMap<String,String>();  
+        map.put("title", title);  
+        map.put("text", text);  
+        map.put("url", url);  
+        mav.addObject("data",map);  
+		return mav;
 	}
 	@RequestMapping("/joinUs")
 	public String joinUs(){
