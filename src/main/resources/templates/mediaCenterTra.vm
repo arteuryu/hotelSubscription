@@ -94,8 +94,11 @@ function isWeixnOpen(){
 if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
-$("#mediaDetail").on("tap",function(){window.location.href=$(this).attr("href");});
-</script>
+$("li").on("tap",function(){
+	var href = "/hotelPage/mediaDetail?title="+$(this).children("h3").text()+"&text="+$(this).children("p").text()+"&url="+$(this).children("img").attr("src");
+// 	alert(href);
+	window.location.href=href;
+});</script>
 </div>
 </body>
 

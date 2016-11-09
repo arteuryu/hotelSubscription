@@ -64,72 +64,72 @@
   <div data-role="main" class="ui-content">
 
       <ul data-role="listview" id="listView" data-theme="d">
- 	  <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+ 	  <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc1.jpg">
         <h3>豪华宴会厅（3楼）</h3>
         <p>7.5米挑高无柱，尽显大气典雅。可容纳多达1000人的会议或者800人的宴会</p>
       </li>
-      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc2.jpg">
         <h3>宴会前厅</h3>
         <p>通透的宴会前厅，可举办500人的高端鸡尾酒会，透过全景落地玻璃可欣赏江南阁楼滕王阁美景。</p>
       </li>
- 		<li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+ 		<li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc3.jpg">
         <h3>茉莉厅Ⅰ</h3>
         <p>拥有113平方米的接待面积，饱览江景的全景玻璃窗，尽显高雅。可容纳90人的会议及宴会。</p>
       </li>
-      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc4.jpg">
         <h3>茉莉厅Ⅱ</h3>
         <p>拥有89平方米的接待面积，饱览江景的全景玻璃窗，尽显高雅。可容纳70人的会议及宴会。</p>
       </li>
-      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc5.jpg">
         <h3>菩提厅</h3>
         <p>拥有97平方米的接待面积，饱览江景的全景玻璃窗，尽显高雅。可容纳80人的会议及宴会。</p>
       </li>
-      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc6.jpg">
         <h3>百合厅</h3>
         <p>拥有60平方米的接待面积，饱览江景的全景玻璃窗，空间舒适，适合20-50人的会议活动。</p>
       </li>
-      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc7.jpg">
         <h3>木兰厅</h3>
         <p>拥有26平方米的接待面积，饱览江景的全景玻璃窗，空间舒适，适合8人的会议活动。</p>
       </li>
-      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetailNc">
+      <li class="nc" style ="border-top:solid 1px #dedede" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetNc8.jpg">
         <h3>会议室 I 和 II</h3>
         <p>位于商务中心的两间专为高端商务会议量身定制的会议室，可容纳6-8人的董事会议。并且拥有独一无二的全景窗设计，让您在开会之余，欣赏赣江及滕王阁美景。</p>
       </li>
-      <li class="xm" href="/hotelPage/meetingDetailXm">
+      <li class="xm" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetXm1.jpg">
         <h3>豪华宴会厅</h3>
         <p>7.5米挑高无柱，尽显大气典雅。可容纳多达1,000人的会议或800人的宴会；豪华宴会厅还可按不同需求，灵活分割成3间独立的宴会厅，它拥有最先进的视听设备，无论是社交宴会还是更大规模的会议与活动，均能成功举办</p>
       </li>
-      <li class="xm" href="/hotelPage/meetingDetailXm">
+      <li class="xm" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetXm2.jpg">
         <h3>菩提厅</h3>
         <p>可灵活分割成3个独立会议室的300平方米的菩提厅，它将是贵宾接待的最佳场所。无论是婚宴还是晚宴，均是您的最佳选择。</p>
       </li>
-      <li class="xm" href="/hotelPage/meetingDetailXm">
+      <li class="xm" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetXm3.jpg">
         <h3>茉莉厅</h3>
         <p>拥有60平方米的前区接待，及无敌海景的落地窗，尽显高雅。可容纳多达130人的会议及宴会</p>
       </li>
-      <li class="xm" href="/hotelPage/meetingDetailXm">
+      <li class="xm" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetXm4.jpg">
         <h3>碧荷厅</h3>
         <p>可灵活分割成3个独立会议室的290平方米的碧荷厅，容纳多达240人的会议及宴会，且拥有独一无二的全落地窗设计，可饱览壮丽的鼓浪屿海景。</p>
       </li>
-      <li class="xm" href="/hotelPage/meetingDetailXm">
+      <li class="xm" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetXm5.jpg">
         <h3>牡丹厅</h3>
         <p>可灵活分割成2个独立会议室的270平方米的牡丹厅，容纳多达220人的会议及宴会，且拥有独一无二的全落地窗设计，可饱览壮丽的鼓浪屿海景。</p>
       </li>
-      <li class="xm" href="/hotelPage/meetingDetailXm">
+      <li class="xm" href="/hotelPage/meetingDetail">
         <img class="hotelImg" src="/assets/images/meetingRoom/meetXm6.jpg">
         <h3>董事会议室</h3>
         <p>为高端商务会议量身定制的60平方米的董事会议室，可容纳25人的董事会议。并且拥有独一无二的全落地窗设计，让您在开会之余，饱览壮丽的鼓浪海景。</p>
@@ -149,8 +149,11 @@ function isWeixnOpen(){
 if(isWeixnOpen()){
 	$("#pageHeader").hide();
 }
-$("li").on("tap",function(){window.location.href=$(this).attr("href");});
-$(".xm").hide();
+$("li").on("tap",function(){
+	var href = $(this).attr("href")+"?title="+$(this).children("h3").text()+"&text="+$(this).children("p").text()+"&url="+$(this).children("img").attr("src");
+// 	alert(href);
+	window.location.href=href;
+});$(".xm").hide();
 $("#city").change(function(){
 	if($(this).val()=="nc"){
 		$(".nc").show();

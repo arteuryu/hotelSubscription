@@ -120,19 +120,24 @@ $(document).ready(function(){
 </div>
 <hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
 <div style="padding-left:10px;background-color:white;">
-<pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">   厦门瑞颐大酒店</pre>
+<!-- <pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">   厦门瑞颐大酒店</pre> -->
+<pre style="font-size:14px;float:left;color:#999999;">选择酒店  </pre>
+<select id="selectHotel" data-role="none" style="margin-top:15px;float:left;font-size:14px;color:#999999">
+<option>厦门瑞颐大酒店</option>
+<option>南昌瑞颐大酒店</option>
+</select>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
 </div>
 </div>
 <hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
 <div style="padding-left:10px;background-color:white;">        
-	<div style="font-size:14px;display:inline;padding-top:10px;float:left;">
+	<div style="font-size:14px;display:inline;padding-top:10px;float:left;margin-right:45px;">
 		<p style="font-size:14px;color:#999999;">时间</p>
 	</div>
-	<div style="font-size:14px;padding-left:45px;padding-bottom:10px;display:inline;float:left;">
-		<p>8月16日<font style="padding-left:10px;" size="2" color="#999999">今天入住时间</font></p>
-		<p>8月17日<font style="padding-left:10px;" size="2" color="#999999">明天离店一天</font></p>		
+	<div style="font-size:14px;padding-bottom:10px;display:inline;float:left;">
+		<p><input class="inputDate" data-role="none" style="width:120px;" type="date" value="16/08/2016"></input><font size="2" color="#999999">今天入住时间</font></p>
+		<p><input class="inputDate" data-role="none" style="width:120px;" type="date"></input><font size="2" color="#999999">明天离店一天</font></p>		
 	</div>
 	<div style="float:right;padding-top:10px;padding-right:10px;">
 		<img src="/assets/images/index/right.png">
@@ -358,6 +363,21 @@ background:black;
 /*   margin-left:10px; */
   border-radius:3px;	
 }
+.inputDate{
+   border: none;
+   font-size:14px;
+   appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+#selectHotel{
+  border: none;
+  font-size:14px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 #selectCount {
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
   border: solid 1px #dedede;
@@ -430,6 +450,7 @@ if(isiOS){
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
+$(".inputDate").val(new Date().toDateInputValue());
 // if($(document.body).width()>330){
 // 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");
