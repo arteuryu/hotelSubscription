@@ -136,8 +136,8 @@ $(document).ready(function(){
 		<p style="font-size:14px;color:#999999;">时间</p>
 	</div>
 	<div style="font-size:14px;padding-bottom:10px;display:inline;float:left;">
-		<p><input class="inputDate" data-role="none" style="width:120px;" type="date" value="16/08/2016"></input><font size="2" color="#999999">今天入住时间</font></p>
-		<p><input class="inputDate" data-role="none" style="width:120px;" type="date"></input><font size="2" color="#999999">明天离店一天</font></p>		
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date" value="16/08/2016"></input><font size="2" color="#999999">今天入住时间</font></p>
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date"></input><font size="2" color="#999999">明天离店一天</font></p>		
 	</div>
 	<div style="float:right;padding-top:10px;padding-right:10px;">
 		<img src="/assets/images/index/right.png">
