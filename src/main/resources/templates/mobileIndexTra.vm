@@ -128,8 +128,8 @@ $(document).ready(function(){
 <pre style="font-size:14px;float:left;color:#999999;">选择酒店  </pre>
 <!-- <pre style="font-size:14px;float:left;color:#999999;">選擇酒店</pre><pre style="float:left;font-size:14px;color:#999999">   廈門瑞頤大酒店</pre> -->
 <select id="selectHotel" data-role="none" style="margin-top:15px;float:left;font-size:14px;color:#999999">
-<option>厦门瑞颐大酒店</option>
-<option>南昌瑞颐大酒店</option>
+<option value="xm">厦门瑞颐大酒店</option>
+<option value="nc">南昌瑞颐大酒店</option>
 </select>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
@@ -178,19 +178,19 @@ $(document).ready(function(){
       <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
         <h3>豪华海景大床房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
-        <p>58平方米的宽敞豪华城景房</p>
+       <p>58平方米的寬敞豪華城景房</p>
         <span>CNY:<font color=red>1236</font></span>
       </li>
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
         <h3>名仕复式套房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
-        <p>58平方米的宽敞豪华城景房</p>
+       <p>58平方米的寬敞豪華城景房</p>
 		<span>CNY:<font color=red>1236</font></span>      
       </li>
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
         <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
         <h3>豪华家庭房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
-        <p>58平方米的宽敞豪华城景房</p>
+       <p>58平方米的寬敞豪華城景房</p>
 		<span>CNY:<font color=red>1236</font></span>             
       </li>
       <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
@@ -413,21 +413,18 @@ var u = navigator.userAgent;
 var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 if(isiOS){
-// 	$("#preInput").css("width","100px");
-// 	$("#indexImg").css("width","160px");
-// 	$("#scanCode").css("padding-right","20px");
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
-// if($(document.body).width()>330){
-// 	$("#city").css("width","250px");
-// 	$("#selectCount").css("width","80px");
-// 	$("#preInput").css("width","100px");
-// 	$("#search").css("width","90%");	
-// 	$("#firstTd").css("padding-left","27px");
-// 	$("#indexImg").css("width",width+"px");	
-// 	$("#scanCode").css("padding-left","75px");
-// }
+$("#selectHotel").change(function(){
+	if($(this).val()=="nc"){
+		$(".nc").show();
+		$(".xm").hide();
+	}else{
+		$(".nc").hide();
+		$(".xm").show();
+	}
+});
 </script>
 </div>
 </body>

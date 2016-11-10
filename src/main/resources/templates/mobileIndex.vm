@@ -123,8 +123,8 @@ $(document).ready(function(){
 <!-- <pre style="font-size:14px;float:left;color:#999999;">选择酒店</pre><pre style="float:left;font-size:14px;color:#999999">   厦门瑞颐大酒店</pre> -->
 <pre style="font-size:14px;float:left;color:#999999;">选择酒店  </pre>
 <select id="selectHotel" data-role="none" style="margin-top:15px;float:left;font-size:14px;color:#999999">
-<option>厦门瑞颐大酒店</option>
-<option>南昌瑞颐大酒店</option>
+<option value="xm">厦门瑞颐大酒店</option>
+<option value="nc">南昌瑞颐大酒店</option>
 </select>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
@@ -144,22 +144,6 @@ $(document).ready(function(){
 	</div>
 </div>
 <hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
-<!-- <div data-role="none" style="padding-top:10px;padding-left:10px;">         -->
-<!-- 		<label style="float:left;color:#999999;padding-top:5px;width:60px;font-size:14px;">预订间数</label> -->
-<!-- 		<select id="selectCount" data-role="none"> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</option> -->
-<!-- 			<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</option> -->
-<!-- 		</select> -->
-<!-- 		<label style="color:#999999;float:left;padding-left:5px;width:60px;padding-top:5px;font-size:14px;">预订代码</label> -->
-<!-- 		<input id="preInput" data-role="none"></input> -->
-<!-- </div> -->
 <ul data-role="none" style="width:100%;overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0;padding-top: 2px;padding-bottom: 10px;border-bottom: solid 1px #dedede;">
 	<li style="float:left;margin-left: 10px;width: 45%;height:30px;">
 			<label style="font-size: 14px;color: #999999;margin-right: 4px;">预定间数</label>
@@ -186,49 +170,118 @@ $(document).ready(function(){
 </div>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 	<ul data-role="listview" id="listView" data-theme="d">
-      <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
-        <h3>豪华海景大床房<span style="float:right"><font size="2px">查看详情</font></span></h3>
-        <p>58平方米的宽敞豪华城景房</p>
-        <span>CNY:<font color=red>1236</font></span>
-      </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
-        <h3>名仕复式套房<span style="float:right"><font size="2px">查看详情</font></span></h3>
-        <p>58平方米的宽敞豪华城景房</p>
-		<span>CNY:<font color=red>1236</font></span>      
-      </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
-        <h3>豪华家庭房<span style="float:right"><font size="2px">查看详情</font></span></h3>
-        <p>58平方米的宽敞豪华城景房</p>
-		<span>CNY:<font color=red>1236</font></span>             
-      </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
-        <h3>高级大床房<span style="float:right"><font size="2px">查看详情</font></span></h3>
+      <li  class="detailItem nc" style ="border-top-width:0px;" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
- 		<span>CNY:<font color=red>1236</font></span>             
       </li>
-      </ul>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
+        <h3>名仕复式套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
+        <h3>豪华家庭房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/05.png">
+        <h3>豪华江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/06.png">
+        <h3>豪华江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/07.png">
+        <h3>行政江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/08.png">
+        <h3>女皇江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn" style="padding-top:10px">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/09.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" style ="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/01.png">
+        <h3>豪华大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/02.png">
+        <h3>豪华双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
+        <h3>豪华海景大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/04.png">
+        <h3>豪华海景双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/05.png">
+        <h3>豪华城景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/06.png">
+        <h3>家庭亲子套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/07.png">
+        <h3>行政海景大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/02.png">
+        <h3>行政海景双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/09.png">
+        <h3>行政海景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/10.png">
+        <h3>行政公寓套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/11.png">
+        <h3>栀椤崎套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/12.png">
+        <h3>皇家海景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+    </ul>
       <p align="center" style="padding-top:10px;"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
       <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
       <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelect" target="_blank"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">瑞颐酒店</font></button></a></div>
  	  <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/about"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">关于瑞颐</font></button></a></div>
       <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/mediaCenter"  target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">媒体中心</font></button></a></div>
       <div style="margin-left:20px;margin-top:10px;margin-right:20px;"><a href="/hotelPage/joinUs" target="_blank" style="margin-top:10px;"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">加入我们</font></button></a></div>
-<!-- <table data-role="none" style="margin-top:15px;margin-left:20px;background-color:#ede9e2;border-collapse:collapse;border-spacing:0px;"> -->
-<!-- <tr align="center" style="margin:0px;"> -->
-<!-- <td> -->
-<!-- 		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre> -->
-<!-- 		<pre style="font-size:10px;"> 出行提供源源不断的优惠和礼遇 </pre> -->
-<!-- 		<button data-role="none" style="border:none;background-color:#a3854a;color:white;padding:5px;margin-bottom:10px;padding-left:3px;padding-right:3px;padding-left:15px;padding-right:15px;">获取详情</button> -->
-<!-- </td> -->
-<!-- <td> -->
-<!-- 		<img id="indexImg" style="height:50%;width:125px;margin-bottom:0px;float:right;" src="/assets/images/index/drink.png"> -->
-<!-- </td> -->
-<!-- </tr> -->
-<!-- </table> -->
 <ul data-role="none" style="overflow:hidden;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0; margin: 20px;background-color: #ede9e2;border-radius: 5px;">
 	<li style="width:62%;text-align:center;float:left;padding-top: 5px;padding-bottom: 5px;">
 		<pre style="font-size:10px;"> 一年365日，我们竭力为您的 </pre>
@@ -450,7 +503,16 @@ if(isiOS){
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
-$(".inputDate").val(new Date().toDateInputValue());
+// $(".inputDate").val("2016-08-16");
+$("#selectHotel").change(function(){
+	if($(this).val()=="nc"){
+		$(".nc").show();
+		$(".xm").hide();
+	}else{
+		$(".nc").hide();
+		$(".xm").show();
+	}
+});
 // if($(document.body).width()>330){
 // 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");
