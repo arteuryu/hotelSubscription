@@ -248,6 +248,13 @@ ul{list-style:none ;}
 	width:200px;
 	float:right;" 
 }
+.inputDate{
+   border: none;
+   font-size:14px;
+   appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 button{
 	border-radius:3px;
 }
@@ -284,7 +291,12 @@ if(isiOS){
 }
 //  alert($(document.body).width());
 //  alert($(document.body).height());
-if($(document.body).width()>330){
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+$(".inputDate").val(new Date().toDateInputValue());if($(document.body).width()>330){
 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");
 	$("#preInput").css("width","100px");

@@ -503,7 +503,13 @@ if(isiOS){
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
-// $(".inputDate").val("2016-08-16");
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+$(".inputDate").val(new Date().toDateInputValue());
+$(".xm").hide();
 $("#selectHotel").change(function(){
 	if($(this).val()=="nc"){
 		$(".nc").show();

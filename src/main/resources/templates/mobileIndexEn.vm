@@ -517,6 +517,7 @@ $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");}
 $("#closePhonePopup").click(function(){
 	$("#popUpContact").popup("close");
 });
+$(".xm").hide();
 $("#selectHotel").change(function(){
 	if($(this).val()=="nc"){
 		$(".nc").show();

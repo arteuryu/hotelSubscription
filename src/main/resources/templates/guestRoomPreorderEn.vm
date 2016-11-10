@@ -36,8 +36,8 @@
 		<p style="font-size:16px;float:left;color:#999999;">Time</p>
 	</div>
 	<div style="font-size:16px;padding-left:52px;display:inline;float:left;">
-		<p>8/16<font style="padding-left:15px;" size="2" color="#999999">Check Time</font></p>
-		<p>8/17<font style="padding-left:15px;" size="2" color="#999999">Leave Time</font></p>		
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date" ></input><font size="2" color="#999999">今天入住时间</font></p>
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date"></input><font size="2" color="#999999">明天离店一天</font></p>		
 	</div>
 	<div style="float:right;padding-top:35px;padding-right:16px;">
 		<img src="/assets/images/index/right.png">
@@ -227,6 +227,13 @@ ul{list-style:none ;}
 /* /* 	margin-left:10px; */ */
 /* 	margin-right:10px;	 */
 }
+.inputDate{
+   border: none;
+   font-size:14px;
+   appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 #city{
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
   border: solid 1px #dedede;
@@ -284,6 +291,12 @@ if(isiOS){
 }
 //  alert($(document.body).width());
 //  alert($(document.body).height());
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+$(".inputDate").val(new Date().toDateInputValue());
 if($(document.body).width()>330){
 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");
