@@ -383,6 +383,14 @@ p{
   -moz-appearance:none;
   -webkit-appearance:none;
 }
+#selectHotel{
+  border: none;
+  font-size:14px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 .mainIconImg{
 	display: block;     
 	height: 30px;     

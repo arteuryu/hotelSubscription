@@ -478,6 +478,14 @@ background:black;
 /* 	margin-left:10px; */
 /* 	margin-right:10px;	 */
 }
+#selectHotel{
+  border: none;
+  font-size:14px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
 button{
 	border-radius:3px;
 	border-width:1px;
