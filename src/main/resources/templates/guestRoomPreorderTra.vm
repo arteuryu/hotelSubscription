@@ -36,8 +36,8 @@
 		<p style="font-size:16px;float:left;color:#999999;">时间</p>
 	</div>
 	<div style="font-size:16px;padding-left:52px;display:inline;float:left;">
-		<p>8月16日<font style="padding-left:15px;" size="2" color="#999999">今天入住时间</font></p>
-		<p>8月17日<font style="padding-left:15px;" size="2" color="#999999">明天离店一天</font></p>		
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date" ></input><font size="2" color="#999999">今天入住时间</font></p>
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date"></input><font size="2" color="#999999">明天离店一天</font></p>		
 	</div>
 	<div style="float:right;padding-top:35px;padding-right:16px;">
 		<img src="/assets/images/index/right.png">
@@ -296,7 +296,8 @@ Date.prototype.toDateInputValue = (function() {
     local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
     return local.toJSON().slice(0,10);
 });
-$(".inputDate").val(new Date().toDateInputValue());if($(document.body).width()>330){
+$(".inputDate").val(new Date().toDateInputValue());
+if($(document.body).width()>330){
 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");
 	$("#preInput").css("width","100px");
