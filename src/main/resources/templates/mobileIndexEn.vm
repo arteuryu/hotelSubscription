@@ -133,7 +133,7 @@ $(document).ready(function(){
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;-webkit-margin-before: 0;-webkit-margin-after: 0;"></hr>
 <div style="padding-left:10px;background-color:white;">
 <p><font color=red size="5px">|</font>&nbsp;&nbsp;Room reservation</p>
-<pre style="font-size:14px;color:#999999;float:left;">Hotel Loc</pre><pre style="font-size:14px;color:black;float:left;">   nearby  </pre><pre style="float:left;font-size:14px;color:#999999" >loc/hotel/keyword</pre>
+<pre style="font-size:14px;color:#999999;float:left;">Locate</pre><pre style="font-size:14px;color:black;float:left;">   nearby  </pre><pre style="float:left;font-size:14px;color:#999999" >loc/hotel/keyword</pre>
 <div style="float:right;padding-top:14px;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
 </div>
@@ -141,7 +141,7 @@ $(document).ready(function(){
 <hr style="clear:both;border-style: solid;border-width: 0;border-bottom: solid 1px #dfdfdf;">
 <div style="padding-left:10px;background-color:white;">
 <!-- <pre style="font-size:11px;float:left;color:#999999;">hotel select</pre><pre style="float:left;font-size:11px;color:#999999">   Swiss International Hotel Xiamen</pre> -->
-<pre style="font-size:14px;float:left;color:#999999;">Hotel  </pre>
+<pre style="font-size:14px;float:left;color:#999999;">Hotel    </pre>
 <select id="selectHotel" data-role="none" style="margin-top:15px;float:left;font-size:14px;color:#999999">
 <option value="xm">Swiss  Hotel Xiamen</option>
 <option value="nc">Swiss  Hotel Xiamen</option>
