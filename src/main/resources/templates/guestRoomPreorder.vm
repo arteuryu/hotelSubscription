@@ -296,7 +296,8 @@ $(".inputDate").val(new Date().toDateInputValue());Date.prototype.toDateInputVal
     local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
     return local.toJSON().slice(0,10);
 });
-$(".inputDate").val(new Date().toDateInputValue());if($(document.body).width()>330){
+$(".inputDate").val(new Date().toDateInputValue());
+if($(document.body).width()>330){
 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");
 	$("#preInput").css("width","100px");

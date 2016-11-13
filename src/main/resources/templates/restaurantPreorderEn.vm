@@ -31,60 +31,64 @@
 </div>
   <div data-role="main" class="ui-content">
       <ul data-role="listview" id="listView" data-theme="d">
-      <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
-        <img class="hotelImg" src="/assets/images/restaurant/resXm1.jpg">
-        <h3>逸趣酒廊 [2楼]</h3>
-        <p>最地道的泰式料理，最豪华的泰厨阵容，最惬意的用餐环境，不可错过的味觉狂欢！</p>
-      </li>
+<!--       <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning"> -->
+<!--         <img class="hotelImg" src="/assets/images/restaurant/resXm1.jpg"> -->
+<!--         <h3>逸趣酒廊 [2楼]</h3> -->
+<!--         <p>最地道的泰式料理，最豪华的泰厨阵容，最惬意的用餐环境，不可错过的味觉狂欢！</p> -->
+<!--       </li> -->
       <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resXm2.jpg">
-        <h3>红泰餐厅 [2楼]</h3>
-        <p>最地道的泰式料理，最豪华的泰厨阵容，最惬意的用餐环境，不可错过的味觉狂欢！</p>
+        <h3>REDTHAI Restaurant: 2F</h3>
+        <p>Authentic Thai cuisine prepared by our team of Thai master chefs, served in a cozy, modern atmosphere. Eight private dining rooms available for your choice.</p>
       </li>
       <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resXm3.jpg">
-        <h3>琴岸咖啡厅 [2楼]</h3>
-        <p>位于2楼的全天候餐厅，早餐、午餐与晚餐自助餐均为现场烹饪，亦提供零点服务。</p>
+        <h3>Rivage: 2F</h3>
+        <p>This all-day dining restaurant serves live kitchen buffets as well as a la carte for breakfast, lunch and dinner.</p>
       </li>
       <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resXm4.jpg">
-        <h3>户外咖啡吧 [3楼]</h3>
-        <p>独具特色的户外咖啡吧，远眺鼓浪屿壮丽海景，给您带来一种闲适、随意的生活态度。同时也是您聚会畅谈的最佳场所。</p>
+        <h3>The Terrace: 3F</h3>
+        <p>A unique outdoor setting on level 3, offering breathtaking views. Perfect for special occasions.</p>
       </li>
       <li  class="detailItem xm" style ="border-top:solid 1px #dedede" href="http://xmry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resXm5.jpg">
-        <h3>新南轩中餐厅 [3楼]</h3>
-        <p>独具特色的户外咖啡吧，远眺鼓浪屿壮丽海景，给您带来一种闲适、随意的生活态度。同时也是您聚会畅谈的最佳场所。</p>
+        <h3>Xin nan Xuan Chinese Restaurant: 3F</h3>
+        <p>Elegant setting for exquisite local fare and Cantonese cuisine, complemented with regional Chinese favorites. A Dim Sum menu is served at daily lunch.</p>
       </li>
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resNc1.jpg">
-        <h3>江畔咖啡厅</h3>
-        <p>南昌瑞颐大酒店江畔咖啡厅拥有独特开放式厨房，品尝美食并享受烹制过程，为您的用餐带来趣味性。江畔咖啡厅拥有宽阔赣江美景，提供丰盛国际自助餐，更有瑞士特色美食。餐厅可容纳200余位客人同时用餐，是西式聚会场地的最佳选择</p>
+        <h3>Rivage International All Day Dining Restaurant: 2F</h3>
+        <p>Rivage presents all-day dining in sophisticated surroundings, with views to the Gan River. Enjoy the choice of a creative a la carte menu or a generous buffet for breakfast, lunch and dinner, featuring live-action stations where the chefs prepare world cuisine and local specialty dishes for our guests.</p>
       </li>
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resNc2.jpg">
-        <h3>新南轩酒楼[2-5楼]</h3>
-        <p>讲究地道厨艺的新南轩酒楼，以点心和地方特色小吃为招牌，把您带入赣、湘、粤及闽南等地的美食世界。您可选择在4楼大厅或具有不同装饰风格的55间私人包间内享受美食，这将把您对用餐的完美体验带入新高度。</p>
+        <h3>Xin Nan Xuan Chinese Restaurant: 2-5F</h3>
+        <p>Xin Nan Xuan, brings its fine reputation from old-town Xiamen, where it was first started in 1911.
+An exquisite restaurant offering fine Jiangxi and Cantonese cuisine, with an array of authentic dishes from Xiamen. Also available is an enticing selection of fresh, live seafood.
+It is set to impress in a modern and innovative ambience that spreads over four levels, with 55 oversized private rooms in addition to the main dining space on level 4.</p>
       </li>
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resNc3.jpg">
-        <h3>江户前日本料理[2楼]</h3>
-        <p>源于日本江户时代的传统日式料理技艺，采用最新鲜的食材及地道专业的烹制工艺，为喜爱和风口味的客人带来味觉、视觉的顶级体验。</p>
+        <h3>Edomae Japanese Restaurant: 2F</h3>
+        <p>Savour the delicate flavours of freshly-prepared Japanese cuisine in a contemporary yet traditional setting, with window views that overlook the Lobby and the scenic Gan River. In addition to the main dining area, Edomae boasts two sushi bars, three teppanyaki rooms for 4-8 persons and five tatami rooms for 4-12 persons.</p>
       </li>
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resNc4.jpg">
-        <h3>逸趣酒廊[1楼]</h3>
-        <p>南昌瑞颐大酒店逸趣酒廊位于酒店一楼大堂，在轻松愉悦的环境中，提供香茗、咖啡、各式鸡尾酒和软饮供您挑选；更有逸趣惊喜下午茶及傍晚的现场钢琴演奏及鸡尾酒。</p>
+        <h3>Niche Lounge: 1F</h3>
+        <p>Located in the spacious lobby, Niche Lounge is the perfect setting for offerings of gourmet coffee and tea culture, or a delicious Swiss chocolate drink.
+When the sun goes down, unwind over a glass of wine or cocktail while listening to live tunes of the piano.</p>
       </li>
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resNc5.jpg">
-        <h3>泡吧[7楼]</h3>
-        <p>泡吧位于酒店7楼游泳池外观景露台，拥有纯户外的舒适环境和绝佳江景视角。在此与朋友分享小聚和派对的欢乐时光，各式饮品和小食供您选择。您还可在游泳池畅游之后，在此小坐，享受阳光微风的闲暇时刻。</p>
+        <h3>Bubble Bar: 7F</h3>
+        <p>Bubble Bar out-door terrace is located on 7th floor adjoining the swimming pool and commands a scenic view over Gan river and Bayi bridge. Enjoy the breeze while sipping on cocktails, wine or beer, and listening to the upbeat music tunes.</p>
       </li>
       <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Reserve/Dinning">
         <img class="hotelImg" src="/assets/images/restaurant/resNc6.jpg">
-        <h3>颐云阁[61楼]</h3>
-        <p>领略城市风情的最佳地点。在这里，您可尽享南昌的空中景色，尤其是夜间赣江两岸灯光秀。颐云阁时尚菜单包含多种轻型餐食和经典下午茶供您选择。</p>
+        <h3>SKY 61 Lounge: 61F</h3>
+        <p>The perfect venue to enjoy the best Nanchang has to offer. Stunning views over the Nanchang skyline with spectacular nightly ‘Light & Sound Shows’.
+A trendy menu with tasty light meals is offered in the evenings and a classic Afternoon Tea set during daytime. Or simply enjoy a glass of wine, cocktail or your favorite drink.</p>
       </li>
     </ul>
     </div>
