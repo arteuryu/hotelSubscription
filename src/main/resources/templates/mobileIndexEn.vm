@@ -133,7 +133,7 @@ $(document).ready(function(){
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;-webkit-margin-before: 0;-webkit-margin-after: 0;"></hr>
 <div style="padding-left:10px;background-color:white;">
 <p><font color=red size="5px">|</font>&nbsp;&nbsp;Room reservation</p>
-<pre style="font-size:14px;color:#999999;float:left;">Locate</pre><pre style="font-size:14px;color:black;float:left;">   nearby  </pre><pre style="float:left;font-size:14px;color:#999999" >loc/hotel/keyword</pre>
+<pre style="font-size:14px;color:#999999;float:left;">Locate</pre><pre id="location" style="font-size:14px;color:black;float:left;">   nearby  </pre><pre style="float:left;font-size:14px;color:#999999" >loc/hotel/keyword</pre>
 <div style="float:right;padding-top:14px;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
 </div>
@@ -545,15 +545,9 @@ if(isiOS){
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
-// if($(document.body).width()>330){
-// 	$("#city").css("width","250px");
-// 	$("#selectCount").css("width","80px");
-// 	$("#preInput").css("width","100px");
-// 	$("#search").css("width","90%");	
-// 	$("#firstTd").css("padding-left","27px");
-// 	$("#indexImg").css("width",width+"px");	
-// 	$("#scanCode").css("padding-left","75px");
-// }
+$("#location").click(function(){
+	window.location.href="/hotelPage/location";
+});
 </script>
 </div>
 </body>

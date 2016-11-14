@@ -217,4 +217,8 @@ public class HotelPageController {
 	public String comingsoonTra(){
 		return "comingsoonTra";
 	}
+	@RequestMapping("/location")
+	public String location(){
+		return "location";
+	}
 }
