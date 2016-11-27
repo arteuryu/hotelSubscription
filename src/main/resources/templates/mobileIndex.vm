@@ -522,6 +522,7 @@ $("#selectHotel").change(function(){
 $("#location").click(function(){
 	window.location.href="/hotelPage/location";
 });
+// $("#popUpContact").popup("open");
 // if($(document.body).width()>330){
 // 	$("#city").css("width","250px");
 // 	$("#selectCount").css("width","80px");

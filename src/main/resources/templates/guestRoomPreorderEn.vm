@@ -176,6 +176,12 @@
       </li>
     </ul>
     </div>
+    <div data-role="popup" id="popUpNcIntroduce" data-theme="a" class="ui-content" data-position-to="window" style="font-size:15px;margin-top:10px;">
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">简</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/indexTra" target="_blank">繁</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/indexEn" target="_blank">En</a></p>
+</div>
+
     <style type="text/css"> 
 .hotelImg{
 	height:80%;
@@ -274,8 +280,10 @@ if(isWeixnOpen()){
 }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 $(".xm").hide();
+$("#popUpNcIntroduce").popup("open");
 $("#city").change(function(){
 	if($(this).val()=="nc"){
+		$("#popUpNcIntroduce").popup("open");
 		$(".nc").show();
 		$(".xm").hide();
 	}else{
