@@ -145,7 +145,7 @@ When planning for your event at Swiss International Hotel Nanchang, our professi
  </p>     
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="text-align:center; width:100%;height:100%;margin-top:10px;">
-<span data-role="none" id="closepopUpNcIntroduce" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#d62d30;">确定</span>
+<span data-role="none" id="closepopUpNcIntroduce" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#d62d30;">Confirm</span>
 </div>
 </div>
 <div data-role="popup" id="popUpXmIntroduce" data-theme="a" class="ui-content" data-position-to="window" style="font-size:15px;margin-top:10px;background:white;">
@@ -155,7 +155,7 @@ When planning for your event at Swiss International Hotel Nanchang, our professi
 </p>     
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="text-align:center; width:100%;height:100%;margin-top:10px;">
-<span data-role="none" id="closepopUpXmIntroduce" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#d62d30;">确定</span>
+<span data-role="none" id="closepopUpXmIntroduce" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#d62d30;">Confirm</span>
 </div>
 </div>
     <script type="text/javascript">
@@ -188,6 +188,15 @@ $("#city").change(function(){
 if($(document.body).width()>310){
 	$("#city").css("width","250px");
 }
+$(document).ready(function(){
+	$("#popUpNcIntroduce").popup("open");
+});
+$("#closepopUpNcIntroduce").click(function(){
+	$("#popUpNcIntroduce").popup("close");
+});
+$("#closepopUpXmIntroduce").click(function(){
+	$("#popUpXmIntroduce").popup("close");
+});
 </script>
 </div>
 </body>

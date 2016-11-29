@@ -16,7 +16,7 @@
   </div>
   <div data-role="content">
   <ul data-role="listview" id="listView" data-theme="d">
-      <li class="detailItem"  href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+      <li class="detailItem"  href="http://www.swissinternationalxiamen.com.cn/zh/shouye">
         <img class="hotelImg" src="/assets/images/hotel/pic_hotel_01.png">
         <h3>Swiss International Hotel Xiamen</h3>
         <img class="iconSite" style="float:left;height:15px;width:10px;"  src="/assets/images/hotel/icon_site.png">
