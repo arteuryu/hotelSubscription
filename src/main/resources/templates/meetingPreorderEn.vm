@@ -139,7 +139,7 @@
     <div data-role="popup" id="popUpNcIntroduce" data-theme="a" class="ui-content" data-position-to="window" style="font-size:15px;margin-top:10px;background:white;">
 <h3 style="font-weight:100;color:black" align="center">Nanchang Swiss Hotel</h3>
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none"> 
-<p style="color:black;">Spread out over levels 4 and 5 are 3,700 square meters of comprehensive meeting and function space with state-of-the-art audio-visual support, which allow for a wide variety of events, meetings and banquets.
+<p style="font-size:16px;font-weight:100;color:black;">Spread out over levels 4 and 5 are 3,700 square meters of comprehensive meeting and function space with state-of-the-art audio-visual support, which allow for a wide variety of events, meetings and banquets.
 A Business Center with two Boardrooms provide for all the requirements of the savvy business traveler. 
 When planning for your event at Swiss International Hotel Nanchang, our professional meeting planners will be on hand to expertly tailor arrangements to ensure a successful and memorable experience.
  </p>     
@@ -151,7 +151,7 @@ When planning for your event at Swiss International Hotel Nanchang, our professi
 <div data-role="popup" id="popUpXmIntroduce" data-theme="a" class="ui-content" data-position-to="window" style="font-size:15px;margin-top:10px;background:white;">
 <h3 style="font-weight:100;color:black" align="center">Xiamen Swiss Hotel</h3>
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none"> 
-<p style="color:black;">Spread out on Levels 3 and 4 are 3,500 square meters of comprehensively-equipped meeting and function space, most of which enjoy views of the great outdoors.
+<p style="font-size:16px;font-weight:100;color:black;">Spread out on Levels 3 and 4 are 3,500 square meters of comprehensively-equipped meeting and function space, most of which enjoy views of the great outdoors.
 </p>     
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="text-align:center; width:100%;height:100%;margin-top:10px;">

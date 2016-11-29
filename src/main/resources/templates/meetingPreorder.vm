@@ -139,7 +139,7 @@
     <div data-role="popup" id="popUpNcIntroduce" data-theme="a" class="ui-content" data-position-to="window" style="font-size:15px;margin-top:10px;background:white;">
 <h3 style="font-weight:100;color:black" align="center">南昌瑞颐大酒店</h3>
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none"> 
-<p style="font-family:‘Microsoft YaHei’;font-weight:normal;color:black;">南昌瑞颐大酒店拥有共3700平方米的会议宴会场地，可同时承接一千人的会议及社交场地。南昌瑞颐大酒店豪华宴会厅位于酒店四层，宴会厅为无住方形，空间挑高8米，设计简洁时尚，适合各类大型宴会及会议。宴会厅外宽阔观景前厅，可为会议宴会客人提供不同风格茶歇，让您的会议更加舒适完美。酒店五楼有拥有15间大小各异的多功能会议室，【配备齐全视听设施，可供举办各式小型会议及宴会。</p>     
+<p style="font-size:16px;font-weight:100;color:black;">南昌瑞颐大酒店拥有共3700平方米的会议宴会场地，可同时承接一千人的会议及社交场地。南昌瑞颐大酒店豪华宴会厅位于酒店四层，宴会厅为无住方形，空间挑高8米，设计简洁时尚，适合各类大型宴会及会议。宴会厅外宽阔观景前厅，可为会议宴会客人提供不同风格茶歇，让您的会议更加舒适完美。酒店五楼有拥有15间大小各异的多功能会议室，【配备齐全视听设施，可供举办各式小型会议及宴会。</p>     
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="text-align:center; width:100%;height:100%;margin-top:10px;">
 <span data-role="none" id="closepopUpNcIntroduce" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#d62d30;">确定</span>
@@ -148,7 +148,7 @@
 <div data-role="popup" id="popUpXmIntroduce" data-theme="a" class="ui-content" data-position-to="window" style="font-size:15px;margin-top:10px;background:white;">
 <h3 style="font-weight:100;color:black" align="center">厦门瑞颐大酒店</h3>
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none"> 
-<p style="color:black;">總面積超過3,500平方米的高級會議室與多功能廳分佈在酒店3層與4層，設備齊全，且大部分會議室都能盡觀窗外鼓浪嶼海景。</p>     
+<p style="font-size:16px;font-weight:100;color:black;">總面積超過3,500平方米的高級會議室與多功能廳分佈在酒店3層與4層，設備齊全，且大部分會議室都能盡觀窗外鼓浪嶼海景。</p>     
 <hr style="-webkit-margin-before:0em;-webkit-margin-after: 0em;" size="0" noshade="noshade" color=#dedede data-role="none">      
 <div style="text-align:center; width:100%;height:100%;margin-top:10px;">
 <span data-role="none" id="closepopUpXmIntroduce" align="center" style="border:none;font-size:14px;padding-top:15px;font-weight:100;text-decoration:none;color:#d62d30;">确定</span>
