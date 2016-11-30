@@ -531,14 +531,14 @@ $(function() {
 	$("#weixin").on("click",function(){
 	    $(this).socialShare("weixinShare",{
 	        url:'http://192.168.1.105:8080/hotelPage/index',
-	        content,'瑞颐集团官网',
+	        content:'瑞颐集团官网',
 	        title:'瑞颐集团'
 	    });
 	});
 	$("#weibo").on("click",function(){
 	    $(this).socialShare("sinaWeibo",{
 	        url:'http://192.168.1.105:8080/hotelPage/index',
-	        content,'瑞颐集团官网',
+	        content:'瑞颐集团官网',
 	        title:'瑞颐集团'
 	    });
 	});
