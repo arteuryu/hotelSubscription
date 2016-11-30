@@ -178,9 +178,13 @@ $("li").on("tap",function(){
 });$(".xm").hide();
 $("#city").change(function(){
 	if($(this).val()=="nc"){
+ 		$("#popUpNcIntroduce").popup("open");
+ 		$("#popUpXmIntroduce").popup("close");
 		$(".nc").show();
 		$(".xm").hide();
 	}else{
+		$("#popUpXmIntroduce").popup("open");
+ 		$("#popUpNcIntroduce").popup("close");
 		$(".nc").hide();
 		$(".xm").show();
 	}
@@ -188,9 +192,9 @@ $("#city").change(function(){
 if($(document.body).width()>310){
 	$("#city").css("width","250px");
 }
-$(document).ready(function(){
-	$("#popUpNcIntroduce").popup("open");
-});
+// $(document).ready(function(){
+// 	$("#popUpNcIntroduce").popup("open");
+// });
 $("#closepopUpNcIntroduce").click(function(){
 	$("#popUpNcIntroduce").popup("close");
 });

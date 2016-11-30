@@ -322,7 +322,14 @@ $(document).ready(function(){
 <!-- <a class="jiathis_counter_style"></a> </div>  -->
 <!-- <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script> -->
 <!-- </div> JiaThis Button END -->
-<div id="socialShare" style="display:none;"></div>
+<div data-role="popup" id="popUpShare" class="socialShare" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
+<ul data-role="none">
+<li data-role="none">
+<a target="_blank" id="weixin"class="msb_network_button weixin" style="display: block; left: 71px; top: 5.5px;">weixin</a>
+<a target="_blank" id="weibo"class="msb_network_button sina" style="display: block; left: 131px; top: 5.5px;">sina</a>
+</li>
+</ul>
+</div>
 
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
@@ -358,7 +365,7 @@ $(document).ready(function(){
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
 <p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
-<p><a id="share" style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">分享</a></p>
+<p><a id="share" href="#popUpShare" data-rel="popup" data-transition="pop" style="color:#ffffff;font-weight:normal;text-decoration:none;">分享</a></p>
 </div>
 <style type="text/css">
 #pageone{  
@@ -424,10 +431,6 @@ background:black;
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-/*   width:70px; */
-/*   height:26px; */
-/*   float:left; */
-/*   margin-left:10px; */
   border-radius:3px;	
 }
 .inputDate{
@@ -491,18 +494,6 @@ p{
 </style>
 <script src="/assets/js/jquery.SuperSlide.2.1.1.js"></script> 
 <script type="text/javascript">
-// function isWeixnOpen(){
-//     var ua = navigator.userAgent.toLowerCase();
-//     if(ua.match(/MicroMessenger/i)=="micromessenger") {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
-// if(isWeixnOpen()){
-// 	$("#pageHeader").hide();
-// }
 $(".detailItem").on("tap",function(){window.location.href=$(this).attr("href");});
 $("#closePhonePopup").click(function(){
 	$("#popUpContact").popup("close");
@@ -537,18 +528,27 @@ $("#location").click(function(){
 	window.location.href="/hotelPage/location";
 });
 $(function() {
-    $("#socialShare").socialShare({
-          content: '自己动手编写jquery插件',
-          url:'http://kiritor.github.io/2015/09/28/shiro-Authentication/',
-          titile:'自己动手编写jquery插件title'
-    });
+	$("#weixin").on("click",function(){
+	    $(this).socialShare("weixinShare",{
+	        url:'http://192.168.1.105:8080/hotelPage/index',
+	        content,'瑞颐集团官网',
+	        title:'瑞颐集团'
+	    });
+	});
+	$("#weibo").on("click",function(){
+	    $(this).socialShare("sinaWeibo",{
+	        url:'http://192.168.1.105:8080/hotelPage/index',
+	        content,'瑞颐集团官网',
+	        title:'瑞颐集团'
+	    });
+	});
 });
-$("#share").click(function(){
-	$("#socialShare").show();
-});
-$("#shareQQ").on("click",function(){
-    $(this).socialShare("tQQ");
-})	
+// $("#share").click(function(){
+// 	$("#socialShare").show();
+// });
+// $("#shareQQ").on("click",function(){
+//     $(this).socialShare("tQQ");
+// })	
 // $("#popUpContact").popup("open");
 // if($(document.body).width()>330){
 // 	$("#city").css("width","250px");
