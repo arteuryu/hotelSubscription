@@ -424,7 +424,7 @@ if(isiOS){
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
-$(".xm").hide();
+$(".nc").hide();
 $("#selectHotel").change(function(){
 	if($(this).val()=="nc"){
 		$(".nc").show();
