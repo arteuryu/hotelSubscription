@@ -322,11 +322,13 @@ $(document).ready(function(){
 <!-- <a class="jiathis_counter_style"></a> </div>  -->
 <!-- <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script> -->
 <!-- </div> JiaThis Button END -->
-<div data-role="popup" id="popUpShare" class="socialShare" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
+<div data-role="popup" id="popUpShare" style="width:200px;height:100px;" class="socialShare" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
+<span style="text-align:center">第三方分享</span>
+<hr>
 <ul data-role="none">
 <li data-role="none">
-<a target="_blank" id="weixin"class="msb_network_button weixin" style="display: block; left: 71px; top: 5.5px;">weixin</a>
-<a target="_blank" id="weibo"class="msb_network_button sina" style="display: block; left: 131px; top: 5.5px;">sina</a>
+<a target="_blank" id="weixin"class="msb_network_button weixin" style="display: block; left: 71px; top: 40px;">weixin</a>
+<a target="_blank" id="weibo"class="msb_network_button sina" style="display: block; left: 131px; top: 40px;">sina</a>
 </li>
 </ul>
 </div>
@@ -542,6 +544,9 @@ $(function() {
 	        title:'瑞颐集团'
 	    });
 	});
+});
+$("#search").click(function(){
+	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
 });
 // $("#share").click(function(){
 // 	$("#socialShare").show();

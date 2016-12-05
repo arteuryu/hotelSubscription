@@ -17,6 +17,43 @@
 
   <div data-role="content">
   <ul data-role="listview" id="listView" data-theme="d">
+
+      <li>
+        <img class="mediaImg" style="padding-left:10px;"src="/assets/images/mediaCenter/meiti09.png">
+        <h3>世界酒店五洲钻石奖</h3>
+        <p>南昌瑞颐大酒店荣获世界酒店 五洲钻石奖 年度最佳新开业酒店殊荣</p>
+      </li>
+            <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti08.png">
+        <h3>2013年度最佳酒店位置奖</h3>
+        <p>本次奖项评选基于慧评网收录的2013年度600万条真实的住客点评 授奖单位：携程、慧评网</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti07.png">
+        <h3>2013年度中国会议酒店前100</h3>
+        <pre>MICE China主编及出版人签名颁发的
+中国会议行业最高奖项。</pre>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti06.png">
+        <h3>2013年度卓越奖</h3>
+        <p>该奖项基于到到网的网上评分</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti05.png">
+        <h3>2013年度十大度假精选</h3>
+        <p>福布斯生活2013年度十大度假精选</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti04.png">
+        <h3>2012年酒店管理集团-年度最具成长性酒店集团</h3>
+        <p>亚洲酒店论坛中心</p>
+      </li>
+      <li>
+        <img class="mediaImg" src="/assets/images/mediaCenter/meiti03.png">
+        <h3>2012年度卓越奖</h3>
+        <p>	该奖项基于到到网的网上评分</p>
+      </li>
       <li id="mediaDetail" href="/hotelPage/mediaDetail">
         <img class="mediaImg" src="/assets/images/mediaCenter/meiti01.png">
         <h3>2012年全球酒店业金樽奖最佳商务酒店</h3>
@@ -26,42 +63,6 @@
         <img class="mediaImg" src="/assets/images/mediaCenter/meiti02.png">
         <h3>2012年度全球酒店业最具投资价值酒店管理公司</h3>
         <p>金樽奖</p>
-      </li>
-      <li>
-        <img class="mediaImg" src="/assets/images/mediaCenter/meiti03.png">
-        <h3>2012年度卓越奖</h3>
-        <p>	该奖项基于到到网的网上评分</p>
-      </li>
-      <li>
-        <img class="mediaImg" src="/assets/images/mediaCenter/meiti04.png">
-        <h3>2012年酒店管理集团-年度最具成长性酒店集团</h3>
-        <p>亚洲酒店论坛中心</p>
-      </li>
-      <li>
-        <img class="mediaImg" src="/assets/images/mediaCenter/meiti05.png">
-        <h3>2013年度十大度假精选</h3>
-        <p>福布斯生活2013年度十大度假精选</p>
-      </li>
-      <li>
-        <img class="mediaImg" src="/assets/images/mediaCenter/meiti06.png">
-        <h3>2013年度卓越奖</h3>
-        <p>该奖项基于到到网的网上评分</p>
-      </li>
-      <li>
-        <img class="mediaImg" src="/assets/images/mediaCenter/meiti07.png">
-        <h3>2013年度中国会议酒店前100</h3>
-        <pre>MICE China主编及出版人签名颁发的
-中国会议行业最高奖项。</pre>
-      </li>
-      <li>
-        <img class="mediaImg" src="/assets/images/mediaCenter/meiti08.png">
-        <h3>2013年度最佳酒店位置奖</h3>
-        <p>本次奖项评选基于慧评网收录的2013年度600万条真实的住客点评 授奖单位：携程、慧评网</p>
-      </li>
-      <li>
-        <img class="mediaImg" style="padding-left:10px;"src="/assets/images/mediaCenter/meiti09.png">
-        <h3>世界酒店五洲钻石奖</h3>
-        <p>南昌瑞颐大酒店荣获世界酒店 五洲钻石奖 年度最佳新开业酒店殊荣</p>
       </li>
     </ul>
 

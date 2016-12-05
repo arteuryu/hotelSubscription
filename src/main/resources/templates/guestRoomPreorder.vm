@@ -303,7 +303,9 @@ if($(document.body).width()>330){
 	$("#preInput").css("width","100px");
 	$("#search").css("width","90%");	
 }
-
+$("#search").click(function(){
+	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
+});
 </script>
 </div>
 </body>

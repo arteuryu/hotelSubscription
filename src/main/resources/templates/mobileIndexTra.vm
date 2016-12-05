@@ -437,6 +437,9 @@ $("#selectHotel").change(function(){
 $("#location").click(function(){
 	window.location.href="/hotelPage/location";
 });
+$("#search").click(function(){
+	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
+});
 </script>
 </div>
 </body>
