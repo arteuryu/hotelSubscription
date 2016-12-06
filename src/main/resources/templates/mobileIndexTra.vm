@@ -172,31 +172,112 @@ $(document).ready(function(){
 </div>
 <hr style="clear:both;width:100%;height:20px;background-color:#f6f6f6;border:none;"></hr>
 	<ul data-role="listview" id="listView" data-theme="d">
-      <li class="detailItem xm" style="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
-        <h3>豪华海景大床房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
-       <p>58平方米的寬敞豪華城景房</p>
-        <span>CNY:<font color=red>1236</font></span>
-      </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
-        <h3>名仕复式套房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
-       <p>58平方米的寬敞豪華城景房</p>
-		<span>CNY:<font color=red>1236</font></span>      
-      </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
-        <h3>豪华家庭房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
-       <p>58平方米的寬敞豪華城景房</p>
-		<span>CNY:<font color=red>1236</font></span>             
-      </li>
-      <li class="detailItem nc" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
-        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
-        <h3>高级大床房<span style="float:right"><font size="2px">查看詳情</font></span></h3>
+      <li  class="detailItem nc" style ="border-top-width:0px;" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/01.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
         <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
- 		<span>CNY:<font color=red>1236</font></span>             
       </li>
-      </ul>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/02.png">
+        <h3>名仕复式套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/03.png">
+        <h3>豪华家庭房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/04.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>尽享饱览鼓浪屿秀丽海景的奢华空间</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/05.png">
+        <h3>豪华江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/06.png">
+        <h3>豪华江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/07.png">
+        <h3>行政江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/08.png">
+        <h3>女皇江景房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem nc" href="http://ncry.yiwosoft.com/MRE/Booking?lang=cn" style="padding-top:10px">
+        <img class="hotelImg" src="/assets/images/hotel/nanchang/09.png">
+        <h3>行政江景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" style ="border-top-width:0px;" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/01.png">
+        <h3>豪华大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/02.png">
+        <h3>豪华双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/03.png">
+        <h3>豪华海景大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/04.png">
+        <h3>豪华海景双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/05.png">
+        <h3>豪华城景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/06.png">
+        <h3>家庭亲子套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/07.png">
+        <h3>行政海景大床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/02.png">
+        <h3>行政海景双床房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/09.png">
+        <h3>行政海景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/10.png">
+        <h3>行政公寓套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/11.png">
+        <h3>栀椤崎套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+      <li class="detailItem xm" href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn">
+        <img class="hotelImg" src="/assets/images/hotel/xiameng/12.png">
+        <h3>皇家海景套房<span style="float:right">CNY:<font color=red>1236</font></span></h3>
+        <p>58平方米的宽敞豪华城景房</p>
+      </li>
+    </ul>
       <p align="center" style="padding-top:10px;"><a href="/hotelPage/guestRoomPreorder" style="text-decoration:none;color:#333333;">更多房型</a></p>
       <hr style="height:20px;background-color:#f6f6f6;border-style:none;"></hr>
       <div style="margin-left:20px;margin-top:20px;margin-right:20px;"><a href="/hotelPage/hotelSelectTra" target="_blank"><button style="width:100%;background-color:white;height:40px;border-radius:5px;border-style:solid;border-color:#E3E3E3;" data-role="none"><font size="3px" color="#666666">瑞頤酒店</font></button></a></div>
