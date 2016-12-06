@@ -21,7 +21,7 @@
 		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px;padding-top:5px" src="/assets/images/index/setting.png"></img></a>
 	</li>
 	<li class="smallIcon" style="display:inline;float:right; list-style:none">
-		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
+		<a id="people"><img   style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img></a>
 	</li>
 	<li class="smallIcon" style="display:inline;float:right; padding-top:5px;list-style:none">
 		<a href="#popUpLang" data-rel="popup" data-transition="pop"><span id="lang" style="font-size:14px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">En</span></a>
@@ -145,7 +145,7 @@ $(document).ready(function(){
 <pre style="font-size:14px;float:left;color:#999999;">Hotel    </pre>
 <select id="selectHotel" data-role="none" style="margin-top:15px;float:left;font-size:14px;color:#999999">
 <option value="xm">Swiss  Hotel Xiamen</option>
-<option value="nc">Swiss  Hotel Xiamen</option>
+<option value="nc">Swiss  Hotel Nanchang</option>
 </select>
 <div style="float:right;padding-top:14px;background-color:white;padding-right:10px;">
 	<img src="/assets/images/index/right.png">
@@ -579,11 +579,13 @@ $("#location").click(function(){
 $("#search").click(function(){
 	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
 });
-if($("#selectHotel").val()=="nc"){
-	$("#people").attr("href","http://ncry.yiwosoft.com/MRE/Member/MemberCard");
-}else{
-	$("#people").attr("href","http://xmry.yiwosoft.com/MRE/Member/MemberCard");
-}
+$("#people").click(function(){
+	if($("#selectHotel").val()=="nc"){
+		window.location.href="http://ncry.yiwosoft.com/MRE/Member/MemberCard";
+	}else{
+		window.location.href="http://xmry.yiwosoft.com/MRE/Member/MemberCard";
+	}
+});
 </script>
 </div>
 </body>

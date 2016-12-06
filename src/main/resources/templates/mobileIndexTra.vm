@@ -20,7 +20,7 @@
 		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px;padding-top:5px" src="/assets/images/index/setting.png"></img></a>
 	</li>
 	<li class="smallIcon" style="display:inline;float:right; list-style:none">
-		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
+		<a id="people"><img   style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img></a>
 	</li>
 		<li class="smallIcon" style="display:inline;float:right; padding-top:5px;list-style:none">
 <!-- 		<select style="font-size:14px;padding-top:5px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;" data-role="none" onchange="self.location.href=options[selectedIndex].value"> -->
@@ -466,6 +466,13 @@ $(function() {
 });
 $("#search").click(function(){
 	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
+});
+$("#people").click(function(){
+	if($("#selectHotel").val()=="nc"){
+		window.location.href="http://ncry.yiwosoft.com/MRE/Member/MemberCard";
+	}else{
+		window.location.href="http://xmry.yiwosoft.com/MRE/Member/MemberCard";
+	}
 });
 </script>
 </div>
