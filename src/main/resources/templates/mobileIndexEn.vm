@@ -347,7 +347,7 @@ $(document).ready(function(){
 </tr>
 </table>
 <div data-role="popup" id="popUpShare" style="width:200px;height:100px;" class="socialShare" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
-<span style="text-align:center">第三方分享</span>
+<span style="text-align:center">Share</span>
 <hr>
 <ul data-role="none">
 <li data-role="none">
@@ -384,12 +384,12 @@ $(document).ready(function(){
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#" target="_blank">En</a></p>
 </div>
 <div data-role="popup" id="popUpMenu" data-theme="a" class="ui-content" data-position-to="#indexMenu" style="font-size:15px;width:80px;margin-top:10px;">
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">首页</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/hotelSelect">瑞颐酒店</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
-<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
-<p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
-<p><a id="share" href="#popUpShare" data-rel="popup" data-transition="pop" style="color:#ffffff;font-weight:normal;text-decoration:none;">分享</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="#">Index</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/hotelSelect">Swiss Hotel</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/about">About Swiss</a></p>
+<p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenter">Media center</a></p>
+<p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUs">Join Us</a></p>
+<p><a id="share" href="#popUpShare" data-rel="popup" data-transition="pop" style="color:#ffffff;font-weight:normal;text-decoration:none;">Share</a></p>
 </div>
 <style type="text/css">
 #pageone{  
