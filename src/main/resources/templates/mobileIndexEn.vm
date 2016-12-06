@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 <link rel="stylesheet" href="/assets/css/share.css"/>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="/assets/js/share.js"></script><script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="/assets/js/share.js">
+</script><script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <!-- <script src="/assets/js/common.js"></script> -->
 <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
@@ -157,7 +158,7 @@ $(document).ready(function(){
 		<p style="font-size:14px;color:#999999;">Time</p>
 	</div>
 	<div style="font-size:14px;padding-bottom:10px;display:inline;float:left;">
-		<p><input class="inputDate" data-role="none" style="width:130px;" type="date" value="16/08/2016"></input><font size="2" color="#999999">checkTime</font></p>
+		<p><input class="inputDate" data-role="none" style="width:130px;" type="date"></input><font size="2" color="#999999">checkTime</font></p>
 		<p><input class="inputDate" data-role="none" style="width:130px;" type="date"></input><font size="2" color="#999999">leaveTime</font></p>		
 	</div>
 	<div style="float:right;padding-top:10px;padding-right:10px;">
@@ -439,7 +440,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 /* .indexHeader{ */
 /* 	background:black;   */
 /* } */
-#people,#setting
+#setting
 {
 border: 1px solid black;
 font-weight: bold;
@@ -547,6 +548,12 @@ $("#selectHotel").change(function(){
 		$(".xm").show();
 	}
 });
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+$(".inputDate").val(new Date().toDateInputValue());
 var u = navigator.userAgent;
 var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端

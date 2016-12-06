@@ -18,14 +18,12 @@
             position: relative;
         }
     </style>
+      <div data-role="header" id="pageHeader">
+	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	
+    <h1>腾讯地图</h1>
+  </div>
 </head> 
 <body> 
-<!-- <div data-role="page" id="pageone"> -->
-<!--   <div data-role="header" id="pageHeader"> -->
-<!-- 	<a href="#" data-rel="back" data-role="none"><img style="padding-top:12px;padding-left:8px;height:16px;width:13px;" src="/assets/images/index/return.png"></a>	 -->
-<!--     <h1>加入我们</h1> -->
-<!--   </div> -->
-<!--   </div> -->
     <!--  通过 iframe 嵌入前端定位组件，此处没有隐藏定位组件，使用了定位组件的在定位中视觉特效  -->
     <iframe id="geoPage" width="100%" height="30%" frameborder=0 scrolling="no"
     src="https://apis.map.qq.com/tools/geolocation?key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp&effect=zoom"></iframe>
