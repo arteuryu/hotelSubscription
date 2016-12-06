@@ -236,6 +236,16 @@ $(document).ready(function(){
 </td>
 </tr>
 </table>
+<div data-role="popup" id="popUpShare" style="width:200px;height:100px;" class="socialShare" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
+<span style="text-align:center">第三方分享</span>
+<hr>
+<ul data-role="none">
+<li data-role="none">
+<a target="_blank" id="weixin"class="msb_network_button weixin" style="display: block; left: 71px; top: 40px;">weixin</a>
+<a target="_blank" id="weibo"class="msb_network_button sina" style="display: block; left: 131px; top: 40px;">sina</a>
+</li>
+</ul>
+</div>
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
 	<li style="display:inline;float:right;list-style:none">
@@ -269,6 +279,7 @@ $(document).ready(function(){
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/aboutTra" target="_blank">關於瑞頤</a></p>
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenterTra" target="_blank">媒體中心</a></p>
 <p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUsTra" target="_blank">加入我們</a></p>
+<p><a id="share" href="#popUpShare" data-rel="popup" data-transition="pop" style="color:#ffffff;font-weight:normal;text-decoration:none;">分享</a></p>
 </div>
 <style type="text/css">
 #pageone{  
@@ -436,6 +447,22 @@ $("#selectHotel").change(function(){
 });
 $("#location").click(function(){
 	window.location.href="/hotelPage/location";
+});
+$(function() {
+	$("#weixin").on("click",function(){
+	    $(this).socialShare("weixinShare",{
+	        url:'http://192.168.1.105:8080/hotelPage/index',
+	        content:'瑞颐集团官网',
+	        title:'瑞颐集团'
+	    });
+	});
+	$("#weibo").on("click",function(){
+	    $(this).socialShare("sinaWeibo",{
+	        url:'http://192.168.1.105:8080/hotelPage/index',
+	        content:'瑞颐集团官网',
+	        title:'瑞颐集团'
+	    });
+	});
 });
 $("#search").click(function(){
 	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";

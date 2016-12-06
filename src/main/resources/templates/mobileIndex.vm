@@ -23,7 +23,7 @@
 		<a id="indexMenu" href="#popUpMenu" data-rel="popup" data-transition="pop"><img  style="width:20px;height:20px;padding-top:5px" src="/assets/images/index/setting.png"></img></a>
 	</li>
 	<li class="smallIcon" style="display:inline;float:right; list-style:none">
-		<img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img>
+		<a id="people"><img  style="width:20px;height:20px;padding-top:5px;" src="/assets/images/index/people.png"></img></a>
 	</li>
 	<li class="smallIcon" style="display:inline;float:right; padding-top:5px;list-style:none">
 		<a href="#popUpLang" data-rel="popup" data-transition="pop"><span id="lang" style="font-size:14px;background-color: transparent;border-top-style: none;border-right-style: none; border-left-style: none;border-bottom-style: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;color:white;">简</span></a>
@@ -548,22 +548,11 @@ $(function() {
 $("#search").click(function(){
 	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
 });
-// $("#share").click(function(){
-// 	$("#socialShare").show();
-// });
-// $("#shareQQ").on("click",function(){
-//     $(this).socialShare("tQQ");
-// })	
-// $("#popUpContact").popup("open");
-// if($(document.body).width()>330){
-// 	$("#city").css("width","250px");
-// 	$("#selectCount").css("width","80px");
-// 	$("#preInput").css("width","100px");
-// 	$("#search").css("width","90%");	
-// 	$("#firstTd").css("padding-left","27px");
-// 	$("#indexImg").css("width",width+"px");	
-// 	$("#scanCode").css("padding-left","75px");
-// }
+if($("#selectHotel").val()=="nc"){
+	$("#people").attr("href","http://ncry.yiwosoft.com/MRE/Member/MemberCard");
+}else{
+	$("#people").attr("href","http://xmry.yiwosoft.com/MRE/Member/MemberCard");
+}
 </script>
 </div>
 </body>

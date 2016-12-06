@@ -3,8 +3,9 @@
 <meta name="viewport" content="width=device-width" />
 <head>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<link rel="stylesheet" href="/assets/css/share.css"/>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="/assets/js/share.js"></script><script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <!-- <script src="/assets/js/common.js"></script> -->
 <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
@@ -344,6 +345,16 @@ $(document).ready(function(){
 </td>
 </tr>
 </table>
+<div data-role="popup" id="popUpShare" style="width:200px;height:100px;" class="socialShare" data-theme="e" data-overlay-theme="a" class="ui-content" style="background:#fffafa;" data-position-to="window">
+<span style="text-align:center">第三方分享</span>
+<hr>
+<ul data-role="none">
+<li data-role="none">
+<a target="_blank" id="weixin"class="msb_network_button weixin" style="display: block; left: 71px; top: 40px;">weixin</a>
+<a target="_blank" id="weibo"class="msb_network_button sina" style="display: block; left: 131px; top: 40px;">sina</a>
+</li>
+</ul>
+</div>
 <div data-position="fixed" data-tap-toggle="false">
 	<ul data-role="none" >
 	<li style="display:inline;float:right;list-style:none">
@@ -377,6 +388,7 @@ $(document).ready(function(){
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/about">关于瑞颐</a></p>
 <p style="margin-bottom:10px;"><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/mediaCenter">媒体中心</a></p>
 <p><a style="color:#ffffff;font-weight:normal;text-decoration:none;" href="/hotelPage/joinUs">加入我们</a></p>
+<p><a id="share" href="#popUpShare" data-rel="popup" data-transition="pop" style="color:#ffffff;font-weight:normal;text-decoration:none;">分享</a></p>
 </div>
 <style type="text/css">
 #pageone{  
@@ -545,12 +557,33 @@ if(isiOS){
 	$("#tableMain").css("padding-right","5px");
 	$("#tableMain").css("padding-left","5px");
 }
+$(function() {
+	$("#weixin").on("click",function(){
+	    $(this).socialShare("weixinShare",{
+	        url:'http://192.168.1.105:8080/hotelPage/index',
+	        content:'瑞颐集团官网',
+	        title:'瑞颐集团'
+	    });
+	});
+	$("#weibo").on("click",function(){
+	    $(this).socialShare("sinaWeibo",{
+	        url:'http://192.168.1.105:8080/hotelPage/index',
+	        content:'瑞颐集团官网',
+	        title:'瑞颐集团'
+	    });
+	});
+});
 $("#location").click(function(){
 	window.location.href="/hotelPage/location";
 });
 $("#search").click(function(){
 	window.location.href="http://xmry.yiwosoft.com/MRE/Booking?lang=cn";
 });
+if($("#selectHotel").val()=="nc"){
+	$("#people").attr("href","http://ncry.yiwosoft.com/MRE/Member/MemberCard");
+}else{
+	$("#people").attr("href","http://xmry.yiwosoft.com/MRE/Member/MemberCard");
+}
 </script>
 </div>
 </body>
